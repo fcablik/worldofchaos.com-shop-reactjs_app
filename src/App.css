@@ -3,43 +3,53 @@
     margin: 0;
     padding: 0;
     font-family: 'Source Code Pro', monospace;
-  }
-  
-  .home,
-  .services,
-  .products,
-  .sign-up {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-  
-  .services {
-    background-image: url('/public/images/img-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 45px;
-  }
-  
-  .products {
-    background-image: url('/public/images/img-1.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 45px;
-  }
-  
-  .sign-up {
-    background-image: url('/public/images/img-8.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 45px;
-  }
-  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1100px) {
+    .container {
+        width: 1070px;
+    }
+}
+@media (min-width: 1300px) {
+    .container {
+        width: 1170px;
+    }
+}@media (min-width: 1300px) {
+    .container {
+        width: 1270px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        width: 1370px;
+    }
+}
