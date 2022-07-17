@@ -1,9 +1,9 @@
 import React from 'react';
+import '../App.css'
 import { Link } from 'react-router-dom';
 import './Main.css';
 
-
-function header() {
+function Main() {
     return (
         <>
             <main id='main'>
@@ -19,7 +19,7 @@ function header() {
                             <Link to="/about" className='-cc-text'>
                                 <sup>00</sup>About HussleVerse
                             </Link>
-                            <Link to="/contacts" className='-cc-text'>
+                            <Link to="/contact" className='-cc-text'>
                                 <sup>01</sup>Contacts
                             </Link>
                             <Link to="/skill-set" className='-cc-text'>
@@ -37,4 +37,4 @@ function header() {
     );
 }
 
-export default header;
+export default Main;
