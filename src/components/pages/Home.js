@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../App.css';
-import Navigation from './../Navigation';
 import Spline from '@splinetool/react-spline';
 
 function Home() {
@@ -13,7 +12,7 @@ function Home() {
                         <div className='hssvrs-welcome-block'>
 
                             <div className="wb-area-text">
-                                <h1 className='-wb-heading'>A modern-day<br/>web development</h1>
+                                <h1 className='-wb-heading'>A modern-day<br/>web dvelopment</h1>
                                 <p className='-wb-text'><sup>*</sup>Choose & press key to continue</p>
                             </div>
 
@@ -23,13 +22,11 @@ function Home() {
 
                         </div>
 
-                        <Navigation />
-
                     </div>
                 </div>
             </main>
         </>
     );
 }
- 
+
 export default Home;
