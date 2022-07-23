@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css'
 import { Link } from 'react-router-dom';
 import './Main.css';
+import Spline from '@splinetool/react-spline';
 
 function Main() {
     return (
@@ -11,8 +12,14 @@ function Main() {
                     <div className="content">
 
                         <div className='hssvrs-welcome-block'>
-                            <h1 className='-wb-heading'>A modern-day<br/>web development</h1>
-                            <p className='-wb-text'><sup>*</sup>Choose & press key to continue</p>
+                            <div className="wb-area-text">
+                                <h1 className='-wb-heading'>A modern-day<br/>web development</h1>
+                                <p className='-wb-text'><sup>*</sup>Choose & press key to continue</p>
+                            </div>
+                            <div className="wb-area-spline">
+                                <Spline scene="https://prod.spline.design/JViiQXwcB77HpiA4/scene.splinecode" />
+                            </div>
+
                         </div>
 
                         <div className="hssvrs-category-choice">

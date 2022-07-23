@@ -1,12 +1,21 @@
 /** primaryColor        -> #A4D1EB */
 /** secondaryColor      -> #D92A2A */
 /** primaryTextColor    -> #363636 */
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Code Pro', monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+}
+
+::-moz-selection { /* Code for Firefox */
+  /* color: red; */
+  background: white;
+}
+
+::selection {
+  /* color: red; */
+  background: white;
 }
 
 h1,
@@ -15,45 +24,47 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+  .container {
+    width: 750px;
+  }
 }
 @media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
+  .container {
+    width: 970px;
+  }
 }
 @media (min-width: 1100px) {
-    .container {
-        width: 1070px;
-    }
+  .container {
+    width: 1070px;
+  }
 }
 @media (min-width: 1300px) {
-    .container {
-        width: 1170px;
-    }
-}@media (min-width: 1300px) {
-    .container {
-        width: 1270px;
-    }
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1270px;
+  }
 }
 @media (min-width: 1400px) {
-    .container {
-        width: 1370px;
-    }
-}
+  .container {
+    width: 1370px;
+  }
+}/*# sourceMappingURL=app.css.map */
