@@ -1,6 +1,5 @@
 // import sass
     @import "variables";
-
     @import 'loadFonts';
     @import "loadingScreen";
 
@@ -8,8 +7,10 @@
     @import "global";
 
     @import "Header";
-    @import "Main";
+    @import "Navigation";
     @import "Footer";
+
+    @import "Home";
 
     // @import "nav";
     // @import "archive";

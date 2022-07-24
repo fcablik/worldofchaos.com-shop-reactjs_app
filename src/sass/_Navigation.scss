@@ -1,0 +1,88 @@
+//{Navigation.js} styles
+.hssvrs-category-choice {
+    position: fixed;
+    bottom: 50px;
+    height: 35px;
+    width: 100%;
+    z-index: 999;
+
+    text-align: center;
+    text-align: -webkit-center;
+    margin: 30px 0;
+
+    .-cc-choice {
+        max-width: 1100px;
+        border-radius: 15px;
+        padding: 10px;
+        background-image: linear-gradient(35deg, $primaryColor, $secondaryColor);
+
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (min-width: 992px){
+            // .-cc-text {
+            //     color: #363636;
+            //     font-size: 15px;
+            //     text-decoration: none;
+            //     padding: 2px 5px;
+
+            //     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+            //     background-repeat: no-repeat;
+            //     background-position: 0% 100%;
+            //     transition: background-size .1s, background-position .2s ease-in .1s;
+            //     background-size: 100% 2px;
+
+            //     sup {
+            //         padding-right: 5px;
+            //     }
+            // }
+            // .-cc-text:hover {
+            //     background-image: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6));
+            //     background-size: 100% 100%;
+            //     background-position: 0% 0%;
+            //     transition: background-position .1s, background-size .2s ease-in .1s;
+            // }
+
+
+
+            .-cc-text {
+                background-image: linear-gradient(
+                  to right,
+                  $bcgColor,
+                  $txtColor 50%,
+                  #000 50%
+                );
+                background-size: 200% 100%;
+                background-position: -100%;
+                display: inline-block;
+                padding: 5px 0;
+                position: relative;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all .3s ease-in-out;
+              }
+              
+              .-cc-text:before{
+                content: '';
+                background: $txtColor;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0;
+                height: 1.5px;
+                transition: all .3s ease-in-out;
+              }
+              
+              .-cc-text:hover {
+               background-position: 0;
+              }
+              
+              .-cc-text:hover::before{
+                width: 100%;
+              }
+
+
+        }
+    }
+}

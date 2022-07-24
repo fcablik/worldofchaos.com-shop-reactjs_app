@@ -11,12 +11,12 @@ function Home() {
 
                         <div className='hssvrs-welcome-block'>
 
-                            <div className="wb-area-text">
+                            <div className="wb-area -wb-title">
                                 <h1 className='-wb-heading'>A modern-day<br/>web dvelopment</h1>
-                                <p className='-wb-text'><sup>*</sup>Choose & press key to continue</p>
+                                <p className='-wb-text'><sup>*</sup>Choose & click or press the key to continue</p>
                             </div>
 
-                            <div className="wb-area-keyboard">
+                            <div className="wb-area -wb-3d">
                                 <Spline scene="https://prod.spline.design/JViiQXwcB77HpiA4/scene.splinecode" />
                             </div>
 
