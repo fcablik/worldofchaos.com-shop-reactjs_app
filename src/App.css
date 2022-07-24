@@ -65,6 +65,17 @@ p {
   }
 }
 
+.header {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(54, 54, 54, 0.1058823529);
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  /* position: sticky; */
+}
+
 .hssvrs-welcome-block {
   margin: 40px 0;
   padding: 100px 50px;

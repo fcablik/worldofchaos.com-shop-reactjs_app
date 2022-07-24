@@ -16,7 +16,7 @@ function Home() {
                                 <p className='-wb-text'><sup>*</sup>Choose & press key to continue</p>
                             </div>
 
-                            <div className="wb-area-spline">
+                            <div className="wb-area-keyboard">
                                 <Spline scene="https://prod.spline.design/JViiQXwcB77HpiA4/scene.splinecode" />
                             </div>
 
