@@ -48,9 +48,9 @@
             .-cc-text {
                 background-image: linear-gradient(
                   to right,
-                  $bcgColor,
-                  $txtColor 50%,
-                  #000 50%
+                  #d17cc6,
+                  $txtColor 40%,
+                  #000 100%
                 );
                 background-size: 200% 100%;
                 background-position: -100%;
@@ -70,7 +70,7 @@
                 bottom: -3px;
                 left: 0;
                 width: 0;
-                height: 1.5px;
+                height: 1px;
                 transition: all .3s ease-in-out;
               }
               

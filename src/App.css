@@ -110,7 +110,7 @@ a:hover {
 }
 @media (min-width: 992px) {
   .hssvrs-category-choice .-cc-choice .-cc-text {
-    background-image: linear-gradient(to right, #fff, #363636 50%, #000 50%);
+    background-image: linear-gradient(to right, #d17cc6, #363636 40%, #000 100%);
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -128,7 +128,7 @@ a:hover {
     bottom: -3px;
     left: 0;
     width: 0;
-    height: 1.5px;
+    height: 1px;
     transition: all 0.3s ease-in-out;
   }
   .hssvrs-category-choice .-cc-choice .-cc-text:hover {
