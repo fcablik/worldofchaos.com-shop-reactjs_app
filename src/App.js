@@ -16,21 +16,24 @@ function App() {
     return (
         <>
             <Router>
-
                 <Header />
 
-                <Routes>
-                    <Route exact path="/" element={<Home />}/>
-                    <Route path='/about' element={<About />} />
-                    <Route path='/contact' element={<Contact />} />
-                    <Route path='/skill-set' element={<Skills />} />
-                    <Route path='/full-experience' element={<FullExperience />} />
-                </Routes>
-                
+                <main id='main'>
+                    <div className='container'>
+
+                        <Routes>
+                            <Route exact path="/" element={<Home />}/>
+                            <Route path='/about' element={<About />} />
+                            <Route path='/contact' element={<Contact />} />
+                            <Route path='/skill-set' element={<Skills />} />
+                            <Route path='/full-experience' element={<FullExperience />} />
+                        </Routes>
+
+                    </div>
+                </main>
+
                 <Navigation />
-
                 <Footer />
-
             </Router>
         </>
     )

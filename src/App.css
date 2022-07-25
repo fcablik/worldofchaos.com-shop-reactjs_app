@@ -5,19 +5,15 @@
   font-family: "Source Code Pro", monospace;
 }
 
-::-moz-selection { /* Code for Firefox */
-  /* color: red; */
-  background: white;
-}
-
-::selection {
-  /* color: red; */
-  background: white;
-}
-
 a {
   text-decoration: none;
   transition: all 0.1s ease-in;
+}
+
+@media (min-width: 992px) {
+  #main {
+    margin-top: 120px;
+  }
 }
 
 h1,
@@ -82,17 +78,18 @@ a:hover {
 .header {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(54, 54, 54, 0.1058823529);
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 999;
-  /* position: sticky; */
 }
 
 .hssvrs-category-choice {
   position: fixed;
-  bottom: 50px;
   height: 35px;
   width: 100%;
   z-index: 999;
@@ -101,7 +98,6 @@ a:hover {
   margin: 30px 0;
 }
 .hssvrs-category-choice .-cc-choice {
-  max-width: 1100px;
   border-radius: 15px;
   padding: 10px;
   background-image: linear-gradient(35deg, #A4D1EB, #FCD5F7);
@@ -138,6 +134,41 @@ a:hover {
     width: 100%;
   }
 }
+@media (max-width: 767px) {
+  .hssvrs-category-choice .-cc-choice {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .hssvrs-category-choice .-cc-choice {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .hssvrs-category-choice .-cc-choice {
+    width: 870px;
+  }
+}
+@media (min-width: 1100px) {
+  .hssvrs-category-choice .-cc-choice {
+    width: 970px;
+  }
+}
+@media (min-width: 1300px) {
+  .hssvrs-category-choice .-cc-choice {
+    width: 1100px;
+  }
+}
+@media (min-width: 992px) {
+  .hssvrs-category-choice {
+    bottom: 100px;
+  }
+}
+@media (min-width: 1500px) {
+  .hssvrs-category-choice {
+    bottom: 120px;
+  }
+}
 
 .footer {
   background-color: #fff;
@@ -154,7 +185,6 @@ a:hover {
 
 .hssvrs-welcome-block {
   margin: 40px 0;
-  padding: 100px 50px;
   border-radius: 50px;
   background-color: #A4D1EB;
 }
@@ -200,9 +230,19 @@ a:hover {
 }
 @media (min-width: 992px) {
   .hssvrs-welcome-block {
-    display: flex;
+    padding: 120px 50px;
   }
   .hssvrs-welcome-block .wb-area {
     width: 50%;
+  }
+}
+@media (min-width: 1300px) {
+  .hssvrs-welcome-block {
+    padding: 120px 90px;
+  }
+}
+@media (max-width: 767px) {
+  .hssvrs-welcome-block {
+    padding: 30px;
   }
 }/*# sourceMappingURL=App.css.map */

@@ -15,16 +15,22 @@
     font-family: 'Source Code Pro', monospace;
 } 
 
-::-moz-selection { /* Code for Firefox */
-    /* color: red; */
-    background: white;
-}
-::selection {
-    /* color: red; */
-    background: white;
-}
+// ::-moz-selection { /* Code for Firefox */
+//     /* color: red; */
+//     background: white;
+// }
+// ::selection {
+//     /* color: red; */
+//     background: white;
+// }
 
 a {
     text-decoration: none;
     transition: all .1s ease-in;
+}
+
+#main {
+    @media (min-width: 992px){
+        margin-top: 120px;
+    }
 }
