@@ -1,15 +1,17 @@
 import React from 'react';
-import Header from './dev/components/Header';
-import Footer from './dev/components/Footer';
-import Navigation from './dev/components/Navigation';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+
 import './App.css';
 
-import Home from './dev/components/pages/Home';
-import About from './dev/components/pages/About';
-import Contact from './dev/components/pages/Contact';
-import Skills from './dev/components/pages/Skills';
-import FullExperience from './dev/components/pages/FullExperience';
+import Home from './components/pages/_dev/Home';
+import About from './components/pages/_dev/About';
+import Contact from './components/pages/_dev/Contact';
+import Skills from './components/pages/_dev/Skills';
+import FullExperience from './components/pages/_dev/FullExperience';
 
 
 function App() {
