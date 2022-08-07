@@ -2,7 +2,7 @@ import React from 'react';
 
 import Spline from '@splinetool/react-spline';
 
-function Home() {
+function HomeDev() {
     return (
         <>
             <div className="content">
@@ -23,4 +23,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomeDev;

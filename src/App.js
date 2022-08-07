@@ -1,13 +1,13 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
+import Header from './components/_dev/Header';
+import Footer from './components/_dev/Footer';
+import Navigation from './components/_dev/Navigation';
 
 import './App.css';
 
-import Home from './components/pages/_dev/Home';
+import HomeDev from './components/pages/_dev/HomeDev';
 import About from './components/pages/_dev/About';
 import Contact from './components/pages/_dev/Contact';
 import Skills from './components/pages/_dev/Skills';
@@ -24,7 +24,7 @@ function App() {
                     <div className='container'>
 
                         <Routes>
-                            <Route exact path="/" element={<Home />}/>
+                            <Route exact path="/" element={<HomeDev />}/>
                             <Route path='/about' element={<About />} />
                             <Route path='/contact' element={<Contact />} />
                             <Route path='/skill-set' element={<Skills />} />
