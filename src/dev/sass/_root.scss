@@ -1,0 +1,49 @@
+// primaryColor     -> #A4D1EB
+// secondaryColor   -> #D92A2A
+// primaryTextColor -> #363636
+
+// html, body{
+//     height: 100%;
+//     margin: 0;
+//     overflow:hidden;
+// }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+} 
+
+// ::-moz-selection { /* Code for Firefox */
+//     /* color: red; */
+//     background: white;
+// }
+// ::selection {
+//     /* color: red; */
+//     background: white;
+// }
+
+a {
+    text-decoration: none;
+    transition: all .1s ease-in;
+}
+
+#main {
+    @media (min-width: 992px){
+        padding-top: 120px;
+    }
+}
+
+#root {
+    height: 100vh;
+
+    @media (max-width: 767px){
+        background: url("/public/images/bcg_main_resp.jpg");
+    }
+    @media (min-width: 768px){
+        background: url("/public/images/bcg_main.jpg");
+    }
+
+
+}

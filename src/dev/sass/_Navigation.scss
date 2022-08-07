@@ -1,0 +1,83 @@
+//{Navigation.js} styles
+.hssvrs-category-choice {
+    position: fixed;
+    height: 35px;
+    width: 100%;
+    z-index: 999;
+
+    text-align: center;
+    text-align: -webkit-center;
+    margin: 30px 0;
+
+    .-cc-choice {
+        border-radius: 15px;
+        padding: 10px;
+        background-image: linear-gradient(35deg, $primaryColor, $secondaryColor);
+
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (min-width: 992px){
+            .-cc-text {
+                background-image: linear-gradient(
+                    to right,
+                    #d17cc6,
+                    $txtColor 40%,
+                    #000 100%
+                );
+
+                background-size: 200% 100%;
+                background-position: -100%;
+                display: inline-block;
+                padding: 5px 0;
+                position: relative;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: all .3s ease-in-out;
+            }
+
+            .-cc-text:before{
+                content: '';
+                background: $txtColor;
+                display: block;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0;
+                height: 1px;
+                transition: all .3s ease-in-out;
+            }
+
+            .-cc-text:hover {
+                background-position: 0;
+            }
+
+            .-cc-text:hover::before {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px){
+            display: none;
+        }
+        @media (min-width: 768px) {
+            width: 650px;
+        }
+        @media (min-width: 992px) {
+            width: 870px;
+        }
+        @media (min-width: 1100px) {
+            width: 970px;
+        }
+        @media (min-width: 1300px) {
+            width: 1100px;
+        }
+    }
+
+    @media(min-width:992px){
+        bottom: 100px;
+    }
+    @media (min-width: 1500px) {
+        bottom: 120px;
+    }
+}
