@@ -12,7 +12,21 @@ a {
 
 @media (min-width: 992px) {
   #main {
-    margin-top: 120px;
+    padding-top: 120px;
+  }
+}
+
+#root {
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  #root {
+    background: url("/public/images/bcg_main_resp.jpg");
+  }
+}
+@media (min-width: 768px) {
+  #root {
+    background: url("/public/images/bcg_main.jpg");
   }
 }
 

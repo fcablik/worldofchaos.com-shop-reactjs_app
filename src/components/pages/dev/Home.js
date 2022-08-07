@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../../../App.css';
 import Spline from '@splinetool/react-spline';
 
 function Home() {
@@ -10,7 +10,7 @@ function Home() {
 
                     <div className="wb-area -wb-title">
                         <h1 className='-wb-heading'>A modern-day<br/>web dvelopment</h1>
-                        <p className='-wb-text'><sup>*</sup>Choose & click or press the key to continue</p>
+                        <p className='-wb-text'><sup>*</sup>Click or press the chosen key to continue</p>
                     </div>
 
                     <div className="wb-area -wb-3d">

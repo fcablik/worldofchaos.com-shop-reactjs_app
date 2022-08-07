@@ -5,11 +5,11 @@ import Navigation from './components/Navigation';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Skills from './components/pages/Skills';
-import FullExperience from './components/pages/FullExperience';
+import Home from './components/pages/dev/Home';
+import About from './components/pages/dev/About';
+import Contact from './components/pages/dev/Contact';
+import Skills from './components/pages/dev/Skills';
+import FullExperience from './components/pages/dev/FullExperience';
 
 
 function App() {
