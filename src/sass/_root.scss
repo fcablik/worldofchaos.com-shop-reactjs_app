@@ -41,11 +41,9 @@ a {
     height: 100vh;
 
     @media (max-width: 767px){
-        background: url("/public/images/bcg_main_resp.jpg");
+        background: url("/public/images/bcg.jpg");
     }
     @media (min-width: 768px){
-        background: url("/public/images/bcg_main.jpg");
+        background: url("/public/images/bcg.jpg");
     }
-
-
 }

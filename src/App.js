@@ -1,42 +1,41 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
 import './App.css';
 
-// import Header from './Header';
-// import Footer from './Footer';
-// import Navigation from './Navigation';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
 
-import { Link } from 'react-router-dom';
-import AppDev from './components/_dev/_App';
-import HomeDev from './components/pages/_dev/HomeDev';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Skills from './components/pages/Skills';
+import FullExperience from './components/pages/FullExperience';
+
 
 function App() {
     return (
         <>
-
             <Router>
+                <Header />
 
                 <main id='main'>
                     <div className='container'>
 
                         <Routes>
-                            <Route exact path="/" element={<HomeDev />}/>
-                            <Route exact path="/dev/" page={<AppDev />}/>
+                            <Route exact path="/" element={<Home />}/>
+                            <Route path='/about' element={<About />} />
+                            <Route path='/contact' element={<Contact />} />
+                            <Route path='/skill-set' element={<Skills />} />
+                            <Route path='/full-experience' element={<FullExperience />} />
                         </Routes>
-
-                        <Link to="/" className='-cc-text'>
-                            <sup>00</sup>HOME
-                        </Link>
-                        <Link to="/dev/" className='-cc-text'>
-                            <sup>00</sup>TEXT HERE
-                        </Link>
 
                     </div>
                 </main>
 
+                <Navigation />
+                <Footer />
             </Router>
-
         </>
     )
 }

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Source Code Pro", monospace;
@@ -8,6 +9,7 @@
 
 a {
   text-decoration: none;
+  -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
 
@@ -22,12 +24,12 @@ a {
 }
 @media (max-width: 767px) {
   #root {
-    background: url("/public/images/bcg_main_resp.jpg");
+    background: url("/public/images/bcg.jpg");
   }
 }
 @media (min-width: 768px) {
   #root {
-    background: url("/public/images/bcg_main.jpg");
+    background: url("/public/images/bcg.jpg");
   }
 }
 
@@ -92,10 +94,17 @@ a:hover {
 
 .header {
   background-color: #fff;
-  box-shadow: 0 3px 6px rgba(54, 54, 54, 0.1058823529);
+  -webkit-box-shadow: 0 3px 6px rgba(54, 54, 54, 0.1058823529);
+          box-shadow: 0 3px 6px rgba(54, 54, 54, 0.1058823529);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 40px;
   position: fixed;
   top: 0;
@@ -103,7 +112,7 @@ a:hover {
   z-index: 999;
 }
 
-.hssvrs-category-choice {
+.woch-category-choice {
   position: fixed;
   height: 35px;
   width: 100%;
@@ -112,15 +121,20 @@ a:hover {
   text-align: -webkit-center;
   margin: 30px 0;
 }
-.hssvrs-category-choice .-cc-choice {
+.woch-category-choice .-cc-choice {
   border-radius: 15px;
   padding: 10px;
   background-image: linear-gradient(35deg, #A4D1EB, #FCD5F7);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 @media (min-width: 992px) {
-  .hssvrs-category-choice .-cc-choice .-cc-text {
+  .woch-category-choice .-cc-choice .-cc-text {
+    background-image: -webkit-gradient(linear, left top, right top, from(#d17cc6), color-stop(40%, #363636), to(#000));
     background-image: linear-gradient(to right, #d17cc6, #363636 40%, #000 100%);
     background-size: 200% 100%;
     background-position: -100%;
@@ -129,9 +143,10 @@ a:hover {
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .hssvrs-category-choice .-cc-choice .-cc-text:before {
+  .woch-category-choice .-cc-choice .-cc-text:before {
     content: "";
     background: #363636;
     display: block;
@@ -140,57 +155,65 @@ a:hover {
     left: 0;
     width: 0;
     height: 1px;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .hssvrs-category-choice .-cc-choice .-cc-text:hover {
+  .woch-category-choice .-cc-choice .-cc-text:hover {
     background-position: 0;
   }
-  .hssvrs-category-choice .-cc-choice .-cc-text:hover::before {
+  .woch-category-choice .-cc-choice .-cc-text:hover::before {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .hssvrs-category-choice .-cc-choice {
+  .woch-category-choice .-cc-choice {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  .hssvrs-category-choice .-cc-choice {
+  .woch-category-choice .-cc-choice {
     width: 650px;
   }
 }
 @media (min-width: 992px) {
-  .hssvrs-category-choice .-cc-choice {
+  .woch-category-choice .-cc-choice {
     width: 870px;
   }
 }
 @media (min-width: 1100px) {
-  .hssvrs-category-choice .-cc-choice {
+  .woch-category-choice .-cc-choice {
     width: 970px;
   }
 }
 @media (min-width: 1300px) {
-  .hssvrs-category-choice .-cc-choice {
+  .woch-category-choice .-cc-choice {
     width: 1100px;
   }
 }
 @media (min-width: 992px) {
-  .hssvrs-category-choice {
+  .woch-category-choice {
     bottom: 100px;
   }
 }
 @media (min-width: 1500px) {
-  .hssvrs-category-choice {
+  .woch-category-choice {
     bottom: 120px;
   }
 }
 
 .footer {
   background-color: #fff;
-  box-shadow: 0 -3px 6px rgba(54, 54, 54, 0.1058823529);
+  -webkit-box-shadow: 0 -3px 6px rgba(54, 54, 54, 0.1058823529);
+          box-shadow: 0 -3px 6px rgba(54, 54, 54, 0.1058823529);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   bottom: 0;
   height: 35px;
@@ -198,35 +221,35 @@ a:hover {
   z-index: 999;
 }
 
-.hssvrs-welcome-block {
+.woch-welcome-block {
   margin: 40px 0;
   border-radius: 50px;
   background-color: #A4D1EB;
 }
-.hssvrs-welcome-block .wb-area.-wb-title .-wb-heading {
+.woch-welcome-block .wb-area.-wb-title .-wb-heading {
   font-size: 42px;
 }
 @media (max-width: 767px) {
-  .hssvrs-welcome-block .wb-area.-wb-title .-wb-heading {
+  .woch-welcome-block .wb-area.-wb-title .-wb-heading {
     font-size: 24px;
   }
 }
-.hssvrs-welcome-block .wb-area.-wb-title .-wb-text {
+.woch-welcome-block .wb-area.-wb-title .-wb-text {
   font-size: 18px;
 }
 @media (min-width: 992px) {
-  .hssvrs-welcome-block .wb-area.-wb-title .-wb-text {
+  .woch-welcome-block .wb-area.-wb-title .-wb-text {
     margin-top: 20px;
   }
 }
 @media (max-width: 991px) {
-  .hssvrs-welcome-block .wb-area.-wb-title .-wb-text {
+  .woch-welcome-block .wb-area.-wb-title .-wb-text {
     font-size: 16px;
     margin-top: 15px;
   }
 }
 @media (min-width: 992px) {
-  .hssvrs-welcome-block .wb-area.-wb-3d {
+  .woch-welcome-block .wb-area.-wb-3d {
     height: 500px;
     top: 0;
     right: 0;
@@ -234,30 +257,30 @@ a:hover {
   }
 }
 @media (min-width: 1024px) {
-  .hssvrs-welcome-block .wb-area.-wb-3d {
+  .woch-welcome-block .wb-area.-wb-3d {
     right: 3%;
   }
 }
 @media (min-width: 1100px) {
-  .hssvrs-welcome-block .wb-area.-wb-3d {
+  .woch-welcome-block .wb-area.-wb-3d {
     right: 10%;
   }
 }
 @media (min-width: 992px) {
-  .hssvrs-welcome-block {
+  .woch-welcome-block {
     padding: 120px 50px;
   }
-  .hssvrs-welcome-block .wb-area {
+  .woch-welcome-block .wb-area {
     width: 50%;
   }
 }
 @media (min-width: 1300px) {
-  .hssvrs-welcome-block {
+  .woch-welcome-block {
     padding: 120px 90px;
   }
 }
 @media (max-width: 767px) {
-  .hssvrs-welcome-block {
+  .woch-welcome-block {
     padding: 30px;
   }
-}/*# sourceMappingURL=App.css.map */
+}
