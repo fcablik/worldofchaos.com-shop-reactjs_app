@@ -35,11 +35,21 @@ a {
   }
 }
 
-#header,
+@media (min-width: 768px) {
+  #header,
 #footer,
 #main {
-  padding-right: 2em;
-  padding-left: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+@media (max-width: 767px) {
+  #header,
+#footer,
+#main {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
 }
 
 h1,
