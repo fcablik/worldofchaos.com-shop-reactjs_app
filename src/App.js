@@ -7,10 +7,10 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 
 import Home from './components/pages/Home';
-import About from './components/pages/About';
+import Shop from './components/pages/Shop';
 import Contact from './components/pages/Contact';
-import Skills from './components/pages/Skills';
-import FullExperience from './components/pages/FullExperience';
+import Sustainability from './components/pages/Sustainability';
+import TermsConditions from './components/pages/TermsConditions';
 
 
 function App() {
@@ -20,14 +20,14 @@ function App() {
                 <Header />
 
                 <main id='main'>
-                    <div className='container'>
+                    <div className='main-content'>
 
                         <Routes>
                             <Route exact path="/" element={<Home />}/>
-                            <Route path='/about' element={<About />} />
+                            <Route path='/shop' element={<Shop />} />
                             <Route path='/contact' element={<Contact />} />
-                            <Route path='/skill-set' element={<Skills />} />
-                            <Route path='/full-experience' element={<FullExperience />} />
+                            <Route path='/sustainability' element={<Sustainability />} />
+                            <Route path='/terms-conditions' element={<TermsConditions />} />
                         </Routes>
 
                     </div>

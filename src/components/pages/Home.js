@@ -6,12 +6,9 @@ function Home() {
     return (
         <>
             <div className="content">
-                <div className='woch-welcome-block'>
+                <div className='welcome-container'>
 
-                    <div className="wb-area -wb-title">
-                        <h1 className='-wb-heading'>A modern-day<br/>web dvelopment</h1>
-                        <p className='-wb-text'><sup>*</sup>Click or press the chosen key to continue</p>
-                    </div>
+                    <h1 className='title'>Home</h1>
 
                 </div>
             </div>

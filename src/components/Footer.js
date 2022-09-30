@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <>
-        <nav className='footer'>
+        <nav className='footer' id='footer'>
             <Link to="/" className='-ftr-text'>
                 Get Your first consultation for Free!
             </Link>

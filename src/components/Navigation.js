@@ -4,19 +4,20 @@ import { Link } from 'react-router-dom';
 function Navigation() {
     return (
         <>
-            <div className="woch-category-choice">
+            {/* this block will be displayed on hover of menu btn in footer */}
+            <div className="menu-block">
                 <div className="-cc-choice">
-                    <Link to="/about" className='-cc-text'>
-                        <sup>00</sup>About HussleVerse
+                    <Link to="/shop" className='-mb-text'>
+                        Shop
                     </Link>
-                    <Link to="/contact" className='-cc-text'>
-                        <sup>01</sup>Contacts
+                    <Link to="/contact" className='-mb-text'>
+                        Contact
                     </Link>
-                    <Link to="/skill-set" className='-cc-text'>
-                        <sup>02</sup>Skills, Experience
+                    <Link to="/sustainability" className='-mb-text'>
+                        Sustainability
                     </Link>
-                    <Link to="/full-experience" className='-cc-text'>
-                        <sup>START</sup>For the Full Experience
+                    <Link to="/terms-conditions" className='-mb-text'>
+                        Terms & Conditions
                     </Link>
                 </div>
             </div>
