@@ -1,4 +1,4 @@
-//{base_root styles}
+//{base::root styles}
 
 // html, body{
 //     height: 100%;
@@ -16,38 +16,71 @@
 
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Code Pro', monospace;
+    box-sizing:     border-box;
+    margin:         0;
+    padding:        0;
+    font-family:    'Source Code Pro', monospace;
+    color:          $woch_text-primary;
+}
 
-    color: $woch_text-primary;
-} 
+body {
+    background: $woch_bcg-green_gradient;
+}
+#root{
+    height: 100vh;
+    background-position: center;
+    background-color: transparent;
+    background-image:
+        linear-gradient( rgba(255, 255, 255, 0.07) .1em, transparent .1em ), 
+        linear-gradient( 90deg, rgba(255, 255, 255, 0.07) .1em, transparent .1em );
+
+    @media (min-width: 768px) {
+        background-size: 11em 11em;
+    }
+    @media (max-width: 767px) {
+        background-size: 8em 8em;
+    }
+}
 
 a {
-    text-decoration: none;
+    text-decoration: unset;
+
+    &:hover {
+        color: $woch_text-highlight;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 100;
+
+    &.main-title {
+        text-align: center;
+    }
+}
+
+a,
+p,
+i,
+span,
+small,
+sup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     transition: all .1s ease-in;
 }
 
 #main {
     padding-top: 120px;
 }
-
-#root {
-    height: 100vh;
-
-    @media (max-width: 767px){
-        background: url("/public/images/bcg.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-    @media (min-width: 768px){
-        background: url("/public/images/bcg.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-}
-
 
 #header,
 #footer,
@@ -61,4 +94,8 @@ a {
         padding-left: 1em;
     }
 }
+
+
+
+
 

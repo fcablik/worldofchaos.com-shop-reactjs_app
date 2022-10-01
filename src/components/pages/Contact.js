@@ -1,5 +1,13 @@
 import React from 'react';
 
 export default function Contact() {
-    return <h1 className="title">Contact</h1>;
+    return (
+        <>
+            <main id='main'>
+                <div className='main-content'>
+                    <h1 className="main-title">Contact</h1>
+                </div>
+            </main>
+        </>
+    );
 }

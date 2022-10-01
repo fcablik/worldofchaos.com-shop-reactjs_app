@@ -1,16 +1,15 @@
 // text colors
-    $txtColor: #363636;
-    $bcgColor: #fff;
+    $txtColor:                  #363636;
+    $bcgColor:                  #fff;
 
-    $primaryColor: #A4D1EB;
-    $secondaryColor: #FCD5F7;
+    $primaryColor:              #A4D1EB;
+    $secondaryColor:            #FCD5F7;
 //-
 
 // woch colors
+    $woch_text-primary:         #afafaf;
+    $woch_text-highlight:       #8ffab5;
 
-    $woch_text-primary: #afafaf;
-    $woch_text-highlight: #8ffab5;
-
-    $woch_bcg-green_gradient: linear-gradient(#1E2419, #21241F, #1E2419);
-
+    $woch_bcg-green_secondary:  #8e9f94;
+    $woch_bcg-green_gradient:   linear-gradient(90deg, #1E2419, #1c201a, #1E2419);
 //-

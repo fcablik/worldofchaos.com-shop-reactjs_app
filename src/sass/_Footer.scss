@@ -1,12 +1,17 @@
 // {Footer.js} styles
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     position: fixed;
-    bottom: 0;
-    height: 35px;
     width: 100%;
     z-index: 999;
+
+    @media (min-width: 768px){
+        bottom: 3em;
+    }
+    @media (max-width: 767px){
+        bottom: 2em;
+    }
 }

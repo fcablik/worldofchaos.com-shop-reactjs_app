@@ -1,2 +1,51 @@
 // {Home.js} styles
 
+.welcome-container {
+    display:            flex;
+    align-items:        center;
+    justify-content:    center;
+    flex-direction:     column;
+    height:             100%;
+
+    .center-block {
+        display:            flex;
+        align-items:        center;
+        justify-content:    center;
+        flex-direction:     column;
+        align-content:      center;
+
+        background-color:   $woch_bcg-green_secondary;
+        border-radius:      50%;
+
+        @media (min-height: 672px), (min-width: 768px) {
+            height: 425px;
+            width: 425px;
+            
+            .logo-full {
+                height: 200px;
+            }
+        }
+        @media (max-height: 671px), (max-width: 767px) {
+            height: 325px;
+            width: 325px;
+
+            .logo-full {
+                height: 150px;
+            }
+        }
+    }
+
+    .info-block {
+        padding-top: 4em;
+        max-width: 220px;
+        text-align: center;
+
+        a {
+            color: $woch_text-highlight;
+
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}

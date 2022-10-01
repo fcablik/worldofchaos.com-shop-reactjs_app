@@ -4,7 +4,6 @@ import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
 
 import Home from './components/pages/Home';
 import Shop from './components/pages/Shop';
@@ -19,21 +18,14 @@ function App() {
             <Router>
                 <Header />
 
-                <main id='main'>
-                    <div className='main-content'>
+                    <Routes>
+                        <Route exact path="/" element={<Home />}/>
+                        <Route path='/shop' element={<Shop />} />
+                        <Route path='/contact' element={<Contact />} />
+                        <Route path='/sustainability' element={<Sustainability />} />
+                        <Route path='/terms-conditions' element={<TermsConditions />} />
+                    </Routes>
 
-                        <Routes>
-                            <Route exact path="/" element={<Home />}/>
-                            <Route path='/shop' element={<Shop />} />
-                            <Route path='/contact' element={<Contact />} />
-                            <Route path='/sustainability' element={<Sustainability />} />
-                            <Route path='/terms-conditions' element={<TermsConditions />} />
-                        </Routes>
-
-                    </div>
-                </main>
-
-                <Navigation />
                 <Footer />
             </Router>
         </>

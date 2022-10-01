@@ -5,8 +5,8 @@ function Navigation() {
     return (
         <>
             {/* this block will be displayed on hover of menu btn in footer */}
-            <div className="menu-block">
-                <div className="-cc-choice">
+            <div id='navigation' className='navigation'>
+                <div className="menu-block">
                     <Link to="/shop" className='-mb-text'>
                         Shop
                     </Link>
@@ -21,6 +21,8 @@ function Navigation() {
                     </Link>
                 </div>
             </div>
+
+            
         </>
     );
 }

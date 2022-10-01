@@ -9,7 +9,7 @@ function Header() {
                 <div className='column'>
                     <Link to='/' className='-hdr-logo'>
                         <img class='logo-full' src={wochLogo} alt='world of chaos' height='50' />
-                    </Link> 
+                    </Link>
                 </div>
                 <div className='column'>
                     <div>

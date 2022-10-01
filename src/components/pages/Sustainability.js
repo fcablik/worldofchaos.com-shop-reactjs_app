@@ -1,5 +1,13 @@
 import React from 'react';
 
 export default function Sustainabilty() {
-    return <h1 className="title">Sustainability</h1>;
+    return (
+        <>
+            <main id='main'>
+                <div className='main-content'>
+                    <h1 className="main-title">Sustainability</h1>
+                </div>
+            </main>
+        </>
+    );
 }

@@ -1,5 +1,13 @@
 import React from 'react';
 
 export default function TermsConditions() {
-    return <h1 className="title">Full Experience</h1>;
+    return (
+        <>
+            <main id='main'>
+                <div className='main-content'>
+                    <h1 className="main-title">Terms & Condition</h1>
+                </div>
+            </main>
+        </>
+    );
 }

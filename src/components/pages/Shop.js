@@ -1,5 +1,13 @@
 import React from 'react';
 
 export default function Shop() {
-    return <h1 className="title">Shop</h1>;
+    return (
+        <>
+            <main id='main'>
+                <div className='main-content'>
+                    <h1 className="main-title">Shop</h1>
+                </div>
+            </main>
+        </>
+    );
 }
