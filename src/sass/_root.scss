@@ -1,4 +1,4 @@
-//{base::root styles}
+//* {base::root styles}
 
 // html, body{
 //     height: 100%;
@@ -14,7 +14,6 @@
 //     background: white;
 // }
 
-
 * {
     box-sizing:     border-box;
     margin:         0;
@@ -26,19 +25,22 @@
 body {
     background: $woch_bcg-green_gradient;
 }
+
 #root{
     height: 100vh;
+    overflow-x: hidden;
+
     background-position: center;
     background-color: transparent;
     background-image:
-        linear-gradient( rgba(255, 255, 255, 0.07) .1em, transparent .1em ), 
-        linear-gradient( 90deg, rgba(255, 255, 255, 0.07) .1em, transparent .1em );
+        linear-gradient( $woch_bcg-green_grid .1em, transparent .1em ), 
+        linear-gradient( 90deg, $woch_bcg-green_grid .1em, transparent .1em );
 
     @media (min-width: 768px) {
-        background-size: 11em 11em;
+        background-size: 5em 5em;
     }
     @media (max-width: 767px) {
-        background-size: 8em 8em;
+        background-size: 4em 4em;
     }
 }
 
@@ -77,25 +79,3 @@ h5,
 h6 {
     transition: all .1s ease-in;
 }
-
-#main {
-    padding-top: 120px;
-}
-
-#header,
-#footer,
-#main {
-    @media (min-width: 768px){
-        padding-right: 2em;
-        padding-left: 2em;
-    }
-    @media (max-width: 767px){
-        padding-right: 1em;
-        padding-left: 1em;
-    }
-}
-
-
-
-
-

@@ -1,3 +1,5 @@
+//* {global} variables
+
 // text colors
     $txtColor:                  #363636;
     $bcgColor:                  #fff;
@@ -11,5 +13,7 @@
     $woch_text-highlight:       #8ffab5;
 
     $woch_bcg-green_secondary:  #8e9f94;
+    $woch_bcg-green_grid:       rgba(142,159,148, .07);
     $woch_bcg-green_gradient:   linear-gradient(90deg, #1E2419, #1c201a, #1E2419);
+    $woch_bcg-black_blur:       rgba(0, 0, 0, .5);
 //-

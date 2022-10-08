@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import wochLogoDark from '../../img/logo-woch_full-dark.svg';
+import wochEarth from '../../img/woch_earth.svg';
 // import shopTitle from '../../img/shop_text-grey.svg';
 
 function Home() {
@@ -10,7 +10,8 @@ function Home() {
             <div className='welcome-container'>
 
                 <div className='center-block'>
-                    <img class='logo-full' src={wochLogoDark} alt='world of chaos' />
+                    {/* <img class='logo-full' src={wochLogoDark} alt='world of chaos' /> */}
+                    <img class='logo-full' src={wochEarth} alt='world of chaos' />
                 </div>
                 <div className='info-block'>
                     <h4>

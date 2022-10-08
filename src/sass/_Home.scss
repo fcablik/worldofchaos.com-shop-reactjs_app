@@ -1,11 +1,15 @@
-// {Home.js} styles
+//* {Home.js} styles
 
 .welcome-container {
     display:            flex;
     align-items:        center;
     justify-content:    center;
     flex-direction:     column;
-    height:             100%;
+    padding: 100px 0;
+
+    @media (min-height: 672px) {
+        height:         100%;
+    }
 
     .center-block {
         display:            flex;
@@ -14,23 +18,63 @@
         flex-direction:     column;
         align-content:      center;
 
-        background-color:   $woch_bcg-green_secondary;
-        border-radius:      50%;
+        $e_w-height_lg: 425px;
+        $e_w-height_sm: 325px;
 
         @media (min-height: 672px), (min-width: 768px) {
-            height: 425px;
-            width: 425px;
+            height: $e_w-height_lg;
+            width: $e_w-height_lg;
             
             .logo-full {
-                height: 200px;
+                max-height: calc(#{$e_w-height_lg});
             }
         }
         @media (max-height: 671px), (max-width: 767px) {
-            height: 325px;
-            width: 325px;
+            height: $e_w-height_sm;
+            width: $e_w-height_sm;
 
             .logo-full {
-                height: 150px;
+                max-height: calc(#{$e_w-height_sm});
+            }
+        }
+
+        img {
+            animation: rotation 20s infinite linear;
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(-10deg);
+                }
+                10% {
+                    transform: rotate(10deg);
+                }
+                20% {
+                    transform: rotate(-15deg);
+                }
+                30% {
+                    transform: rotate(15deg);
+                }
+                40% {
+                    transform: rotate(-20deg);
+                }
+                50% {
+                    transform: rotate(20deg);
+                }
+                60% {
+                    transform: rotate(-20deg) ;
+                }
+                70% {
+                    transform: rotate(15deg);
+                }
+                80% {
+                    transform: rotate(-15deg) ;
+                }
+                90% {
+                    transform: rotate(10deg) ;
+                }
+                100% {
+                    transform: rotate(-10deg);
+                }
             }
         }
     }
