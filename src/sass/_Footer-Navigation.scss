@@ -1,7 +1,7 @@
-//{Navigation.js} styles
+//* {Navigation.js} styles
 
 .navigation {
-
+    font-family: 'GoodTimesMain' !important;
     position: fixed;
     width: 100%;
 
@@ -35,17 +35,24 @@
         background: $woch_bcg-black_blur;
         backdrop-filter: blur(5px);
         
-        .-mb-text {
-            display:flex;
-            justify-content: center;
-            color: $woch_text-primary;
-            cursor: pointer;
-            margin: 2em 0;
-            font-size: 1.2em;
-
-            &:hover {
-                color: $woch_text-highlight;
+        .web-links {
+            .-mb-text {
+                display:flex;
+                justify-content: center;
+                color: $woch_text-primary;
+                cursor: pointer;
+                margin: 3em 0;
+                font-size: 1em;
+    
+                &:hover,
+                &.active {
+                    color: $woch_text-highlight;
+                }
             }
+        }
+        .social-links {
+            display:flex;
+            justify-content: space-evenly;
         }
     
         @media (min-width: 500px){

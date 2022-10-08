@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -11,12 +12,12 @@ import Contact from './components/pages/Contact';
 import Sustainability from './components/pages/Sustainability';
 import TermsConditions from './components/pages/TermsConditions';
 
-
 function App() {
     return (
         <>
             <Router>
                 <Header />
+                <ScrollToTop />
 
                     <Routes>
                         <Route exact path="/" element={<Home />}/>

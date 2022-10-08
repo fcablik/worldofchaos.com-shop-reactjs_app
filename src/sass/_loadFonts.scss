@@ -1,0 +1,54 @@
+//* {fonts config}
+
+    @font-face{
+        font-family: 'GoodTimesMain';
+        font-style: normal;
+        font-weight: 700;
+        src: url('./fonts/good_times/good_times_rg.otf') format('opentype');
+    }
+
+    @font-face{
+        font-family: 'GoodTimesMain_rg';
+        font-style: normal;
+        font-weight: 100;
+        src: url('./fonts/good_times/good_times_rg.otf') format('opentype');
+    }
+
+
+//* ----------- *//
+
+
+//* {base loads}
+
+    * {
+        font-family:    'Source Code Pro', monospace;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .navigation a {
+        font-style: normal;
+        font-family: 'GoodTimesMain';
+
+        &.main-title {
+            text-align: center;
+        }
+    }
+
+    h1, h2, h3 {
+        font-weight: 700;
+    }
+    h4, h5, h6 {
+        font-weight: 100;
+    }
+
+
+    h1 {
+        @media (min-width: 768px) {
+            font-size: 1.5em;
+        }
+        @media (max-width: 767px) {
+            font-size: 1em
+        }
+    }
+
+//*

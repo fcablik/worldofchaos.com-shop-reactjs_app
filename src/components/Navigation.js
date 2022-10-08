@@ -1,28 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Navigation() {
     return (
         <>
-            {/* this block will be displayed on hover of menu btn in footer */}
             <div id='navigation' className='navigation'>
                 <div className="menu-block">
-                    <Link to="/shop" className='-mb-text'>
+                    <NavLink activeClassName='active' to="/shop" className='-mb-text'>
                         Shop
-                    </Link>
-                    <Link to="/contact" className='-mb-text'>
+                    </NavLink>
+                    <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                         Contact
-                    </Link>
-                    <Link to="/sustainability" className='-mb-text'>
+                    </NavLink>
+                    <NavLink activeClassName='active' to="/sustainability" className='-mb-text'>
                         Sustainability
-                    </Link>
-                    <Link to="/terms-conditions" className='-mb-text'>
+                    </NavLink>
+                    <NavLink activeClassName='active' to="/terms-conditions" className='-mb-text'>
                         Terms & Conditions
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
-
-            
         </>
     );
 }

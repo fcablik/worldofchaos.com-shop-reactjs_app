@@ -1,0 +1,25 @@
+//* {icons config}
+
+.icons,
+.social-links {
+    .-f-icon {
+        cursor: pointer;
+
+        &:hover {
+            svg {
+                .-f-icon-bcg {
+                    fill: $woch_text-highlight;
+                }
+            }
+        }
+
+        svg {
+            max-height: 1.8em;
+
+            .-f-icon-bcg {
+                fill: #a2a2a2;
+            }
+        }
+    }
+}
+

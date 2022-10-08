@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import wochEarth from '../../img/woch_earth.svg';
 // import shopTitle from '../../img/shop_text-grey.svg';
@@ -16,9 +16,9 @@ function Home() {
                 <div className='info-block'>
                     <h4>
                         <span>There’s nothing here at the moment, but you can</span>
-                        <Link to="/contact" className='-mb-text'>
+                        <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                             <span> </span>contact us
-                        </Link>.
+                        </NavLink>.
                     </h4>
                 </div>
 

@@ -1,17 +1,21 @@
-// import sass
-    @import "variables";
-    @import 'loadFonts';
-    @import "loadingScreen";
+//* {import sass}
 
-    @import "root";
-    @import "global";
+@import 'loadFonts';
+@import "variables";
+@import "loadingScreen";
 
-    @import "Header";
-    @import "Footer-Navigation";
-    @import "Footer";
+@import "root";
+@import "global";
 
-    @import "Home";
+@import "Header";
+@import "Footer-Navigation";
+@import "Footer";
 
-    // @import "nav";
-    // @import "archive";
-    // @import "view-scroll";
+@import "Home";
+// @import "Shop";
+
+@import "icons";
+
+// @import "nav";
+// @import "archive";
+// @import "view-scroll";

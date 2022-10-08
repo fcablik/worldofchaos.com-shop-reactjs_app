@@ -1,24 +1,9 @@
 //* {base::root styles}
 
-// html, body{
-//     height: 100%;
-//     margin: 0;
-//     overflow:hidden;
-// }
-// ::-moz-selection { /* Code for Firefox */
-//     /* color: red; */
-//     background: white;
-// }
-// ::selection {
-//     /* color: red; */
-//     background: white;
-// }
-
 * {
     box-sizing:     border-box;
     margin:         0;
     padding:        0;
-    font-family:    'Source Code Pro', monospace;
     color:          $woch_text-primary;
 }
 
@@ -26,7 +11,7 @@ body {
     background: $woch_bcg-green_gradient;
 }
 
-#root{
+#root {
     height: 100vh;
     overflow-x: hidden;
 
@@ -52,30 +37,14 @@ a {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 100;
-
+h1, h2, h3, h4, h5, h6 {
     &.main-title {
         text-align: center;
     }
 }
 
-a,
-p,
-i,
-span,
-small,
-sup,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+a, p, i,
+span, small, sup,
+h1, h2, h3, h4, h5, h6 {
     transition: all .1s ease-in;
 }
