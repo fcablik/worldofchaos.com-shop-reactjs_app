@@ -5,7 +5,9 @@ export default function Shop() {
         <>
             <main id='main'>
                 <div className='main-content'>
-                    <h1 className="main-title">life in chaos Collection</h1>
+                    <div id='shop'>
+                        <h1 className="main-title">life in chaos Collection</h1>
+                    </div>
                 </div>
             </main>
         </>

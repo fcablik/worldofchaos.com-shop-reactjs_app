@@ -12,6 +12,14 @@ body {
 }
 
 #root {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
     height: 100vh;
     overflow-x: hidden;
 
@@ -23,9 +31,28 @@ body {
 
     @media (min-width: 768px) {
         background-size: 5em 5em;
+        padding: 120px 0 80px 0;
+
+        &::-webkit-scrollbar { 
+            display: none;
+        }
     }
     @media (max-width: 767px) {
         background-size: 4em 4em;
+        padding: 100px 0 80px 0;
+    }
+
+    #contact,
+    #shop {
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+
+        ::selection {
+            background: #295838;
+            color: $woch_text-primary;
+        }
     }
 }
 

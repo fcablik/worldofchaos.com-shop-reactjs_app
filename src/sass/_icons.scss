@@ -3,12 +3,18 @@
 .icons,
 .social-links {
     .-f-icon {
-        cursor: pointer;
+        
+        &:not(.disabled) {
+            cursor: pointer;
+        }
 
         &:hover {
-            svg {
-                .-f-icon-bcg {
-                    fill: $woch_text-highlight;
+            &:not(.disabled) {
+                svg {
+                    .-f-icon-bcg {
+                        transition: all .3s ease-in-out;
+                        fill: $woch_text-highlight;
+                    }
                 }
             }
         }
@@ -17,7 +23,7 @@
             max-height: 1.8em;
 
             .-f-icon-bcg {
-                fill: #a2a2a2;
+                fill: $woch_bcg-icons;
             }
         }
     }

@@ -5,10 +5,12 @@
     align-items:        center;
     justify-content:    center;
     flex-direction:     column;
-    padding: 100px 0;
 
-    @media (min-height: 672px) {
-        height:         100%;
+    @media (min-height: 730px) {
+        padding-top: 10px;
+    }
+    @media (min-height: 840px) {
+        padding-top: 50px;
     }
 
     .-wc-center-block {

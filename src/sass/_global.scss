@@ -1,9 +1,5 @@
 //* {App.js} styles - global settings
 
-#main {
-    padding-top: 120px;
-}
-
 #header,
 #footer,
 #main {
@@ -14,5 +10,56 @@
     @media (max-width: 767px){
         padding-right: 1em;
         padding-left: 1em;
+    }
+}
+
+p,
+span,
+small,
+i,
+br,
+hr {
+    &.highlight {
+        color: $woch_text-highlight;
+    }
+}
+
+a {
+    &.highlight {
+        &:hover {
+            color: $woch_text-highlight;
+            cursor: pointer;
+        }
+    }
+}
+
+.main-content {
+    .-mc-text-area {
+        line-height: 1.8em;
+        
+        @media (min-width: 768px){
+            max-width: 55vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5em 0;
+        }
+        @media (max-width: 767px){
+            padding: 3em 0 8em 1em;
+        }
+
+        ul {
+            &.highlight-bullets {
+                margin: 15px 20px;
+
+                ::marker {
+                    color: $woch_text-highlight;
+                    content: "#";
+                }
+
+                li {
+                    padding-left: 15px;
+                }
+            }
+        }
     }
 }

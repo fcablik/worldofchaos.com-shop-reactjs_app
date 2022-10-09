@@ -12,6 +12,7 @@ function Footer() {
     const handleClick = event => {
         setIsVisible(current => !current);
     };
+    
 
     return (
         <>
@@ -25,7 +26,7 @@ function Footer() {
                         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/wochlife/" className='-f-icon'>
                             <InstagramSvg />
                         </a>
-                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCy14LSbnhpS6BwtZ5Jsh6ag" className='-f-icon'>
+                        <a target="_blank" rel="noreferrer" className='-f-icon disabled'>
                             <YouTubeSvg />
                         </a>
                         <a target="_blank" rel="noreferrer" href="mailto:info@theworldofchaos.com" className='-f-icon'>
@@ -34,7 +35,7 @@ function Footer() {
                     </div>
 
                     <div className={isVisible ? '-ic-after menu-active' : '-ic-after menu-inactive'}>
-                        Free shipping over $ 120.
+                        The store is closed ATM.
                     </div>
                 </div>
 
@@ -51,7 +52,7 @@ function Footer() {
                         <div className='web-links'>
                             <a to="#" className='-mb-text disabled'>
                                 <span>Shop</span>
-                                <small>closed atm</small>
+                                <small>closed atm.</small>
                             </a>
                             <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                                 <span>Contact</span>
@@ -61,7 +62,7 @@ function Footer() {
                             </NavLink>
                             <a to="#" className='-mb-text disabled'>
                                 <span>Terms & Conditions</span>
-                                <small>closed atm</small>
+                                <small>closed atm.</small>
                             </a>
                         </div>
 
@@ -72,7 +73,7 @@ function Footer() {
                             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/wochlife/" className='-f-icon'>
                                 <InstagramSvg />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCy14LSbnhpS6BwtZ5Jsh6ag" className='-f-icon'>
+                            <a target="_blank" rel="noreferrer" className='-f-icon disabled'>
                                 <YouTubeSvg />
                             </a>
                             <a target="_blank" rel="noreferrer" href="mailto:info@theworldofchaos.com" className='-f-icon'>

@@ -27,10 +27,10 @@
         @media (min-width: 500px) {
             .-ic {
                 &.menu-inactive{
-                    -webkit-transform: translateY(0);
-                    -ms-transform: translateY(0);
-                    -o-transform: translateY(0);
-                    transform: translateY(0);
+                    -webkit-transform: translateY(2px);
+                    -ms-transform: translateY(2px);
+                    -o-transform: translateY(2px);
+                    transform: translateY(2px);
                 }
                 &.menu-active{
                     -webkit-transform: translateY(60px);
@@ -53,15 +53,17 @@
                     opacity: 0;
                 }
                 &.menu-active{
-                    -webkit-transform: translateY(0);
-                    -ms-transform: translateY(0);
-                    -o-transform: translateY(0);
-                    transform: translateY(0);
+                    -webkit-transform: translateY(2px);
+                    -ms-transform: translateY(2px);
+                    -o-transform: translateY(2px);
+                    transform: translateY(2px);
                 }
             }
     
             .-ic,
             .-ic-after {
+                position: absolute;
+
                 &.menu-active,
                 &.menu-inactive {
                     -webkit-transition: all 1.2s;
@@ -82,6 +84,7 @@
                 display: block;
                 border-radius: 5px;
                 background-color: $woch_text-primary;
+                box-shadow: $woch-menu_shadow;
 
                 -webkit-transition: all .3s ease-in-out;
                 -o-transition: all .3s ease-in-out;
