@@ -11,7 +11,7 @@
         height:         100%;
     }
 
-    .center-block {
+    .-wc-center-block {
         display:            flex;
         align-items:        center;
         justify-content:    center;
@@ -79,9 +79,9 @@
         }
     }
 
-    .info-block {
+    .-wc-info-block {
         padding-top: 4em;
-        max-width: 220px;
+        max-width: 225px;
         text-align: center;
 
         a {

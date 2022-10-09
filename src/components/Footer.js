@@ -38,31 +38,31 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className='menu'>
-                    <div onClick = {handleClick}>
-                        <div className={isVisible ? 'menu-opener active' : 'menu-opener inactive'}>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </div>
+                <div className='menu-icon' onClick = {handleClick}>
+                    <div className={isVisible ? 'menu-opener active' : 'menu-opener inactive'}>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
                     </div>
                 </div>
 
                 <nav id='navigation' className={isVisible ? 'navigation open' : 'navigation close'}>
                     <div className="menu-block">
                         <div className='web-links'>
-                            <NavLink activeClassName='active' to="/shop" className='-mb-text'>
-                                Shop
-                            </NavLink>
+                            <a to="#" className='-mb-text disabled'>
+                                <span>Shop</span>
+                                <small>closed atm</small>
+                            </a>
                             <NavLink activeClassName='active' to="/contact" className='-mb-text'>
-                                Contact
+                                <span>Contact</span>
                             </NavLink>
                             <NavLink activeClassName='active' to="/sustainability" className='-mb-text'>
-                                Sustainability
+                                <span>Sustainability</span>
                             </NavLink>
-                            <NavLink activeClassName='active' to="/terms-conditions" className='-mb-text'>
-                                Terms & Conditions
-                            </NavLink>
+                            <a to="#" className='-mb-text disabled'>
+                                <span>Terms & Conditions</span>
+                                <small>closed atm</small>
+                            </a>
                         </div>
 
                         <div className='social-links'>
@@ -81,6 +81,7 @@ function Footer() {
                         </div>
                     </div>
                 </nav>
+
             </div>
         </>
     );

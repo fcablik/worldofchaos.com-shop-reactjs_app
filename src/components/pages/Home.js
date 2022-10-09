@@ -9,13 +9,13 @@ function Home() {
         <>
             <div className='welcome-container'>
 
-                <div className='center-block'>
+                <div className='-wc-center-block'>
                     {/* <img class='logo-full' src={wochLogoDark} alt='world of chaos' /> */}
                     <img class='logo-full' src={wochEarth} alt='world of chaos' />
                 </div>
-                <div className='info-block'>
+                <div className='-wc-info-block'>
                     <h4>
-                        <span>There’s nothing here at the moment, but you can</span>
+                        <span>The Shop is closed<br/>at the moment, but you can still</span>
                         <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                             <span> </span>contact us
                         </NavLink>.

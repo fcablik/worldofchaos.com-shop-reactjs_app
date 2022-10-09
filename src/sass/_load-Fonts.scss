@@ -25,12 +25,20 @@
     }
 
     h1, h2, h3, h4, h5, h6,
-    .navigation a {
+    .navigation a,
+    .navigation small,
+    .navigation span {
         font-style: normal;
         font-family: 'GoodTimesMain';
 
         &.main-title {
             text-align: center;
+        }
+    }
+
+    .navigation {
+        small {
+            font-size: .4em;
         }
     }
 

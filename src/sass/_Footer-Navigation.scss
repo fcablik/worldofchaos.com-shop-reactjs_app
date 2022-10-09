@@ -40,13 +40,31 @@
                 display:flex;
                 justify-content: center;
                 color: $woch_text-primary;
-                cursor: pointer;
                 margin: 3em 0;
                 font-size: 1em;
-    
-                &:hover,
-                &.active {
-                    color: $woch_text-highlight;
+
+                &:not(.disabled) {
+                    cursor: pointer;
+
+                    &:hover,
+                    &.active {
+                        span {
+                            color: $woch_text-highlight;
+                        }
+                    }
+                }
+
+                &.disabled {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    span {
+                        text-decoration: line-through;
+                    }
+                    small {
+                        padding-top: 1.2em;
+                    }
                 }
             }
         }
@@ -54,7 +72,6 @@
             display:flex;
             justify-content: space-evenly;
         }
-    
         @media (min-width: 500px){
             bottom: 6em;
             right: 0;
