@@ -44,22 +44,31 @@ a {
             padding: 5em 0;
         }
         @media (max-width: 767px){
-            padding: 3em 0 4em 1em;
+            padding: 3em 0 6em 1em;
         }
 
         ul {
             &.highlight-bullets {
-                margin: 15px 20px;
-
-                ::marker {
-                    color: $woch_text-highlight;
-                    content: "#";
-                }
+                margin: 15px 0;
+                list-style: none;
 
                 li {
                     padding-left: 15px;
+                    display: flex;
+
+                    &::before {
+                        color: $woch_text-highlight;
+                        content: "#";
+                        margin-right: 15px;
+                    }
                 }
             }
         }
+    }
+}
+
+.visible-small {
+    @media (min-width: 768px){
+        display: none;
     }
 }

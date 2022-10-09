@@ -15,7 +15,7 @@ function Home() {
                 </div>
                 <div className='-wc-info-block'>
                     <h4>
-                        <span>The Shop is closed<br/>at the moment, but you can still</span>
+                        <span>The Store is closed<br/>at the moment, but you can still</span>
                         <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                             <span> </span>contact us
                         </NavLink>.

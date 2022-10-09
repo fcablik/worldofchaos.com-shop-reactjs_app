@@ -186,18 +186,29 @@ a.highlight:hover {
 }
 @media (max-width: 767px) {
   .main-content .-mc-text-area {
-    padding: 3em 0 4em 1em;
+    padding: 3em 0 6em 1em;
   }
 }
 .main-content .-mc-text-area ul.highlight-bullets {
-  margin: 15px 20px;
-}
-.main-content .-mc-text-area ul.highlight-bullets ::marker {
-  color: #8ffab5;
-  content: "#";
+  margin: 15px 0;
+  list-style: none;
 }
 .main-content .-mc-text-area ul.highlight-bullets li {
   padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-content .-mc-text-area ul.highlight-bullets li::before {
+  color: #8ffab5;
+  content: "#";
+  margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .visible-small {
+    display: none;
+  }
 }
 
 .header {
@@ -264,8 +275,8 @@ a.highlight:hover {
   z-index: 999;
   padding: 3em;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .navigation .menu-block .web-links .-mb-text {
   display: -webkit-box;

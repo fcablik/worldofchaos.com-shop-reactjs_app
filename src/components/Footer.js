@@ -35,7 +35,7 @@ function Footer() {
                     </div>
 
                     <div className={isVisible ? '-ic-after menu-active' : '-ic-after menu-inactive'}>
-                        The store is closed ATM.
+                        The Store is closed ATM.
                     </div>
                 </div>
 
@@ -57,9 +57,10 @@ function Footer() {
                             <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                                 <span>Contact</span>
                             </NavLink>
-                            <NavLink activeClassName='active' to="/sustainability" className='-mb-text'>
+                            <a to="#" className='-mb-text disabled'>
                                 <span>Sustainability</span>
-                            </NavLink>
+                                <small>closed atm.</small>
+                            </a>
                             <a to="#" className='-mb-text disabled'>
                                 <span>Terms & Conditions</span>
                                 <small>closed atm.</small>
