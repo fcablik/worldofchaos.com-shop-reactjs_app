@@ -20,7 +20,7 @@ export default function Contact() {
                                 <p>If you find yourself having any problems, <span className='highlight'>contact us</span> on:</p>
                                 <ul className='highlight-bullets'>
                                     <li><a className='highlight' href='mailto:help@theworldofchaos.com'>help@theworldofchaos.com</a></li>
-                                    <li><p>Socials:</p>&nbsp;<a target='_blank' rel='noreferrer' href='https://www.instagram.com/wochlife'>@wochlife</a></li>
+                                    <li><p>Socials: @wochlife</p></li>
                                 </ul>
                             </div>
 
@@ -31,7 +31,7 @@ export default function Contact() {
                                 <ul className='highlight-bullets'>
                                     <li><a class="highlight" href='mailto:hello@theworldofchaos.com'>hello@theworldofchaos.com</a></li>
                                     <li>Mob: +420 732 581 264</li>
-                                    <li>The contactee: Filip Cablik, CEO</li>
+                                    <li>Filip Cablik, CEO</li>
                                 </ul>
                             </div>
 

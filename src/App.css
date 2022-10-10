@@ -535,6 +535,30 @@ a.highlight:hover {
   }
 }
 
+#error404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30vh auto;
+}
+#error404 .btn-404 {
+  background-color: #a2a2a2;
+  color: #000;
+  padding: 0.4em 0.6em;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+#error404 .btn-404:hover {
+  background-color: #8ffab5;
+}
+
 .welcome-container {
   display: -webkit-box;
   display: -ms-flexbox;

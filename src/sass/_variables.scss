@@ -1,5 +1,10 @@
 //* {global} variables
 
+//* base colors
+    $black: #000;
+    $white: #fff;
+//*
+
 //* woch colors
     $woch_text-primary:         #afafaf;
     $woch_text-highlight:       #8ffab5;
@@ -7,7 +12,8 @@
     $woch_bcg-green_grid:       rgba(142,159,148, .07);
     $woch_bcg-green_gradient:   linear-gradient(90deg, #1E2419, #1c201a, #1E2419);
     $woch_bcg-black_blur:       rgba(0, 0, 0, .5);
-    $woch_bcg-icons:          #a2a2a2;
+    $woch_bcg-icons:           #a2a2a2;
+    $woch_bcg-components:      #a2a2a2;
 
     $woch-menu_shadow:          0 1px 3px #0000009c;
 //*
