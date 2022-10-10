@@ -14,7 +14,6 @@ import Contact from './components/pages/Contact';
 // import Sustainability from './components/pages/Sustainability';
 // import TermsConditions from './components/pages/TermsConditions';
 
-
 function App() {
     return (
         <>

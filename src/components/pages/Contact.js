@@ -18,9 +18,17 @@ export default function Contact() {
 
                             <div className='section'>
                                 <p>If you find yourself having any problems, <span className='highlight'>contact us</span> on:</p>
+
                                 <ul className='highlight-bullets'>
                                     <li><a className='highlight' href='mailto:help@theworldofchaos.com'>help@theworldofchaos.com</a></li>
-                                    <li><p>Socials: @wochlife</p></li>
+                                    <li>
+                                        TikTok:&nbsp;
+                                        <a target='_blank' rel='noreferrer' class='highlight' href='https://tiktok.com/@wochlife'>@wochlife</a>
+                                    </li>
+                                    <li>
+                                        Instagram:&nbsp;
+                                        <a target='_blank' rel='noreferrer' class="highlight" href='https://instagram.com/wochlife'>@wochlife</a>
+                                    </li>
                                 </ul>
                             </div>
 
@@ -28,9 +36,15 @@ export default function Contact() {
 
                             <div className='section'>
                                 <p>For further information or collaborations, <span className='highlight'>contact us</span> on:</p>
+
                                 <ul className='highlight-bullets'>
-                                    <li><a class="highlight" href='mailto:hello@theworldofchaos.com'>hello@theworldofchaos.com</a></li>
-                                    <li>Mob: +420 732 581 264</li>
+                                    <li>
+                                        <a class="highlight" href='mailto:hello@theworldofchaos.com'>hello@theworldofchaos.com</a>
+                                    </li>
+                                    <li>
+                                        Mob:&nbsp;
+                                        <a class='highlight' href='tel:+420732581264'>+420 732 581 264</a>
+                                    </li>
                                     <li>Filip Cablik, CEO</li>
                                 </ul>
                             </div>
@@ -39,11 +53,15 @@ export default function Contact() {
 
                             <div className='section'>
                                 <p className='highlight'>Global Information:</p>
+
                                 <ul className='highlight-bullets'>
                                     <li>World Of Chaos</li>
                                     <li>VAT: ########</li>
                                     <li>IBAN: CZ################</li>
-                                    <li>Operated by:<a href='https://www.instagram.com/filipcablik'>&nbsp;@filipcablik</a></li>
+                                    <li>
+                                        Operated by:&nbsp;
+                                        <a href='https://www.instagram.com/filipcablik'>@filipcablik</a>
+                                    </li>
                                 </ul>
                             </div>
 
