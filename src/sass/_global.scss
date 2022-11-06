@@ -33,8 +33,31 @@ a {
     }
 }
 
+a {
+    text-decoration: unset;
+
+    &:hover {
+        color: $woch_text-highlight;
+    }
+}
+
+a, p, i,
+span, small, sup,
+h1, h2, h3, h4, h5, h6 {
+    transition: all .1s ease-in;
+}
+
 .-highlight {
     color: $woch_text-highlight;
+}
+.-text-center {
+    text-align: center;
+}
+
+.visible-small {
+    @media (min-width: 768px){
+        display: none;
+    }
 }
 
 .main-content {
@@ -49,12 +72,6 @@ a {
         }
         @media (max-width: 767px){
             padding: 3em 0 6em 1em;
-        }
-
-        .section {
-            h6 {
-                text-align: center;
-            }
         }
 
         ul {
@@ -74,11 +91,5 @@ a {
                 }
             }
         }
-    }
-}
-
-.visible-small {
-    @media (min-width: 768px){
-        display: none;
     }
 }

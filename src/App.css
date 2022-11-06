@@ -131,27 +131,6 @@ body {
   color: #afafaf;
 }
 
-a {
-  text-decoration: unset;
-}
-a:hover {
-  color: #8ffab5;
-}
-
-h1.-mc-title, h2.-mc-title, h3.-mc-title, h4.-mc-title, h5.-mc-title, h6.-mc-title,
-.navigation a.-mc-title,
-.navigation small.-mc-title,
-.navigation span.-mc-title {
-  text-align: center;
-}
-
-a, p, i,
-span, small, sup,
-h1, h2, h3, h4, h5, h6 {
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-}
-
 @media (min-width: 768px) {
   #header,
 #footer,
@@ -183,8 +162,32 @@ a.highlight:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: unset;
+}
+a:hover {
+  color: #8ffab5;
+}
+
+a, p, i,
+span, small, sup,
+h1, h2, h3, h4, h5, h6 {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
 .-highlight {
   color: #8ffab5;
+}
+
+.-text-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .visible-small {
+    display: none;
+  }
 }
 
 .main-content .-mc-text-area {
@@ -203,9 +206,6 @@ a.highlight:hover {
     padding: 3em 0 6em 1em;
   }
 }
-.main-content .-mc-text-area .section h6 {
-  text-align: center;
-}
 .main-content .-mc-text-area ul.highlight-bullets {
   margin: 15px 0;
   list-style: none;
@@ -220,12 +220,6 @@ a.highlight:hover {
   color: #8ffab5;
   content: "#";
   margin-right: 15px;
-}
-
-@media (min-width: 768px) {
-  .visible-small {
-    display: none;
-  }
 }
 
 .header {
@@ -837,7 +831,6 @@ a.highlight:hover {
 .welcome-container .-wc-info-block {
   padding-top: 4em;
   max-width: 225px;
-  text-align: center;
 }
 .welcome-container .-wc-info-block a {
   color: #8ffab5;
@@ -848,7 +841,13 @@ a.highlight:hover {
 
 #subscription {
   height: calc(100% - 152px);
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .icons .-f-icon:not(.disabled),

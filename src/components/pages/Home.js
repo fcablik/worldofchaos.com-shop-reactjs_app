@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import wochEarth from '../../img/woch_earth.svg';
 // import shopTitle from '../../img/shop_text-grey.svg';
 
-function Home() {
+export default function Home() {
     return (
         <>
             <div className='welcome-container'>
@@ -12,7 +12,7 @@ function Home() {
                     <img class='logo-full' src={wochEarth} alt='world of chaos' />
                 </div>
 
-                <div className='-wc-info-block'>
+                <div className='-wc-info-block -text-center'>
                     <h4>
                         <span>The Store is closed<br/>at the moment, but you can still</span>
                         <NavLink activeClassName='active' to="/contact" className='-mb-text'>
@@ -28,5 +28,3 @@ function Home() {
         </>
     );
 }
-
-export default Home;

@@ -7,12 +7,12 @@ export default function Contact() {
                 <div className='main-content'>
 
                     <div id='contact'>
-                        <h1 className="-mc-title">Contact</h1>
+                        <h1 className="-mc-title -text-center">Contact</h1>
 
                         <div className='-mc-text-area'>
 
                             <div className='section'>
-                                <h6>Take fashion to another level, move it towards responsibility.<br/>Sustainability is always a choice.</h6>
+                                <h6 className='-text-center'>Take fashion to another level, move it towards responsibility.<br/>Sustainability is always a choice.</h6>
                             </div>
 
                                 <br/><br/>
