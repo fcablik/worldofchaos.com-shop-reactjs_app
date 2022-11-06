@@ -1,18 +1,40 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import {useState} from 'react';
+import { useState, useEffect} from 'react';
+import { NavLink, useLocation } from "react-router-dom";
 
 import TikTokSvg from '../components/svg/TikTok';
 import InstagramSvg from '../components/svg/Instagram';
 import YouTubeSvg from '../components/svg/YouTube';
 import MailSvg from '../components/svg/Mail';
 
+
+
 function Footer() {
+
+    //* show/hide menu Handler
     const [isVisible, setIsVisible] = useState(false);
     const handleClick = event => {
         setIsVisible(current => !current);
     };
-    
+
+
+    //* route change Handler    
+    const location  = useLocation();
+
+    function changeClass(){
+        const nav = document.getElementById('navigation');
+        if ( nav.classList.contains('open') ) {
+            handleClick();
+        }
+    }
+
+    useEffect(() => {
+        console.log('Location changed');
+        changeClass();
+    }, [location]);
+
+
+
 
     return (
         <>
@@ -29,7 +51,7 @@ function Footer() {
                         <a target="_blank" rel="noreferrer" className='-f-icon disabled'>
                             <YouTubeSvg />
                         </a>
-                        <a target="_blank" rel="noreferrer" href="mailto:info@theworldofchaos.com" className='-f-icon'>
+                        <a target="_blank" rel="noreferrer" href="mailto:hello@theworldofchaos.com" className='-f-icon'>
                             <MailSvg />
                         </a>
                     </div>
@@ -57,6 +79,9 @@ function Footer() {
                             <NavLink activeClassName='active' to="/contact" className='-mb-text'>
                                 <span>Contact</span>
                             </NavLink>
+                            <NavLink activeClassName='active' to="/subscription" className='-mb-text'>
+                                <span>Subscription</span>
+                            </NavLink>
                             <a to="#" className='-mb-text disabled'>
                                 <span>Sustainability</span>
                                 <small>closed atm.</small>
@@ -77,7 +102,7 @@ function Footer() {
                             <a target="_blank" rel="noreferrer" className='-f-icon disabled'>
                                 <YouTubeSvg />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="mailto:info@theworldofchaos.com" className='-f-icon'>
+                            <a target="_blank" rel="noreferrer" href="mailto:hello@theworldofchaos.com" className='-f-icon'>
                                 <MailSvg />
                             </a>
                         </div>

@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default function Contact() {
+export default function Subscription() {
     return (
         <>
             <main id='main'>
                 <div className='main-content'>
 
                     <div id='contact'>
-                        <h1 className="-mc-title">Contact</h1>
+                        <h1 className="-mc-title -highlight">Subscribe to stay in touch!</h1>
 
                         <div className='-mc-text-area'>
 

@@ -31,22 +31,70 @@
     .menu-block {
         position: fixed;
         z-index: 999;
-        padding: 3em;
         background: $woch_bcg-black_blur;
         backdrop-filter: blur(7px);
+
+        @media (min-width: 500px){
+            bottom: 6em;
+            right: 0;
+            margin-right: 2em;
+        }
+        @media (max-width: 499px){
+            bottom: 15%;
+        }
+
+        @media (min-height: 550px){
+            padding: 3em;
+        }
+        @media (max-height: 549px){
+            padding: 1.5em;
+        }
+        @media (max-width: 568px) {
+            @media (max-height: 400px){
+                padding: 1em;
+                margin: 0;
+                bottom: 5em;
+            }
+        }
         
         .web-links {
-            .-mb-text {
-                display:flex;
+
+            @media (max-height: 549px){
+                padding-bottom: .5em;
+            }
+
+            .-mb-text { 
                 justify-content: center;
                 color: $woch_text-primary;
                 font-size: 1em;
 
-                &:not(:first-child){
-                    margin: 3em 0;
+                @media (min-height: 550px){
+                    display: flex;
+
+                    &:not(:first-child){
+                        margin: 3em 0;
+                    }
+                    &:first-child {
+                        margin-bottom: 3em;
+                    }
                 }
-                &:first-child {
-                    margin-bottom: 3em;
+                @media (max-height: 549px) {
+                    display: inline-flex;
+                    align-items: center;
+                    margin: 2em 1.5em;
+                }
+                @media (max-width: 830px) {
+                    @media (max-height: 549px){
+                        margin: 2em 1em;
+                    }
+                }
+                @media (max-height: 399px) {
+                    margin: 3em 0.5em;
+                }
+                @media (max-width: 568px) {
+                    @media (max-height: 400px){
+                        margin: 1em;
+                    }
                 }
 
                 &:not(.disabled) {
@@ -61,7 +109,6 @@
                 }
 
                 &.disabled {
-                    display:flex;
                     flex-direction: column;
                     align-items: center;
                     
@@ -77,14 +124,6 @@
         .social-links {
             display:flex;
             justify-content: space-evenly;
-        }
-        @media (min-width: 500px){
-            bottom: 6em;
-            right: 0;
-            margin-right: 2em;
-        }
-        @media (max-width: 499px){
-            bottom: 15%;
         }
     }
 

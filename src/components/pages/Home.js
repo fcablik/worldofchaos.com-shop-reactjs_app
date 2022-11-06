@@ -8,11 +8,10 @@ function Home() {
     return (
         <>
             <div className='welcome-container'>
-
                 <div className='-wc-center-block'>
-                    {/* <img class='logo-full' src={wochLogoDark} alt='world of chaos' /> */}
                     <img class='logo-full' src={wochEarth} alt='world of chaos' />
                 </div>
+
                 <div className='-wc-info-block'>
                     <h4>
                         <span>The Store is closed<br/>at the moment, but you can still</span>
@@ -25,7 +24,6 @@ function Home() {
                 {/* <div className='block-sub-title'>
                     <img class='shop-title' src={shopTitle} alt='shop woch' height='50' />
                 </div> */}
-
             </div>
         </>
     );
