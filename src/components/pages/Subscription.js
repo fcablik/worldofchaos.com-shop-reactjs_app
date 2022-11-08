@@ -1,5 +1,5 @@
 import React from 'react';
-import SubscriptionForm from '../subcriptionForm';
+import SubscriptionForm from '../SubcriptionForm';
 
 export default function Subscription() {
     return (
@@ -14,9 +14,11 @@ export default function Subscription() {
                             <div className='section'>
                                 <SubscriptionForm />
                             </div>
+                            
+                                <br/>
 
                             <div className='section -text-center'>
-                                <p>Subscribe to make sure you do not miss<br/>any important updates or drops. :-)</p>
+                                <p>Sign in to make sure you don't miss<br/>any important updates or drops. :-)</p>
                             </div>
                         </div>
                         

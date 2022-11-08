@@ -9,20 +9,20 @@ export default function Home() {
         <>
             <div className='welcome-container'>
                 <div className='-wc-center-block'>
-                    <img class='logo-full' src={wochEarth} alt='world of chaos' />
+                    <img className='logo-full' src={wochEarth} alt='world of chaos' />
                 </div>
 
                 <div className='-wc-info-block -text-center'>
                     <h4>
                         <span>The Store is closed<br/>at the moment, but you can still</span>
-                        <NavLink activeClassName='active' to="/contact" className='-mb-text'>
+                        <NavLink activeclassname='active' to="/contact" className='-mb-text'>
                             <span> </span>contact us
                         </NavLink>.
                     </h4>
                 </div>
 
                 {/* <div className='block-sub-title'>
-                    <img class='shop-title' src={shopTitle} alt='shop woch' height='50' />
+                    <img className='shop-title' src={shopTitle} alt='shop woch' height='50' />
                 </div> */}
             </div>
         </>

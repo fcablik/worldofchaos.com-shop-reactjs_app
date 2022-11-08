@@ -24,11 +24,11 @@ export default function Contact() {
                                     <li><a className='highlight' href='mailto:help@theworldofchaos.com'>help@theworldofchaos.com</a></li>
                                     <li>
                                         TikTok:&nbsp;
-                                        <a target='_blank' rel='noreferrer' class='highlight' href='https://tiktok.com/@wochlife'>@wochlife</a>
+                                        <a target='_blank' rel='noreferrer' className='highlight' href='https://tiktok.com/@wochlife'>@wochlife</a>
                                     </li>
                                     <li>
                                         Instagram:&nbsp;
-                                        <a target='_blank' rel='noreferrer' class="highlight" href='https://instagram.com/wochlife'>@wochlife</a>
+                                        <a target='_blank' rel='noreferrer' className="highlight" href='https://instagram.com/wochlife'>@wochlife</a>
                                     </li>
                                 </ul>
                             </div>
@@ -40,11 +40,11 @@ export default function Contact() {
 
                                 <ul className='highlight-bullets'>
                                     <li>
-                                        <a class="highlight" href='mailto:hello@theworldofchaos.com'>hello@theworldofchaos.com</a>
+                                        <a className="highlight" href='mailto:hello@theworldofchaos.com'>hello@theworldofchaos.com</a>
                                     </li>
                                     <li>
                                         Call Us:&nbsp;
-                                        <a class='highlight' href='tel:+420732581264'>+420 732 581 264 (CZ)</a>
+                                        <a className='highlight' href='tel:+420732581264'>+420 732 581 264 (CZ)</a>
                                     </li>
                                     <li>Filip Cablik, Founder</li>
                                 </ul>
@@ -61,7 +61,7 @@ export default function Contact() {
                                     <li>IBAN: LT023250086995759630</li>
                                     <li>
                                         Operated by:&nbsp;
-                                        <a href='#'>@filipcablik</a>
+                                        <a target='_blank' rel='noreferrer' href='https://www.instagram.com/filipcablik/'>@filipcablik</a>
                                     </li>
                                 </ul>
                             </div>

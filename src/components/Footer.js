@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect} from 'react';
+import { useEffect, useState} from 'react';
 import { NavLink, useLocation } from "react-router-dom";
 
 import TikTokSvg from '../components/svg/TikTok';
@@ -8,32 +8,26 @@ import YouTubeSvg from '../components/svg/YouTube';
 import MailSvg from '../components/svg/Mail';
 
 
-
 function Footer() {
 
     //* show/hide menu Handler
-    const [isVisible, setIsVisible] = useState(false);
-    const handleClick = event => {
-        setIsVisible(current => !current);
-    };
-
+        const [isVisible, setIsVisible] = useState(false);
+        const handleClick = event => {
+            setIsVisible(current => !current);
+        };
 
     //* route change Handler    
-    const location  = useLocation();
+        const location  = useLocation();
 
-    function changeClass(){
-        const nav = document.getElementById('navigation');
-        if ( nav.classList.contains('open') ) {
-            handleClick();
+        function changeClass(){
+            const nav = document.getElementById('navigation');
+            if ( nav.classList.contains('open') ) {
+                handleClick();
+            }
         }
-    }
-
-    useEffect(() => {
-        console.log('Location changed');
-        changeClass();
-    }, [location]);
-
-
+            useEffect(() => {
+                changeClass();
+            }, [location]);
 
 
     return (
@@ -63,9 +57,9 @@ function Footer() {
 
                 <div className='menu-icon' onClick = {handleClick}>
                     <div className={isVisible ? 'menu-opener active' : 'menu-opener inactive'}>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
+                        <span className='line'></span>
+                        <span className='line'></span>
+                        <span className='line'></span>
                     </div>
                 </div>
 
@@ -76,16 +70,15 @@ function Footer() {
                                 <span>Shop</span>
                                 <small>closed atm.</small>
                             </a>
-                            <NavLink activeClassName='active' to="/contact" className='-mb-text'>
+                            <NavLink activeclassname='active' to="/contact" className='-mb-text'>
                                 <span>Contact</span>
                             </NavLink>
-                            <NavLink activeClassName='active' to="/subscription" className='-mb-text'>
+                            <NavLink activeclassname='active' to="/subscription" className='-mb-text'>
                                 <span>Subscription</span>
                             </NavLink>
-                            <a to="#" className='-mb-text disabled'>
+                            <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>Sustainability</span>
-                                <small>closed atm.</small>
-                            </a>
+                            </NavLink>
                             <a to="#" className='-mb-text disabled'>
                                 <span>Terms & Conditions</span>
                                 <small>closed atm.</small>
@@ -99,7 +92,7 @@ function Footer() {
                             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/wochlife/" className='-f-icon'>
                                 <InstagramSvg />
                             </a>
-                            <a target="_blank" rel="noreferrer" className='-f-icon disabled'>
+                            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@wochlife/" className='-f-icon'>
                                 <YouTubeSvg />
                             </a>
                             <a target="_blank" rel="noreferrer" href="mailto:hello@theworldofchaos.com" className='-f-icon'>
