@@ -42,7 +42,7 @@ function Footer() {
                         <a target="_blank" rel="noreferrer" href="https://www.instagram.com/wochlife/" className='-f-icon'>
                             <InstagramSvg />
                         </a>
-                        <a target="_blank" rel="noreferrer" className='-f-icon disabled'>
+                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@wochlife/" className='-f-icon'>
                             <YouTubeSvg />
                         </a>
                         <a target="_blank" rel="noreferrer" href="mailto:hello@theworldofchaos.com" className='-f-icon'>
@@ -76,6 +76,10 @@ function Footer() {
                             <NavLink activeclassname='active' to="/subscription" className='-mb-text'>
                                 <span>Subscription</span>
                             </NavLink>
+                            {/* <a to="#" className='-mb-text disabled'>
+                                <span>Subscription</span>
+                                <small>closed atm.</small>
+                            </a> */}
                             <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>Sustainability</span>
                             </NavLink>

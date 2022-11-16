@@ -1,227 +1,110 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 
 export default function SubscriptionForm() {
 
     const countrySelect = [
-        'Afghanistan',
-        'Albania',
-        'Algeria',
-        'Andorra',
-        'Angola',
-        'Antigua and Barbuda',
-        'Argentina',
-        'Armenia',
-        'Australia',
-        'Austria',
-        'Azerbaijan',
-        'Bahamas',
-        'Bahrain',
-        'Bangladesh',
-        'Barbados',
-        'Belgium',
-        'Belize',
-        'Benin',
-        'Bhutan',
-        'Bolivia',
-        'Bosnia and Herzegovina',
-        'Botswana',
-        'Brazil',
-        'Brunei',
-        'Bulgaria',
-        'Burkina Faso',
-        'Burundi',
-        "Côte d'Ivoire",
-        'Cabo Verde',
-        'Cambodia',
-        'Cameroon',
-        'Canada',
-        'Central African Republic',
-        'Chad',
-        'Chile',
-        'China',
-        'Colombia',
-        'Comoros',
-        'Congo (Congo-Brazzaville)',
-        'Costa Rica',
-        'Croatia',
-        'Cuba',
-        'Cyprus',
-        'Czechia (Czech Republic)',
-        'Democratic Republic of the Congo',
-        'Denmark',
-        'Djibouti',
-        'Dominica',
-        'Dominican Republic',
-        'Ecuador',
-        'Egypt',
-        'El Salvador',
-        'Equatorial Guinea',
-        'Eritrea',
-        'Estonia',
-        'Eswatini (fmr. "Swaziland")',
-        'Ethiopia',
-        'Fiji',
-        'Finland',
-        'France',
-        'Gabon',
-        'Gambia',
-        'Georgia',
-        'Germany',
-        'Ghana',
-        'Greece',
-        'Grenada',
-        'Guatemala',
-        'Guinea',
-        'Guinea-Bissau',
-        'Guyana',
-        'Haiti',
-        'Holy See',
-        'Honduras',
-        'Hungary',
-        'Iceland',
-        'India',
-        'Indonesia',
-        'Iran',
-        'Iraq',
-        'Ireland',
-        'Israel',
-        'Italy',
-        'Jamaica',
-        'Japan',
-        'Jordan',
-        'Kazakhstan',
-        'Kenya',
-        'Kiribati',
-        'Kuwait',
-        'Kyrgyzstan',
-        'Laos',
-        'Latvia',
-        'Lebanon',
-        'Lesotho',
-        'Liberia',
-        'Libya',
-        'Liechtenstein',
-        'Lithuania',
-        'Luxembourg',
-        'Madagascar',
-        'Malawi',
-        'Malaysia',
-        'Maldives',
-        'Mali',
-        'Malta',
-        'Marshall Islands',
-        'Mauritania',
-        'Mauritius',
-        'Mexico',
-        'Micronesia',
-        'Moldova',
-        'Monaco',
-        'Mongolia',
-        'Montenegro',
-        'Morocco',
-        'Mozambique',
-        'Myanmar (formerly Burma)',
-        'Namibia',
-        'Nauru',
-        'Nepal',
-        'Netherlands',
-        'New Zealand',
-        'Nicaragua',
-        'Niger',
-        'Nigeria',
-        'North Korea',
-        'North Macedonia',
-        'Norway',
-        'Oman',
-        'Pakistan',
-        'Palau',
-        'Palestine State',
-        'Panama',
-        'Papua New Guinea',
-        'Paraguay',
-        'Peru',
-        'Philippines',
-        'Poland',
-        'Portugal',
-        'Qatar',
-        'Romania',
-        'Rwanda',
-        'Saint Kitts and Nevis',
-        'Saint Lucia',
-        'Saint Vincent and the Grenadines',
-        'Samoa',
-        'San Marino',
-        'Sao Tome and Principe',
-        'Saudi Arabia',
-        'Senegal',
-        'Serbia',
-        'Seychelles',
-        'Sierra Leone',
-        'Singapore',
-        'Slovakia',
-        'Slovenia',
-        'Solomon Islands',
-        'Somalia',
-        'South Africa',
-        'South Korea',
-        'South Sudan',
-        'Spain',
-        'Sri Lanka',
-        'Sudan',
-        'Suriname',
-        'Sweden',
-        'Switzerland',
-        'Syria',
-        'Tajikistan',
-        'Tanzania',
-        'Thailand',
-        'Timor-Leste',
-        'Togo',
-        'Tonga',
-        'Trinidad and Tobago',
-        'Tunisia',
-        'Turkey',
-        'Turkmenistan',
-        'Tuvalu',
-        'Uganda',
-        'Ukraine',
-        'United Arab Emirates',
-        'United Kingdom',
-        'United States of America',
-        'Uruguay',
-        'Uzbekistan',
-        'Vanuatu',
-        'Venezuela',
-        'Vietnam',
-        'Yemen',
-        'Zambia',
-        'Zimbabwe',
-
-        //* disabled/prohibited countries:
-            // 'Belarus',
-            // 'Russia',
+        //* disabled countries
+        // {id: '000',	 origin: 'Belarus'},
+        // {id: '001',	 origin: 'Russia'},
+        {id: '100',	 origin: 'Switzerland'},
+        {id: '101',	 origin: 'Czechia'},
+        {id: '102',	 origin: 'Austria'},
+        {id: '103',	 origin: 'Germany'},
+        {id: '104',	 origin: 'Slovakia'},
+        {id: '105',	 origin: 'Italy'},
+        {id: '106',	 origin: 'France'},
+        {id: '107',	 origin: 'Belgium'},
+        {id: '108',	 origin: 'Bulgaria'},
+        {id: '109',	 origin: 'Croatia'},
+        {id: '110',	 origin: 'Denmark'},
+        {id: '111',	 origin: 'Estonia'},
+        {id: '112',	 origin: 'Finland'},
+        {id: '113',	 origin: 'Greece'},
+        {id: '114',	 origin: 'Hungary'},
+        {id: '115',	 origin: 'Ireland'},
+        {id: '116',	 origin: 'Latvia'},
+        {id: '117',	 origin: 'Lithuania'},
+        {id: '118',	 origin: 'Luxembourg'},
+        {id: '119',	 origin: 'Netherlands'},
+        {id: '120',	 origin: 'Poland'},
+        {id: '121',	 origin: 'Portugal'},
+        {id: '122',	 origin: 'Romania'},
+        {id: '123',	 origin: 'Slovenia'},
+        {id: '124',	 origin: 'Spain'},
+        {id: '125',	 origin: 'Sweden'},
     ];
+
+    const [email, getEmail]      = useState("");
+    const [country, getCountry]  = useState("");
+    
+
+    function isValidEmail(email) {
+        return /\S+@\S+\.\S+/.test(email);
+    }
+
+    const validate = () => {
+        if (isValidEmail(email) & country !== 'default') {
+            return email.length & country.length;
+        }
+    };
+
+    const handleSubmit = () => {
+        const url = "https://www.theworldofchaos.com/_access/import_subs.php";
+
+        let fData = new FormData();
+        fData.append('email', email);
+        fData.append('country', country);
+
+        axios.post(url, fData)
+        .then(
+            response => alert(response.data)
+        )
+        .catch(
+            error => console.log(error)
+        );
+    }
 
     return (
         <>
             <form>
-                <label>
-                    <input type='text' name='name' className='-text-center' />
-                </label>
+                <input
+                    className='-text-center'
+                    type="email"
+                    placeholder="your email"
+                    value={email}
+                    onChange={e=>getEmail(e.target.value)}
+                />
+                {email.touched && email.error && <span>{email.error}</span>}
 
-                <select className='-text-center'>
+                <select 
+                    className='-text-center'
+                    value={country}
+                    onChange={e=>getCountry(e.target.value)}
+                >
                     <option value='default'>select your country</option>
 
                     {countrySelect.map(country => (
-                        <option key={country} value={country}>
-                            {country}
+                        <option
+                            key={country.id}
+                            id={country.id}
+                            value={country.origin}
+                        >
+                            {country.origin}
                         </option>
                     ))};
                 </select>
 
-                {/* add "hidden" property to input -->  */}
-                <input type='submit' value='Submit' />
+                <input
+                    className='-text-center'
+                    type="submit"
+                    value='Subscribe'
+                    onClick={handleSubmit}
+                    id="submit-sub"
+                    disabled={!validate()}
+                />
             </form>
         </>
     )
+
 }

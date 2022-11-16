@@ -5,9 +5,12 @@
     display: flex;
     flex-direction: column;
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #sub-form {
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
+
 }
