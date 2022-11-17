@@ -89,6 +89,15 @@ body {
 @media (min-width: 768px) {
   #root {
     background-size: 5em 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media (min-width: 768px) and (min-height: 730px) {
@@ -198,6 +207,10 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 55vw;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .main-content .-mc-text-area {
     padding: 5em 0;
   }
 }
@@ -206,20 +219,35 @@ h1, h2, h3, h4, h5, h6 {
     padding: 3em 0 6em 1em;
   }
 }
-.main-content .-mc-text-area ul.highlight-bullets {
+.main-content .-mc-text-area ul.highlight-bullets,
+.main-content .-mc-component-area ul.highlight-bullets {
   margin: 15px 0;
   list-style: none;
 }
-.main-content .-mc-text-area ul.highlight-bullets li {
+.main-content .-mc-text-area ul.highlight-bullets li,
+.main-content .-mc-component-area ul.highlight-bullets li {
   padding-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.main-content .-mc-text-area ul.highlight-bullets li::before {
+.main-content .-mc-text-area ul.highlight-bullets li::before,
+.main-content .-mc-component-area ul.highlight-bullets li::before {
   color: #8ffab5;
   content: "#";
   margin-right: 15px;
+}
+
+.btn-home {
+  background-color: #a2a2a2;
+  color: #000;
+  padding: 0.4em 0.6em;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+.btn-home:hover {
+  background-color: #8ffab5;
+  color: #000;
 }
 
 .header {
@@ -607,16 +635,6 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   margin: 30vh auto;
 }
-#error404 .btn-404 {
-  background-color: #a2a2a2;
-  color: #000;
-  padding: 0.4em 0.6em;
-  font-size: 1.2em;
-  margin-top: 2em;
-}
-#error404 .btn-404:hover {
-  background-color: #8ffab5;
-}
 
 .welcome-container {
   display: -webkit-box;
@@ -632,16 +650,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-@media (min-height: 730px) {
-  .welcome-container {
-    padding-top: 10px;
-  }
-}
-@media (min-height: 1000px) {
-  .welcome-container {
-    padding-top: 50px;
-  }
 }
 .welcome-container .-wc-center-block {
   display: -webkit-box;
@@ -839,17 +847,33 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7;
 }
 
-#subscription {
-  height: calc(100% - 152px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media (min-width: 768px) {
+  #subscription {
+    min-width: 600px;
+  }
 }
-#subscription form {
+@media (min-width: 768px) and (min-height: 730px) {
+  #subscription {
+    margin-top: -40px;
+  }
+}
+@media (min-width: 768px) and (max-height: 729px) {
+  #subscription {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 768px) {
+  #subscription #sub-form {
+    padding: 5em 0;
+  }
+}
+@media (max-width: 767px) {
+  #subscription #sub-form {
+    padding: 3em 0 6em 1em;
+  }
+}
+#subscription #sub-form .form,
+#subscription #sub-form #submit-response {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,6 +884,88 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#subscription #sub-form .form input:focus, #subscription #sub-form .form input:active, #subscription #sub-form .form input:hover,
+#subscription #sub-form .form select:focus,
+#subscription #sub-form .form select:active,
+#subscription #sub-form .form select:hover {
+  outline: none;
+}
+#subscription #sub-form .form input,
+#subscription #sub-form .form select,
+#subscription #sub-form .form button {
+  border-radius: 5px;
+  border: 0;
+  margin: 1em 0;
+}
+#subscription #sub-form .form input[type=email],
+#subscription #sub-form .form select[type=select] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  text-align: -webkit-center;
+}
+#subscription #sub-form .form select option {
+  text-align: center;
+  text-align: -webkit-center;
+}
+#subscription #sub-form .form-email, #subscription #sub-form .form-country {
+  background-color: #a2a2a2;
+  color: #2e2e2e;
+  min-height: 35px;
+}
+#subscription #sub-form .form-email::-webkit-input-placeholder, #subscription #sub-form .form-country::-webkit-input-placeholder {
+  color: #2e2e2e;
+}
+#subscription #sub-form .form-email::-moz-placeholder, #subscription #sub-form .form-country::-moz-placeholder {
+  color: #2e2e2e;
+}
+#subscription #sub-form .form-email:-ms-input-placeholder, #subscription #sub-form .form-country:-ms-input-placeholder {
+  color: #2e2e2e;
+}
+#subscription #sub-form .form-email::-ms-input-placeholder, #subscription #sub-form .form-country::-ms-input-placeholder {
+  color: #2e2e2e;
+}
+#subscription #sub-form .form-email::placeholder, #subscription #sub-form .form-country::placeholder {
+  color: #2e2e2e;
+}
+@media (min-width: 768px) {
+  #subscription #sub-form .form-email, #subscription #sub-form .form-country {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 767px) {
+  #subscription #sub-form .form-email, #subscription #sub-form .form-country {
+    min-width: 60%;
+  }
+}
+#subscription #sub-form .form-email {
+  min-width: 70%;
+}
+@media (max-width: 767px) {
+  #subscription #sub-form .form-email {
+    min-width: 80%;
+  }
+}
+#subscription #sub-form .form-country {
+  min-width: 50%;
+}
+@media (max-width: 767px) {
+  #subscription #sub-form .form-country {
+    min-width: 60%;
+  }
+}
+#subscription #sub-form .form-submit {
+  padding: 0.8em 4em;
+}
+#subscription #sub-form .form-submit:not(:disabled) {
+  background-color: #2e2e2e;
+  cursor: pointer;
+}
+#subscription #sub-form .form-submit:not(:disabled):hover {
+  background-color: #8ffab5;
+  color: #2e2e2e;
 }
 
 .icons .-f-icon:not(.disabled),

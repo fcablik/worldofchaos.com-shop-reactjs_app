@@ -43,7 +43,7 @@
                 }
             }
             .-ic-after {
-                color: $woch_text-highlight;
+                color: $woch-highlight;
 
                 &.menu-inactive{
                     -webkit-transform: translateY(-60px);
@@ -107,7 +107,7 @@
                 cursor: pointer;
 
                 .line {
-                    background-color: $woch_text-highlight;
+                    background-color: $woch-highlight;
                 }
             }
 

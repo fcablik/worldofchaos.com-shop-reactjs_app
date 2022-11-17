@@ -1,16 +1,110 @@
 //* {sign-in subs. page config}
 
 #subscription {
-    height: calc(100% - 152px);
-    display: flex;
-    flex-direction: column;
+
+    @media (min-width: 768px){
+        min-width: 600px;
+
+        @media (min-height: 730px){
+            margin-top: -40px;
+        }
+        @media (max-height: 729px){
+            margin-top: -20px;
+        }
+    }
 
     #sub-form {
-        form {
+        @media (min-width: 768px){
+            padding: 5em 0;
+        }
+        @media (max-width: 767px){
+            padding: 3em 0 6em 1em;
+        }
+
+        .form,
+        #submit-response {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-    }
 
+        .form {
+            input,
+            select {
+                &:focus,
+                &:active,
+                &:hover {
+                    outline: none;
+                }
+            }
+
+            input,
+            select,
+            button {
+                border-radius: 5px;
+                border: 0;
+                margin: 1em 0;
+            }
+
+            input[type=email],
+            select[type=select] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                text-align: center;
+                text-align: -webkit-center;
+            }
+            select option {
+                text-align: center;
+                text-align: -webkit-center;
+            }
+
+            &-email,
+            &-country {
+                &::placeholder{
+                    color: $woch_text-dark;
+                }
+
+                background-color: $woch_bcg-components;
+                color: $woch_text-dark;
+                min-height: 35px;
+
+                @media (min-width: 768px){
+                    font-size: .9em;
+                }
+
+                @media (max-width: 767px){
+                    min-width: 60%;
+                }
+            }
+
+            &-email {
+                min-width: 70%;
+
+                @media (max-width: 767px){
+                    min-width: 80%;
+                }
+            }
+            &-country {
+                min-width: 50%;
+
+                @media (max-width: 767px){
+                    min-width: 60%;
+                }
+            }
+            &-submit {
+                padding: .8em 4em;
+
+                &:not(:disabled) {
+                    background-color: $woch_text-components_dark;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: $woch-highlight;
+                        color: $woch_text-dark;
+                    }
+                }
+            }
+        }
+    }
 }

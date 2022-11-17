@@ -10,18 +10,15 @@ export default function Subscription() {
                     <div id='subscription'>
                         <h1 className="-mc-title -text-center -highlight">Subscribe to stay in touch!</h1>
 
-                        <div className='-mc-text-area'>
+                        <div className='-mc-component-area'>
                             <div className='section' id='sub-form'>
                                 <SubscriptionForm />
                             </div>
                             
-                                <br/>
-
                             <div className='section -text-center'>
                                 <p>Sign in to make sure you don't miss<br/>any important updates or drops. :-)</p>
                             </div>
                         </div>
-                        
                     </div>
 
                 </div>

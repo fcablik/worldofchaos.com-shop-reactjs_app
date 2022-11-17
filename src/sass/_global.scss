@@ -13,6 +13,7 @@
     }
 }
 
+
 p,
 span,
 small,
@@ -20,14 +21,14 @@ i,
 br,
 hr {
     &.highlight {
-        color: $woch_text-highlight;
+        color: $woch-highlight;
     }
 }
 
 a {
     &.highlight {
         &:hover {
-            color: $woch_text-highlight;
+            color: $woch-highlight;
             cursor: pointer;
         }
     }
@@ -37,7 +38,7 @@ a {
     text-decoration: unset;
 
     &:hover {
-        color: $woch_text-highlight;
+        color: $woch-highlight;
     }
 }
 
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .-highlight {
-    color: $woch_text-highlight;
+    color: $woch-highlight;
 }
 .-text-center {
     text-align: center;
@@ -63,17 +64,26 @@ h1, h2, h3, h4, h5, h6 {
 .main-content {
     .-mc-text-area {
         line-height: 1.8em;
-        
+
         @media (min-width: 768px){
             max-width: 55vw;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        @media (min-width: 768px){
             padding: 5em 0;
         }
+
         @media (max-width: 767px){
             padding: 3em 0 6em 1em;
         }
 
+
+    }
+
+    .-mc-text-area,
+    .-mc-component-area {
         ul {
             &.highlight-bullets {
                 margin: 15px 0;
@@ -84,12 +94,25 @@ h1, h2, h3, h4, h5, h6 {
                     display: flex;
 
                     &::before {
-                        color: $woch_text-highlight;
+                        color: $woch-highlight;
                         content: "#";
                         margin-right: 15px;
                     }
                 }
             }
         }
+    }
+}
+
+.btn-home {
+    background-color: $woch_bcg-components;
+    color: $black;
+    padding: .4em .6em;
+    font-size: 1.2em;
+    margin-top: 2em;
+
+    &:hover {
+        background-color: $woch-highlight;
+        color: $black;
     }
 }

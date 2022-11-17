@@ -5,16 +5,4 @@
     flex-direction: column;
     align-items: center;
     margin: 30vh auto;
-
-    .btn-404 {
-        background-color: $woch_bcg-components;
-        color: $black;
-        padding: .4em .6em;
-        font-size: 1.2em;
-        margin-top: 2em;
-
-        &:hover {
-            background-color: $woch_text-highlight;
-        }
-    }
 }

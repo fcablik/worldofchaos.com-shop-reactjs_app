@@ -6,13 +6,6 @@
     justify-content:    center;
     flex-direction:     column;
 
-    @media (min-height: 730px) {
-        padding-top: 10px;
-    }
-    @media (min-height: 1000px) {
-        padding-top: 50px;
-    }
-
     .-wc-center-block {
         display:            flex;
         align-items:        center;
@@ -144,7 +137,7 @@
         max-width: 225px;
 
         a {
-            color: $woch_text-highlight;
+            color: $woch-highlight;
 
             &:hover {
                 opacity: .7;

@@ -49,36 +49,50 @@ export default function SubscriptionForm() {
         }
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault();
         const url = "https://www.theworldofchaos.com/_access/import_subs.php";
 
         let fData = new FormData();
         fData.append('email', email);
         fData.append('country', country);
 
-        axios.post(url, fData)
-        .then(
-            response => alert(response.data)
-        )
-        .catch(
-            error => console.log(error)
-        );
+        if (validate){
+            axios.post(url, fData)
+            .then(response => {
+                const form = document.getElementById('form');
+                const resp = document.getElementById('submit-response');
+
+                resp.innerHTML = "<p>Thanks for subscribing! We'll get back to you soon. :-)</p>";
+                resp.style.display = 'flex';
+                form.style.display = 'none';
+
+                setTimeout(function() {
+                    window.location.reload();
+                }, 8000);
+            })
+            .catch(error => {
+                console.log('error' + error);
+                window.location.reload();
+            });
+        }
+
     }
 
     return (
         <>
-            <form>
+            <form className='form' id='form'>
                 <input
-                    className='-text-center'
+                    className='-text-center form-email'
                     type="email"
                     placeholder="your email"
                     value={email}
                     onChange={e=>getEmail(e.target.value)}
                 />
-                {email.touched && email.error && <span>{email.error}</span>}
 
                 <select 
-                    className='-text-center'
+                    className='-text-center form-country'
+                    type="select"
                     value={country}
                     onChange={e=>getCountry(e.target.value)}
                 >
@@ -95,15 +109,19 @@ export default function SubscriptionForm() {
                     ))};
                 </select>
 
-                <input
-                    className='-text-center'
+                <button
+                    className='-text-center form-submit'
                     type="submit"
                     value='Subscribe'
                     onClick={handleSubmit}
                     id="submit-sub"
                     disabled={!validate()}
-                />
+                >
+                    Submit
+                </button>
             </form>
+
+            <div id='submit-response'></div>
         </>
     )
 
