@@ -9,10 +9,10 @@ import Footer from './components/Footer';
 
 import PageNotFound from './components/pages/404';
 import Home from './components/pages/Home';
+import Shop from './components/pages/Shop';
 import Contact from './components/pages/Contact';
 import Subscription from './components/pages/Subscription';
 import Sustainability from './components/pages/Sustainability';
-// import Shop from './components/pages/Shop';
 // import TermsConditions from './components/pages/TermsConditions';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
 
                     <Routes>
                         <Route exact path="/" element={<Home />}/>
-                        {/* <Route path='/shop' element={<Shop />} /> */}
+                        <Route path='/shop' element={<Shop />} />
                         <Route path='/contact' element={<Contact />} />
                         <Route path='/subscription' element={<Subscription />} />
                         <Route path='/sustainability' element={<Sustainability />} />

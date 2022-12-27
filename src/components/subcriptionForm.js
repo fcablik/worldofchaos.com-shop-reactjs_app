@@ -55,16 +55,20 @@ export default function SubscriptionForm() {
         if (validate){
             axios.post(url, fData)
             .then(response => {
-                const form = document.getElementById('form');
                 const resp = document.getElementById('submit-response');
+                const form = document.getElementById('form');
+                const title = document.getElementById('form-title');
+                const text = document.getElementById('form-text');
 
-                resp.innerHTML = "<p>Thanks for subscribing! We'll get back to you soon. :-)</p>";
+                resp.innerHTML = "<p>Thanks for subscribing! Now you won't miss anything. :-)</p>";
                 resp.style.display = 'flex';
                 form.style.display = 'none';
+                title.style.display = 'none';
+                text.style.display = 'none';
 
                 setTimeout(function() {
                     window.location.reload();
-                }, 8000);
+                }, 5000);
             })
             .catch(error => {
                 console.log('error' + error);

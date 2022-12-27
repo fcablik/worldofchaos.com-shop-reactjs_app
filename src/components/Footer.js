@@ -64,20 +64,15 @@ function Footer() {
                 <nav id='navigation' className={isVisible ? 'navigation open' : 'navigation close'}>
                     <div className="menu-block">
                         <div className='web-links'>
-                            <a to="#" className='-mb-text disabled'>
+                            <NavLink activeclassname='active' to="/shop" className='-mb-text'>
                                 <span>Shop</span>
-                                <small>closed atm.</small>
-                            </a>
+                            </NavLink>
                             <NavLink activeclassname='active' to="/contact" className='-mb-text'>
                                 <span>Contact</span>
                             </NavLink>
                             <NavLink activeclassname='active' to="/subscription" className='-mb-text'>
                                 <span>Subscription</span>
                             </NavLink>
-                            {/* <a to="#" className='-mb-text disabled'>
-                                <span>Subscription</span>
-                                <small>closed atm.</small>
-                            </a> */}
                             <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>Sustainability</span>
                             </NavLink>
