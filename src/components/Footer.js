@@ -64,9 +64,8 @@ function Footer() {
                 <nav id='navigation' className={isVisible ? 'navigation open' : 'navigation close'}>
                     <div className="menu-block">
                         <div className='web-links'>
-                            <a to="#" className='-mb-text disabled'>
+                            <a to="#" className='-mb-text'>
                                 <span>Shop</span>
-                                <small>closed atm.</small>
                             </a>
                             <NavLink activeclassname='active' to="/contact" className='-mb-text'>
                                 <span>Contact</span>
