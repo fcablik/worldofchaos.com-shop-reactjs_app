@@ -15,8 +15,8 @@ export default function Home() {
                 <div className='-wc-info-block -text-center'>
                     <h4>
                         <span>The Store is closed<br/>at the moment, but you can still</span>
-                        <NavLink activeclassname='active' to="/contact" className='-mb-text'>
-                            <span> </span>contact us
+                        <NavLink activeclassname='active' to="/contact" className='-wc-info-text highlight'>
+                            &nbsp;contact us
                         </NavLink>.
                     </h4>
                 </div>

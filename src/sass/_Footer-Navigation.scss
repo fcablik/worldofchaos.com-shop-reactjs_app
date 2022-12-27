@@ -34,13 +34,17 @@
         background: $woch_bcg-black_blur;
         backdrop-filter: blur(7px);
 
-        @media (min-width: 500px){
+        @media (min-width: 768px) {
             bottom: 6em;
             right: 0;
             margin-right: 2em;
         }
-        @media (max-width: 499px){
+        @media (max-width: 767px) {
             bottom: 15%;
+        
+            @media (max-height: 400px) {
+                bottom: 25%;
+            }
         }
 
         @media (min-height: 550px){
@@ -58,14 +62,13 @@
         }
         
         .web-links {
-
             @media (max-height: 549px){
                 padding-bottom: .5em;
             }
 
             .-mb-text { 
                 justify-content: center;
-                color: $woch_text-primary;
+                color: $woch_text-light;
                 font-size: 1em;
 
                 @media (min-height: 550px){
@@ -111,12 +114,17 @@
                 &.disabled {
                     flex-direction: column;
                     align-items: center;
+                    cursor: auto;
                     
                     span {
                         text-decoration: line-through;
                     }
                     small {
                         padding-top: 1.2em;
+                    }
+
+                    @media (max-height: 400px) {
+                        display: none;
                     }
                 }
             }
@@ -127,7 +135,7 @@
         }
     }
 
-    @media (max-width: 499px){
+    @media (max-width: 767px){
         display: flex;
         flex-direction: column;
         align-items: center;

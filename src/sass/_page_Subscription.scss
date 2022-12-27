@@ -1,21 +1,21 @@
 //* {sign-in subs. page config}
 
 #subscription {
-
     @media (min-width: 768px){
-        min-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         @media (min-height: 730px){
-            margin-top: -40px;
-        }
-        @media (max-height: 729px){
-            margin-top: -20px;
+            height: calc(100vh - 304px);
         }
     }
 
     #sub-form {
         @media (min-width: 768px){
             padding: 5em 0;
+            min-width: 600px;
         }
         @media (max-width: 767px){
             padding: 3em 0 6em 1em;
@@ -62,11 +62,11 @@
             &-email,
             &-country {
                 &::placeholder{
-                    color: $woch_text-dark;
+                    color: $woch_text-light;
                 }
 
-                background-color: $woch_bcg-components;
-                color: $woch_text-dark;
+                background-color: $woch_bcg-components-dark;
+                color: $woch_text-light;
                 min-height: 35px;
 
                 @media (min-width: 768px){
@@ -96,12 +96,14 @@
                 padding: .8em 4em;
 
                 &:not(:disabled) {
-                    background-color: $woch_text-components_dark;
+                    color: $woch_text-dark;
+                    background-color: $woch_bcg-components;
                     cursor: pointer;
     
                     &:hover {
-                        background-color: $woch-highlight;
-                        color: $woch_text-dark;
+                        color: $woch_text-light;
+                        background-color: $woch_bcg-components_dark-hover;
+                        // font-weight: 700;
                     }
                 }
             }

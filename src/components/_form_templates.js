@@ -35,18 +35,7 @@ export default function SubscriptionForm() {
         {id: '125',	 origin: 'Sweden'},
     ];
 
-
-    
-
     const [email, setEmail] = useState('');
-
-
-
-
-
-
-
-
     const [formData, setFormData] = React.useState(
         {
             firstName: "", 
@@ -70,10 +59,6 @@ export default function SubscriptionForm() {
             }
         })
     }
-
-
-
-
 
     return (
         <>

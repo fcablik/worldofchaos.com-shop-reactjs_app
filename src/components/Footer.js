@@ -10,24 +10,22 @@ import MailSvg from '../components/svg/Mail';
 
 function Footer() {
 
-    //* show/hide menu Handler
         const [isVisible, setIsVisible] = useState(false);
         const handleClick = event => {
             setIsVisible(current => !current);
         };
 
-    //* route change Handler    
         const location  = useLocation();
 
         function changeClass(){
             const nav = document.getElementById('navigation');
-            if ( nav.classList.contains('open') ) {
+            if (nav.classList.contains('open')) {
                 handleClick();
             }
         }
-            useEffect(() => {
-                changeClass();
-            }, [location]);
+        useEffect(() => {
+            changeClass();
+        }, [location]);
 
 
     return (
@@ -45,7 +43,7 @@ function Footer() {
                         <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@wochlife/" className='-f-icon'>
                             <YouTubeSvg />
                         </a>
-                        <a target="_blank" rel="noreferrer" href="mailto:hello@theworldofchaos.com" className='-f-icon'>
+                        <a target="_blank" rel="noreferrer" href="mailto:phil@theworldofchaos.com" className='-f-icon'>
                             <MailSvg />
                         </a>
                     </div>
@@ -99,7 +97,7 @@ function Footer() {
                             <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@wochlife/" className='-f-icon'>
                                 <YouTubeSvg />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="mailto:hello@theworldofchaos.com" className='-f-icon'>
+                            <a target="_blank" rel="noreferrer" href="mailto:phil@theworldofchaos.com" className='-f-icon'>
                                 <MailSvg />
                             </a>
                         </div>

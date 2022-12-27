@@ -9,17 +9,25 @@ export default function Sustainabilty() {
 
                     <div id='contact'>
                         <div className='-mc-text-area'>
-
                             <div className='section'>
-                                <h6 className='-text-center'>We take it as a must.</h6>
+                                <h6 className='-text-center'>Why do we encourage our customers to look for more sustainable ways to style?</h6>
                             </div>
 
                                 <br/><br/>
 
                             <div className='section'>
-                                <p>The world is getting faster & chaotic, and so are the industries. The fashion industry is unfortunately one of those that have lost its sustainability and ethical values. As these values are very important, we want to help the sustainable fashion grow and spread awareness of these core problems - which can be fixed. <br/>We are on a journey to prevent and eliminate the chaos in the world.</p>
+                                <p>
+                                    The world is getting faster & chaotic, and so are the industries. The fashion industry is unfortunately one of those that have lost its sustainability and ethical values. As these values are very important, we want the sustainable fashion to grow and therefor we spread awareness of these core problems - which can be fixed. 
+                                        <br/><br/>
+                                    We are on a journey to help eliminate the chaos in the world - by giving the shoes from forgotten shops and facililties a new life.
+                                </p>
+
+                                    <br/><br/>
+
+                                <h6 className='-text-center'>Good To Know</h6>
 
                                     <br/>
+
                                 <p>Ethics and sustainability values roadmap:</p>
                                 <ul className='highlight-bullets'>
                                     <li>1. Cotton growing</li>
@@ -31,9 +39,13 @@ export default function Sustainabilty() {
                                     <li>7. Printing</li>
                                     <li>8. Customer delivery</li>
                                 </ul>
-                                <br/>
 
-                                <p>It is an approach which guards the whole process. We do our best to maximize the benefits to the industry and society, and at the same time, minimize the impact on the environment and humanity.</p>
+                                    <br/>
+
+                                <p>It is an approach which guards the whole process. In an ideal world, everybody would do their best to maximize the benefits to the industry and society, and at the same time, minimize the impact on the environment and humanity.
+                                    <br/>
+                                    And that is exactly what society should aim for.
+                                </p>
                                     <br/>
                                 <p>Namely:</p>
                                 <ul className='highlight-bullets'>
@@ -41,38 +53,15 @@ export default function Sustainabilty() {
                                     <li>Sourcing</li>
                                     <li>Manufacturing</li>
                                     <li>Storing</li>
-                                    <li>Shipping
-                                        {/* / Store displaying (ye’s ideas - bags instead of re-hanging clothes) */}
-                                    </li>
+                                    <li>Shipping</li>
+                                    <li>Store manipulation & storage</li>
+                                    {/* / Store displaying (ye’s ideas - bags instead of re-hanging clothes) */}
                                 </ul>
 
                                 <p>Ethical means morally right and acceptable. Therefore, ethical and sustainable fashion does not start from manufacturing clothes. It starts from the cotton fields and ends in consumer's wardrobe.</p>
-
                             </div>
-
-                            <br/><br/>
-
-                            <div className='section'>
-                                <h6 className='-text-center'>We do not want to talk more than necessary, we want to execute & actualize.</h6>
-                            </div>
-
-                            {/* <br/><br/> */}
-
-                            {/* <div className='section'>
-                                <p>Certifications</p>
-                                <ul className='highlight-bullets'>
-                                    <li>1.</li>
-                                    <li>2.</li>
-                                    <li>3.</li>
-                                    <li>4.</li>
-                                </ul>
-                                    // as carousel or images list ???
-                            </div> */}
-
                         </div>
                     </div>
-
-
                 </div>
             </main>
         </>

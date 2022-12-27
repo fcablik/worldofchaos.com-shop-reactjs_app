@@ -3,9 +3,19 @@
 .icons,
 .social-links {
     .-f-icon {
-        
         &:not(.disabled) {
             cursor: pointer;
+        }
+
+        svg {
+            max-height: 1.8em;
+
+            .-f-icon-bcg {
+                fill: $woch_bcg-icons;
+            }
+            .-f-icon-inner {
+                fill: $woch_text-dark;
+            }
         }
 
         &:hover {
@@ -14,16 +24,12 @@
                     .-f-icon-bcg {
                         transition: all .3s ease-in-out;
                         fill: $woch-highlight;
+                        font-weight: 700;
                     }
+                    // .-f-icon-inner {
+                    //     fill: $woch_text-light;
+                    // }
                 }
-            }
-        }
-
-        svg {
-            max-height: 1.8em;
-
-            .-f-icon-bcg {
-                fill: $woch_bcg-icons;
             }
         }
     }

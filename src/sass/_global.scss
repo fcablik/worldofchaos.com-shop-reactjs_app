@@ -21,24 +21,18 @@ i,
 br,
 hr {
     &.highlight {
-        color: $woch-highlight;
-    }
-}
-
-a {
-    &.highlight {
-        &:hover {
-            color: $woch-highlight;
-            cursor: pointer;
-        }
+        color: $woch_text-dark;
+        font-weight: 700;
     }
 }
 
 a {
     text-decoration: unset;
+    color:  $woch_text-dark;
 
     &:hover {
         color: $woch-highlight;
+        cursor: pointer;
     }
 }
 
@@ -49,7 +43,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .-highlight {
-    color: $woch-highlight;
+    color: $woch_text-dark;
+    font-weight: 700;
 }
 .-text-center {
     text-align: center;
@@ -94,7 +89,8 @@ h1, h2, h3, h4, h5, h6 {
                     display: flex;
 
                     &::before {
-                        color: $woch-highlight;
+                        color: $woch_text-dark;
+                        font-weight: 700;
                         content: "#";
                         margin-right: 15px;
                     }
@@ -112,7 +108,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2em;
 
     &:hover {
-        background-color: $woch-highlight;
+        background-color: $woch_text-dark;
+        font-weight: 700;
         color: $black;
     }
 }

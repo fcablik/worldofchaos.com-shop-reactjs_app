@@ -4,11 +4,10 @@
     box-sizing:     border-box;
     margin:         0;
     padding:        0;
-    color:          $woch_text-primary;
 }
 
 body {
-    background: $woch_bcg-green_gradient;
+    background: $woch_bcg-light;
 }
 
 #root {
@@ -26,14 +25,11 @@ body {
     background-position: center;
     background-color: transparent;
     background-image:
-        linear-gradient( $woch_bcg-green_grid .1em, transparent .1em ), 
-        linear-gradient( 90deg, $woch_bcg-green_grid .1em, transparent .1em );
+        linear-gradient( $woch_bcg-grid .1em, transparent .1em ), 
+        linear-gradient( 90deg, $woch_bcg-grid .1em, transparent .1em );
 
     @media (min-width: 768px) {
         background-size: 5em 5em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         @media (min-height: 730px){
             padding: 120px 0 80px 0;
@@ -61,7 +57,7 @@ body {
 
         ::selection {
             background: #295838;
-            color: $woch_text-primary;
+            color: $woch_text-light;
         }
     }
 }

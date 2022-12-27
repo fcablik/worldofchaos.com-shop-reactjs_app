@@ -37,15 +37,10 @@ export default function SubscriptionForm() {
 
     const [email, getEmail]      = useState("");
     const [country, getCountry]  = useState("");
-    
-
-    function isValidEmail(email) {
-        return /\S+@\S+\.\S+/.test(email);
-    }
 
     const validate = () => {
-        if (isValidEmail(email) & country !== 'default') {
-            return email.length & country.length;
+        if (/\S+@\S+\.\S+/.test(email) & country !== '') {
+            return true;
         }
     };
 
@@ -96,7 +91,7 @@ export default function SubscriptionForm() {
                     value={country}
                     onChange={e=>getCountry(e.target.value)}
                 >
-                    <option value='default'>select your country</option>
+                    <option value=''>select your country</option>
 
                     {countrySelect.map(country => (
                         <option

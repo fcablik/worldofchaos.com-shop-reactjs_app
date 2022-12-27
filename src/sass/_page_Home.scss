@@ -132,16 +132,14 @@
         }
     }
 
-    .-wc-info-block {
-        padding-top: 4em;
-        max-width: 225px;
+    .-wc-info {
+        &-block {
+            padding-top: 4em;
+            max-width: 225px;
+        }
 
-        a {
-            color: $woch-highlight;
-
-            &:hover {
-                opacity: .7;
-            }
+        &-text.highlight{
+            font-weight: 700;
         }
     }
 }

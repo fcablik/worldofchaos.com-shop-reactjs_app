@@ -4,7 +4,7 @@
 
     $dbConn['host']			= "uvdb54.active24.cz";
     $dbConn['username']		= "theworldofchaos";
-    $dbConn['password']		= "rM3Aj7IlAD";
+    $dbConn['password']		= "1RKatxH7SN";
     $dbConn['dbname']		= "theworldofchaos";
 
     $conn = new mysqli($dbConn['host'], $dbConn['username'], $dbConn['password'], $dbConn['dbname']);
