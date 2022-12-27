@@ -109,7 +109,40 @@ h1, h2, h3, h4, h5, h6 {
 
     &:hover {
         background-color: $woch_text-dark;
-        font-weight: 700;
-        color: $black;
+        color: $woch_text-light;
+    }
+}
+
+.svg-action-icon {
+    &:not(:hover) {
+        animation: blink-animation 1.3s infinite;
+        -webkit-animation: blink-animation 1.3s infinite;
+    }
+
+    svg {
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        svg {
+            fill: $woch-highlight !important;
+        }
+    }
+
+    @keyframes blink-animation {
+        from {
+            opacity: .15;
+        }
+        to {
+          opacity: 1;
+        }
+    }
+    @-webkit-keyframes blink-animation {
+        from {
+            opacity: .15;
+        }
+        to {
+          opacity: 1;
+        }
     }
 }
