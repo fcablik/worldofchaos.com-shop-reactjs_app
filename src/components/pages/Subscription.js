@@ -1,5 +1,5 @@
 import React from 'react';
-import SubscriptionForm from '../SubcriptionForm';
+import SubscriptionForm from '../subcriptionForm';
 
 export default function Subscription() {
     return (
