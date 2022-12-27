@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     svg {
+        fill: $woch_text-dark !important;
         transition: all .3s ease-in-out;
     }
 
