@@ -8,7 +8,7 @@ export default function Sustainabilty() {
                     <h1 className="-mc-title -text-center">Sustainability</h1>
 
                     <div id='contact'>
-                        <div className='-mc-text-area'>
+                        <div className='-mc-global'>
                             <div className='section'>
                                 <h6 className='-text-center'>Why do we encourage our customers to look for more sustainable ways to style?</h6>
                             </div>
