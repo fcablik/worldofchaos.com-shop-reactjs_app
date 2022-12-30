@@ -9,9 +9,12 @@ export default function Contact() {
                     <div id='contact'>
                         <h1 className="-mc-title -text-center">Contact</h1>
 
-                        <div className='-mc-text-area'>
+                        <div className='-mc-global'>
                             <div className='section'>
-                                <h6 className='-text-center'>World Of Chaos is about responsibility.<br/>Give our shoes a new life.</h6>
+                                <h4 className='-text-center'>
+                                    {/* World Of Chaos is about responsibility.<br/> */}
+                                    Why us&nbsp;?<br/>'Cause we Got 'Em&nbsp;!
+                                </h4>
                             </div>
 
                                 <br/><br/>

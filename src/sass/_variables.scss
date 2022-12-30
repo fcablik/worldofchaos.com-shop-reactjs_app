@@ -8,17 +8,29 @@
 //* woch colors
     $woch_text-light:                   #afafaf;
     $woch_text-dark:                    #2e2e2e;
-
-    $woch-highlight:                    #8ffab5;
+        $woch-highlight:                    #8ffab5;
 
     $woch_bcg-grid:                     rgba(142,159,148, .2);
     // $woch_bcg-green_gradient:       linear-gradient(90deg, #191D15, #1b2019, #191D15);
     $woch_bcg-light:                    linear-gradient(90deg, #AFAFAF, #BFBFBF, #AFAFAF);
     $woch_bcg-black_blur:               rgba(0, 0, 0, .5);
     $woch_bcg-icons:                    #a2a2a2;
-    $woch_bcg-components:               #a2a2a2;
-    $woch_bcg-components_dark:          #2e2e2e;
-    $woch_bcg-components_dark-hover:    #2e2e2ec3;
 
-    $woch-menu_shadow:              0 1px 3px #0000009c;
+    $woch_bcg-components:               #a2a2a2;
+
+        $woch_bcg-components_light:         #afafaf;
+        $woch_bcg-components_light-hover:   #afafaf64;
+            $woch_bcg-components_light-mob:     #afafaf85;
+
+        $woch_bcg-components_dark:          #2e2e2e;
+        $woch_bcg-components_dark-hover:    #2e2e2ec3;
+
+
+    $woch-menu_shadow:                  0 1px 3px #0000009c;
+
+    $woch_border-light:                 1px solid #2e2e2e1a;
 //*
+
+
+    $radius-main:                       35px;
+    $radius-main_response:              25px;

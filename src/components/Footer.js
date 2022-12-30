@@ -71,7 +71,7 @@ function Footer() {
                                 <span>Contact</span>
                             </NavLink>
                             <NavLink activeclassname='active' to="/subscription" className='-mb-text'>
-                                <span>Subscription</span>
+                                <span>Stay In Touch</span>
                             </NavLink>
                             <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>Sustainability</span>

@@ -57,27 +57,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-content {
-    .-mc-text-area {
-        line-height: 1.8em;
+    .-mc {
+        &-global {
+            @media (min-width: 768px){
+                max-width: 55vw;
+            }
+            @media (max-width: 767px){
+                padding: 3em 0 6em 1em;
+            }
+        }
 
-        @media (min-width: 768px){
-            max-width: 55vw;
+        &-shop {
+            @media (min-width: 768px) {
+                max-width: 70vw;
+            }
+    
+            @media (min-width: 1500px) {
+                max-width: 55vw;
+            }
+            @media (max-width: 767px) {
+                padding: 3em 0 6em 0;
+
+                @media (min-width: 520px) {
+                    max-width: 70vw;
+                }
+            }
+        }
+
+        &-global,
+        &-shop {
+            line-height: 1.8em;
             margin-left: auto;
             margin-right: auto;
+
+            @media (min-width: 768px){
+                padding: 5em 0;
+            }
         }
-
-        @media (min-width: 768px){
-            padding: 5em 0;
-        }
-
-        @media (max-width: 767px){
-            padding: 3em 0 6em 1em;
-        }
-
-
     }
 
-    .-mc-text-area,
+    .-mc-global,
     .-mc-component-area {
         ul {
             &.highlight-bullets {
@@ -120,13 +139,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     svg {
-        fill: $woch_text-dark !important;
+        fill: $woch_text-dark;
         transition: all .3s ease-in-out;
     }
 
     &:hover {
         svg {
-            fill: $woch-highlight !important;
+            fill: $woch-highlight;
         }
     }
 
@@ -145,5 +164,67 @@ h1, h2, h3, h4, h5, h6 {
         to {
           opacity: 1;
         }
+    }
+}
+
+
+//* global margin classes
+    .mt-1 {
+        margin-top: 1em;
+    }
+    .mr-1 {
+        margin-right: 1em;
+    }
+    .mb-1 {
+        margin-bottom: 1em;
+    }
+    .ml-1 {
+        margin-left: 1em;
+    }
+    .m-1 {
+        margin: 1em;
+    }
+
+    .mt-2 {
+        margin-top: 2em;
+    }
+    .mr-2 {
+        margin-right: 2em;
+    }
+    .mb-2 {
+        margin-bottom: 2em;
+    }
+    .ml-2 {
+        margin-left: 2em;
+    }
+    .m-2 {
+        margin: 2em;
+    }
+//* end margin classes
+
+.bold {
+    font-weight: 700;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.xs-mob {
+    @media (min-width: 768px){
+        display: none;
+    }
+}
+.xs-none {
+    @media (max-width: 767px){
+        display: none;
     }
 }
