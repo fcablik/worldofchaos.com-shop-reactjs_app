@@ -7,7 +7,6 @@ function ProductCard(props) {
     const product                   = props.product;
     const cart                      = useContext(CartContext);
         // console.log(cart.items);
-        console.log(cart.getTotalCost());
     const productQuantity           = cart.getProductQuantity(product.id);
     const [openModal, setOpenModal] = useState(false);
 

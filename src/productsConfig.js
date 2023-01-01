@@ -8,8 +8,8 @@ const productsArray = [
         stock: '3',
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-dunk-low-retro-white-black-2021-1-1000.png?v=1641689123', //test Img,
         images: [
-            'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-dunk-low-retro-white-black-2021-1-1000.png?v=1641689123',
-            'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-dunk-low-retro-white-black-2021-1-1000.png?v=1641689123'
+            'firstURL',
+            'secondURL'
         ]
     },
     {
