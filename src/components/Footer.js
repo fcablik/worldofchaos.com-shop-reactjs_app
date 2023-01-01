@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState} from 'react';
 import { NavLink, useLocation } from "react-router-dom";
 
@@ -76,7 +75,7 @@ function Footer() {
                             <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>Sustainability</span>
                             </NavLink>
-                            <a to="#" className='-mb-text disabled'>
+                            <a href='/' className='-mb-text disabled'>
                                 <span>Terms & Conditions</span>
                                 <small>closed atm.</small>
                             </a>

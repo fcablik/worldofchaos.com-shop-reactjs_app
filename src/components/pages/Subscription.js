@@ -1,4 +1,3 @@
-import React from 'react';
 import SubscriptionForm from '../subcriptionForm';
 
 export default function Subscription() {

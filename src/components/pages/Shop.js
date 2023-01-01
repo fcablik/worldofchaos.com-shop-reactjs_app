@@ -1,4 +1,3 @@
-import React from 'react';
 import ProductCategory from '../productCategory';
 
 export default function Shop() {
@@ -16,6 +15,11 @@ export default function Shop() {
 
                         <div className='-mc-shop'>
                             <ProductCategory />
+
+                            <div className='-mc-important-note section -text-center'>
+                                <p className='bold capitalize'>important customer note:</p>
+                                <p>All our products are brand new &&nbsp;authenticated - we never sell used, fake or damaged goods!</p>
+                            </div>
                         </div>
                     </div>
                 </div>

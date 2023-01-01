@@ -1,8 +1,13 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import wochLogo from '../img/logo-woch_full-grey.svg';
 
+import { CartContext } from '../cartContext';
+import { useContext } from 'react';
+
 function Header() {
+    const cart = useContext(CartContext);
+    const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
+
     return (
         <>
             <nav className='header' id='header'>
@@ -14,8 +19,9 @@ function Header() {
 
                 <div className='-hdr-column'>
                     <div>
-                        <span>CART </span>
-                        <span>0</span>
+                        <NavLink to='/cart'>
+                            <span>CART ({productsCount})</span>
+                        </NavLink>
                     </div>
                 </div>
             </nav>

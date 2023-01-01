@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import wochEarth from '../../img/woch_earth.svg';

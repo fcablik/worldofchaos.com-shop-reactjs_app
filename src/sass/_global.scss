@@ -94,6 +94,10 @@ h1, h2, h3, h4, h5, h6 {
                 padding: 5em 0;
             }
         }
+
+        &-important-note {
+            margin-top: 6em;
+        }
     }
 
     .-mc-global,
@@ -133,6 +137,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .svg-action-icon {
+
+    &:focus,
+    &:hover,
+    &:focus-visible,
+    &:active,
+    &:target,
+    &:visited {
+        outline: none;
+    }
+
     &:not(:hover) {
         animation: blink-animation 1.3s infinite;
         -webkit-animation: blink-animation 1.3s infinite;
@@ -141,6 +155,15 @@ h1, h2, h3, h4, h5, h6 {
     svg {
         fill: $woch_text-dark;
         transition: all .3s ease-in-out;
+
+        &:focus,
+        &:hover,
+        &:focus-visible,
+        &:active,
+        &:target,
+        &:visited {
+            outline: none;
+        }
     }
 
     &:hover {
@@ -216,6 +239,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .underline {
     text-decoration: underline;
+}
+
+.capitalize {
+    text-transform: capitalize;
 }
 
 .xs-mob {
