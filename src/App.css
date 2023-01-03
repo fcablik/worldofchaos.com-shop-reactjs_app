@@ -224,6 +224,12 @@ body {
   color: #afafaf;
 }
 
+#lang-switch {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 @media (min-width: 768px) {
   #header,
 #footer,

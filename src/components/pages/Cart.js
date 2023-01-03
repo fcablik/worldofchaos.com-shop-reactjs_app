@@ -1,10 +1,18 @@
 import { useContext } from 'react';
 import { CartContext } from "../../cartContext";
 import CartProduct from '../CartProduct';
+import { t } from 'i18next';
 
 export default function Cart() {
     const cart = useContext(CartContext);
     const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
+
+    let currencyShortText;
+    if (t('store.currency.code') === 'czk') {
+        currencyShortText = t('store.currency.shortText');
+    } else {
+        currencyShortText = t('store.currency.shortText');
+    }
 
     return (
         <>
@@ -20,7 +28,7 @@ export default function Cart() {
                                             <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
                                         ))}
 
-                                        <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+                                        <h1>Total: {cart.getTotalCost()} {currencyShortText}</h1>
 
                                         <button variant='success'>
                                             go to checkout

@@ -1,5 +1,14 @@
+import { t } from 'i18next';
 
 const Modal = ({ open, onClose, product, cart, productQuantity }) => {
+
+    let productPrice;
+    if (t('store.currency.code') === 'czk') {
+        productPrice = (product.price.czk) + ' ' + t('store.currency.shortText');
+    } else {
+        productPrice = t('store.currency.shortText') + ' ' + (product.price.eur);
+    }
+
     if (!open) return null;
     return (
         <div onClick={onClose} className='modal'>
@@ -18,7 +27,7 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                         {/* {product.images}<br/> */}
                         {product.title}<br/>
                         {product.color}<br/>
-                        {product.price}
+                        {productPrice}
                     </div>
 
                     <div className='modal-content-footer'>

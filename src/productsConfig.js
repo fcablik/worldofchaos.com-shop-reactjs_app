@@ -4,7 +4,12 @@ const productsArray = [
         id: '1',
         title: 'Nike Dunk Low',
         color: 'Black White',
-        price: '179.99',
+        price: 
+            {
+                czk: '4999',
+                eur: '179.99',
+            }
+        ,
         stock: '3',
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-dunk-low-retro-white-black-2021-1-1000.png?v=1641689123', //test Img,
         images: [
@@ -16,7 +21,12 @@ const productsArray = [
         id: '2',
         title: 'Nike Air Force 1 Low',
         color: 'Purple Skeleton Halloween',
-        price: '122.99',
+        price: 
+            {
+                czk: '4999',
+                eur: '179.99',
+            }
+        ,
         stock: '2',
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-air-force-1-low-purple-skeleton-2-1000_900x.png?v=1641919670'
 
@@ -25,7 +35,12 @@ const productsArray = [
         id: '3',
         title: 'Nike Air Jordan 1 ELEVATE SE',
         color: 'white/university blue/white onyx',
-        price: '133.99',
+        price: 
+            {
+                czk: '4999',
+                eur: '179.99',
+            }
+        ,
         stock: '2',
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/air-jordan-1-mid-light-smoke-grey-anthracite-1-1000_900x.png?v=1645623346'
 
@@ -34,7 +49,12 @@ const productsArray = [
         id: '4',
         title: 'Nike Air Jordan 1 Mid',
         color: 'Light Smoke Grey Anthracite',
-        price: '112.99',
+        price: 
+            {
+                czk: '4999',
+                eur: '179.99',
+            }
+        ,
         stock: '2',
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/air-jordan-1-mid-light-smoke-grey-anthracite-1-1000_900x.png?v=1645623346'
 
@@ -43,7 +63,12 @@ const productsArray = [
         id: '5',
         title: 'Nike Air Force 1 Low',
         color: 'Light Smoke Grey Anthracite',
-        price: '212.99',
+        price: 
+            {
+                czk: '4999',
+                eur: '179.99',
+            }
+        ,
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-air-force-1-low-purple-skeleton-2-1000_900x.png?v=1641919670'
 
     },
@@ -51,7 +76,12 @@ const productsArray = [
         id: '6',
         title: 'Nike Air Force 1 Low',
         color: 'Light Smoke Grey Anthracite',
-        price: '412.99',
+        price: 
+            {
+                czk: '4999',
+                eur: '179.99',
+            }
+        ,
         imgMain: 'https://cdn.shopify.com/s/files/1/0609/4143/5103/products/nike-air-force-1-low-purple-skeleton-2-1000_900x.png?v=1641919670'
 
     }

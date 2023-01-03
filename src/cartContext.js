@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
-import { productsArray, getProductData } from "./productsConfig";
+import { getProductData } from "./productsConfig";
+import { t } from 'i18next';
 
 export const CartContext = createContext({
     items: [],
@@ -78,7 +79,15 @@ export function CartProvider({children}) {
         let totalCost = 0;
         cartProducts.map((cartItem) => {
             const productData = getProductData(cartItem.id);
-            totalCost += (productData.price * cartItem.quantity);
+
+            let productPrice;
+            if (t('store.currency.code') === 'czk') {
+                productPrice = (productData.price.czk);
+            } else {
+                productPrice = (productData.price.eur);
+            }
+
+            totalCost += (productPrice * cartItem.quantity);
         });
         return totalCost;
     }

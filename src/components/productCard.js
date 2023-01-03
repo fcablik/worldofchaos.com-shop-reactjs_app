@@ -2,6 +2,7 @@ import { CartContext } from "../cartContext";
 import { useContext } from "react";
 import { useState } from 'react';
 import Modal from './productDetailModal';
+import { t } from 'i18next';
 
 function ProductCard(props) {
     const product                   = props.product;
@@ -9,6 +10,13 @@ function ProductCard(props) {
         // console.log(cart.items);
     const productQuantity           = cart.getProductQuantity(product.id);
     const [openModal, setOpenModal] = useState(false);
+
+    let productPrice;
+    if (t('store.currency.code') === 'czk') {
+        productPrice = (product.price.czk) + ' ' + t('store.currency.shortText');
+    } else {
+        productPrice = t('store.currency.shortText') + ' ' + (product.price.eur);
+    }
 
     return (
         <>
@@ -30,7 +38,7 @@ function ProductCard(props) {
 
                     <div className='product-item-main-info-price'>
                         <span className='highlight'>
-                            {product.price}
+                            {productPrice}
                         </span>
                     </div>
                 </div>

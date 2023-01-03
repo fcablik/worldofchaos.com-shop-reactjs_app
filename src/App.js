@@ -19,9 +19,36 @@ import Sustainability from './components/pages/Sustainability';
 
 import CartProvider from './cartContext';
 
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+const lngs = {
+    en: { nativeName: 'en' },
+    cs: { nativeName: 'cz' }
+};
+
 function App() {
+    const { i18n } = useTranslation();
+    const [count, setCounter] = useState(0);
+
     return (
         <>
+            <div id='lang-switch'>
+                {Object.keys(lngs).map((lng) => (
+                    <button
+                        key={lng}
+                        className='button-px-highlight bold capitalize'
+                        style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} 
+                        type="submit"
+                        onClick={() => {
+                            i18n.changeLanguage(lng);
+                        }}
+                    >
+                        {lngs[lng].nativeName}
+                    </button>
+                ))}
+            </div>
+
             <CartProvider>
                     <Router>
                         {/* <Cursor/> */}

@@ -1,4 +1,5 @@
 import ProductCategory from '../productCategory';
+import { t } from 'i18next';
 
 export default function Shop() {
     return (
@@ -7,18 +8,18 @@ export default function Shop() {
                 <div className='main-content'>
                     <div id='shop'>
                         <h1 className="-mc-title -text-center">
-                            welcome to the
+                            {t('shop.welcome.firstPart')}
                                 <br className='xs-mob'/>
                                 <span className='xs-none'>&nbsp;</span>
-                            woch store
+                            {t('shop.welcome.secondPart')}
                         </h1>
 
                         <div className='-mc-shop'>
                             <ProductCategory />
 
                             <div className='-mc-important-note section -text-center'>
-                                <p className='bold capitalize'>important customer note:</p>
-                                <p>All our products are brand new &&nbsp;authenticated - we never sell used, fake or damaged goods!</p>
+                                <p className='bold capitalize'>{t('shop.note.header')}</p>
+                                <p>{t('shop.note.text')}</p>
                             </div>
                         </div>
                     </div>
