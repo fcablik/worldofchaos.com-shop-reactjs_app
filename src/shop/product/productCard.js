@@ -20,7 +20,7 @@ function ProductCard(props) {
 
     return (
         <>
-            <div className='product-item -text-center pixel-product-box'>
+            <div className='product-item text-center pixel-product-box'>
                 <div className="product-item-main-info">
                     <div className='product-item-main-info-image'>
                         <img alt='' src={product.imagePreview} />

@@ -10,7 +10,7 @@ export default function Home() {
                     <img className='logo-full' src={wochEarth} alt='world of chaos' />
                 </div>
 
-                {/* <div className='-wc-info-block -text-center'>
+                {/* <div className='-wc-info-block text-center'>
                     <h4>
                         <span>The Store is closed<br/>at the moment, but you can still</span>
                         <NavLink activeclassname='active' to="/contact" className='-wc-info-text highlight'>

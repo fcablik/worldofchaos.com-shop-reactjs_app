@@ -7,7 +7,7 @@ export default function Shop() {
             <main id='main'>
                 <div className='main-content'>
                     <div id='shop'>
-                        <h1 className="-mc-title -text-center">
+                        <h1 className="-mc-title text-center">
                             {t('shop.welcome.firstPart')}
                                 <br className='xs-mob'/>
                                 <span className='xs-none'>&nbsp;</span>
@@ -17,7 +17,7 @@ export default function Shop() {
                         <div className='-mc-shop'>
                             <ProductCategory />
 
-                            <div className='-mc-important-note section -text-center'>
+                            <div className='-mc-important-note section text-center'>
                                 <p className='bold capitalize'>{t('shop.note.header')}</p>
                                 <p>{t('shop.note.text')}</p>
                             </div>

@@ -6,11 +6,11 @@ export default function Contact() {
                 <div className='main-content'>
 
                     <div id='contact'>
-                        <h1 className="-mc-title -text-center">Contact</h1>
+                        <h1 className="-mc-title text-center">Contact</h1>
 
                         <div className='-mc-global'>
                             <div className='section'>
-                                <h4 className='-text-center'>
+                                <h4 className='text-center'>
                                     {/* World Of Chaos is about responsibility.<br/> */}
                                     Why us&nbsp;?<br/>'Cause we Got 'Em&nbsp;!
                                 </h4>

@@ -63,10 +63,10 @@ export default function SubscriptionForm() {
         <>
             <form>
                 <label>
-                    <input className='-text-center' type='text' name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input className='text-center' type='text' name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 </label>
 
-                <select className='-text-center'
+                <select className='text-center'
                     // value={}
                 >
                     <option value='default'>select your country</option>

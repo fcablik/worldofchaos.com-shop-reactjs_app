@@ -82,7 +82,7 @@ export default function SubscriptionForm() {
         <>
             <form className='form' id='form'>
                 <input
-                    className='-text-center form-email'
+                    className='text-center form-email'
                     type="email"
                     placeholder="your email"
                     value={email}
@@ -90,7 +90,7 @@ export default function SubscriptionForm() {
                 />
 
                 <select 
-                    className='-text-center form-country'
+                    className='text-center form-country'
                     type="select"
                     value={country}
                     onChange={e=>getCountry(e.target.value)}
@@ -109,7 +109,7 @@ export default function SubscriptionForm() {
                 </select>
 
                 <button
-                    className='-text-center form-submit'
+                    className='text-center form-submit'
                     type="submit"
                     value='Subscribe'
                     onClick={handleSubmit}

@@ -16,22 +16,23 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                 onClick={(e) => {
                     e.stopPropagation();
                 }}
-                className='modal-container'
+                className='modal-container pixel-component-box'
             >
                 <div className='modal-content'>
                     <div className='modal-content-header'>
-                        <p className='modal-content-header-close' onClick={onClose}> close </p>
+                        <p className='modal-content-header-close button-px-close bold capitalize' onClick={onClose}> close </p>
                     </div>
 
                     <div className='modal-content-body'>
                         <div id='product-detail' className='modal-content-body-product-detail'>
-                            <div className='col-no-1 modal-content-body-product-detail-description'>
+                            <div className='col-no-1 text-left modal-content-body-product-detail-description'>
+                                <div className='modal-content-body-product-detail-description-title'>Description</div>
                                 {product.title}<br/>
                                 {product.color}<br/>
                             </div>
 
-                            <div className='col-no-2'>
-                                <div id='product-gallery' className="modal-content-body-product-detail-gallery">
+                            <div className='col-no-2 modal-content-body-product-detail-image'>
+                                <div id='product-gallery' className="modal-content-body-product-detail-image-gallery">
                                     {product.gallery.map((image) => {
                                         return(
                                             <img width='200' alt='' src={image} />
@@ -40,7 +41,7 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                                 </div>
                             </div>      
 
-                            <div className='col-no-3'>
+                            <div className='col-no-3 text-left modal-content-body-product-detail-variant'>
                                 {productPrice}
                                 {
                                     productQuantity > 0 ?

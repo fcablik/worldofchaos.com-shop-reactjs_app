@@ -13,7 +13,7 @@
                     grid-template-columns: repeat(2, 50%);
                 }
 
-                @media (min-width: 991px) {
+                @media (min-width: 1200px) {
                     height: 100%;
                     align-content: center;
 
@@ -22,7 +22,14 @@
                             align-self: center;
                         }
                     }
-    
+
+                    &-description,
+                    &-variant {
+                        padding-left: 6em;
+                    }
+                }
+
+                &-image {
                     &-gallery {
                         width: 100%;
                         overflow: hidden;
@@ -33,6 +40,14 @@
                         }
                     }
                 }
+
+                &-description {
+                    &-title {
+                        color: $woch-grey;
+                    }
+                }
+
+                // &-variant {}
             }
         }
     }
