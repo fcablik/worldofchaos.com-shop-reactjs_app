@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import wochLogo from '../img/logo-woch_full-grey.svg';
 
-import { CartContext } from '../cartContext';
+import { CartContext } from '../shop/cart/cartContext';
 import { useContext } from 'react';
 
 import { t } from 'i18next';

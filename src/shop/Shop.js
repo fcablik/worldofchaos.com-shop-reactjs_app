@@ -1,4 +1,4 @@
-import ProductCategory from '../productCategory';
+import ProductCategory from './product/category/productCategory';
 import { t } from 'i18next';
 
 export default function Shop() {

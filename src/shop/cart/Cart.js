@@ -1,6 +1,6 @@
 import { useContext } from 'react';
-import { CartContext } from "../../cartContext";
-import CartProduct from '../CartProduct';
+import { CartContext } from "./cartContext";
+import CartProduct from './cartProduct';
 import { t } from 'i18next';
 
 export default function Cart() {

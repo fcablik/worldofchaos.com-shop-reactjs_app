@@ -7,29 +7,29 @@ import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-import PageNotFound from './components/pages/404';
-import Home from './components/pages/Home';
-import Shop from './components/pages/Shop';
-import Cart from './components/pages/Cart';
+import PageNotFound from './pages/404';
+import Home from './pages/Home';
 
-import Contact from './components/pages/Contact';
-import Subscription from './components/pages/Subscription';
-import Sustainability from './components/pages/Sustainability';
-// import TermsConditions from './components/pages/TermsConditions';
+import Shop from './shop/Shop';
+import Cart from './shop/cart/Cart';
 
-import CartProvider from './cartContext';
+import Contact from './pages/Contact';
+import Subscription from './pages/Subscription';
+import Sustainability from './pages/Sustainability';
+// import TermsConditions from './pages/TermsConditions';
 
-import { useState } from 'react';
+import CartProvider from './shop/cart/cartContext';
+
 import { useTranslation } from 'react-i18next';
 
 const lngs = {
     en: { nativeName: 'en' },
-    cs: { nativeName: 'cz' }
+    cs: { nativeName: 'cz' },
+    sk: { nativeName: 'sk' }
 };
 
 function App() {
     const { i18n } = useTranslation();
-    const [count, setCounter] = useState(0);
 
     return (
         <>

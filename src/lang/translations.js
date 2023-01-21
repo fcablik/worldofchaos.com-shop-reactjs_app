@@ -14,6 +14,8 @@ i18n
         debug: true,
         fallbackLng: 'en',
         resources: {
+
+// english EN
             en: {
                 translation: {
                     store: {
@@ -28,8 +30,8 @@ i18n
                     },
                     shop: {
                         welcome: {
-                            firstPart: "welcome to the",
-                            secondPart: "woch store"
+                            firstPart: "“welcome to the chaos”",
+                            secondPart: "collection"
                         },
                         note: {
                             header: 'important customer note:',
@@ -38,6 +40,8 @@ i18n
                     }
                 }
             },
+
+// czech CZ
             cs: {
                 translation: {
                     store: {
@@ -51,9 +55,37 @@ i18n
                         cart: "Košík"
                     },
                     shop: {
+                        welcome: {
+                            secondPart: "kolekce"
+                        },
                         note: {
                             header: 'dulezita poznamka:',
                             text: 'Vsechny nase produkty jsou zcela nove &\u00a0overeny\u00a0(autentikovany) -\u00a0nikdy neprodavame pouzite, padelane nebo\u00a0poskozene zbozi!'
+                        } 
+                    }
+                }
+            },
+
+// slovak SK
+            sk: {
+                translation: {
+                    store: {
+                        name: "world of chaos",
+                        currency: {
+                            code: "eur",
+                            shortText: '€'
+                        }
+                    },
+                    header: {
+                        cart: "Košík"
+                    },
+                    shop: {
+                        welcome: {
+                            secondPart: "kolekcia"
+                        },
+                        note: {
+                            header: 'dôležitá poznámka:',
+                            text: 'Vsetko nase zbozi je nove &\u00a0overene\u00a0(autentikovane) -\u00a0nikdy nepredavame pouzite, padelane alebo\u00a0poskozene zbozi!'
                         } 
                     }
                 }

@@ -18,7 +18,7 @@ export default function Sustainabilty() {
                                 <p>
                                     The world is getting faster & chaotic, and so are the industries. The fashion industry is unfortunately one of those that have lost its sustainability and ethical values. As these values are very important, we want the sustainable fashion to grow and therefor we spread awareness of these core problems - which can be fixed. 
                                         <br/><br/>
-                                    We are on a journey to help eliminate the chaos in the world - by giving the shoes from forgotten shops and facililties a new life.
+                                    We are on a journey to help eliminate the chaos in the world. Be a part of this!
                                 </p>
 
                                     <br/><br/>

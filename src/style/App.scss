@@ -2,7 +2,6 @@
 
 @import 'load-Fonts';
 @import "variables";
-@import "loading-Screen";
 @import "modal";
 
 @import "root";
@@ -15,13 +14,17 @@
 
 @import '404';
 @import "page_Home";
+
 @import "page_Contact";
 @import "page_Subscription";
+
 @import "page_Shop";
 @import "shop_productCategory";
+@import "productDetailModal";
 
 @import "icons";
 
 // @import "nav";
 // @import "archive";
 // @import "view-scroll";
+// @import "loading-Screen";

@@ -1,4 +1,4 @@
-import { CartContext } from "../cartContext";
+import { CartContext } from "../cart/cartContext";
 import { useContext } from "react";
 import { useState } from 'react';
 import Modal from './productDetailModal';
@@ -23,7 +23,7 @@ function ProductCard(props) {
             <div className='product-item -text-center pixel-product-box'>
                 <div className="product-item-main-info">
                     <div className='product-item-main-info-image'>
-                        <img alt='' src={product.imgMain} />
+                        <img alt='' src={product.imagePreview} />
                     </div>
 
                     <div className='product-item-main-info-title'>

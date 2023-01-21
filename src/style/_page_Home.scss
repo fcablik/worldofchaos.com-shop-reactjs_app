@@ -13,11 +13,13 @@
         flex-direction:     column;
         align-content:      center;
 
-        $e_w_size_xl: 480px;
-        $e_w_size_lg: 440px;
-        $e_w_size_md: 425px;
-        $e_w_size_sm: 375px;
-        $e_w_size_xs: 280px;
+        $e_w_size_xxl:  780px;
+        $e_w_size_xl:   480px;
+        $e_w_size_lg:   440px;
+        $e_w_size_md:   425px;
+        $e_w_size_sm:   375px;
+        $e_w_size_xs:   280px;
+
 
         @media (min-width: 1500px) {
             height: $e_w_size_xl;
@@ -41,6 +43,14 @@
                 .logo-full {
                     max-height: calc(#{$e_w_size_sm});
                 }
+            }
+        }
+        @media (min-width: 1500px) and (min-height: 1000px), (min-width: 2400px) {
+            height: 100%;
+            width: $e_w_size_xxl;
+            
+            .logo-full {
+                max-height: calc(#{$e_w_size_xxl});
             }
         }
 
@@ -137,6 +147,14 @@
 
         svg {
             max-width: 195px;
+        }
+
+        @media (min-width: 1500px) and (min-height: 1000px), (min-width: 2400px) {
+            padding-top: 6em;
+
+            svg {
+                max-width: 290px;
+            }
         }
     }
 

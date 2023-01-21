@@ -30,13 +30,13 @@
 
             @media (min-width: 768px) {
                 // border-radius: $radius-main;
-                padding: 3em 1em;
+                padding: 2em 1em;
                 margin: 2em 2em 3em;
             }
 
             @media (max-width: 767px) {
                 // border-radius: $radius-main_response;
-                padding: 1.2em .2em 2em;
+                padding: 2em .2em;
                 margin: 0 .5em 3em;
             }
 
@@ -52,12 +52,13 @@
                 }
 
                 &-image {
-                    
                     @media (min-width: 768px) {
-                        min-height: 140px;
+                        min-height: 180px;
+                        padding: 0px 1vw;
                     }
                     @media (max-width: 767px) {
-                        min-height: 120px;
+                        min-height: 170px;
+                        padding: 0px 3vw;
                     }
 
                     img {

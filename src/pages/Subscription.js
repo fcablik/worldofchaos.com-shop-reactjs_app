@@ -1,4 +1,4 @@
-import SubscriptionForm from '../subcriptionForm';
+import SubscriptionForm from '../components/subcriptionForm';
 
 export default function Subscription() {
     return (

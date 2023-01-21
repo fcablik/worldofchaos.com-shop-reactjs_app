@@ -1,6 +1,6 @@
-import { CartContext } from "../cartContext";
+import { CartContext } from "./cartContext";
 import { useContext } from "react";
-import { getProductData } from "../productsConfig";
+import { getProductData } from "../product/productsConfig";
 import { t } from 'i18next';
 
 export default function CartProduct(props) {

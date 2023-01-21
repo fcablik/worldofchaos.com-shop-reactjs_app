@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import wochEarth from '../../img/woch_earth.svg';
+import wochEarth from '../img/woch_earth.svg';
 
 export default function Home() {
     return (

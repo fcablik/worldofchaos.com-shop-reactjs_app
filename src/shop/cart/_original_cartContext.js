@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import { getProductData } from "./productsConfig";
+import { getProductData } from "../product/productsConfig";
 import { t } from 'i18next';
 
 export const CartContext = createContext({

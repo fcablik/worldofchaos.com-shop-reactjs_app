@@ -1,0 +1,39 @@
+.modal {
+    &-content {
+        &-body {
+            height: 100%;
+
+            &-product-detail {
+                display: grid;
+        
+                @media (min-width: 1200px) {
+                    grid-template-columns: repeat(3, 3fr);
+                }
+                @media (max-width: 1199px) {
+                    grid-template-columns: repeat(2, 50%);
+                }
+
+                @media (min-width: 991px) {
+                    height: 100%;
+                    align-content: center;
+
+                    .col-no {
+                        &-2 {
+                            align-self: center;
+                        }
+                    }
+    
+                    &-gallery {
+                        width: 100%;
+                        overflow: hidden;
+                        display: flex;
+    
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

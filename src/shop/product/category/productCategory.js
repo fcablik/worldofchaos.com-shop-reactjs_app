@@ -1,5 +1,5 @@
 import { productsArray } from '../productsConfig';
-import ProductCard from '../components/productCard';
+import ProductCard from '../productCard';
 
 export default function ProductCategory() {
     return (
