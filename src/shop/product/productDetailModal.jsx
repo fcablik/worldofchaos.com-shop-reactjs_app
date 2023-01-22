@@ -1,3 +1,4 @@
+import ImageCarousel from "./detail/carouselSlider";
 import { t } from 'i18next';
 
 const Modal = ({ open, onClose, product, cart, productQuantity }) => {
@@ -8,6 +9,10 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
     } else {
         productPrice = t('store.currency.shortText') + ' ' + (product.price.eur);
     }
+
+    const slides = product.gallery.map((image) => {
+        return {url: image};
+    });
 
     if (!open) return null;
     return (
@@ -33,11 +38,7 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
 
                             <div className='col-no-2 modal-content-body-product-detail-image'>
                                 <div id='product-gallery' className="modal-content-body-product-detail-image-gallery">
-                                    {product.gallery.map((image) => {
-                                        return(
-                                            <img width='200' alt='' src={image} />
-                                        );
-                                    })}
+                                    <ImageCarousel slides={slides} />
                                 </div>
                             </div>      
 

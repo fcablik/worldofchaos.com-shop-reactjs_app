@@ -140,16 +140,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.btn-home {
-    background-color: $woch_bcg-components;
-    color: $black;
-    padding: .4em .6em;
-    font-size: 1.2em;
-    margin-top: 2em;
-
-    &:hover {
-        background-color: $woch_text-dark;
-        color: $woch_text-light;
+.btn-back {
+    &-home,
+    &-to-shop {
+        background-color: $woch_bcg-components;
+        color: $black;
+        padding: .4em .6em;
+        font-size: 1.2em;
+        margin-top: 2em;
+    
+        &:hover {
+            background-color: $woch_text-dark;
+            color: $woch_text-light;
+        }
     }
 }
 

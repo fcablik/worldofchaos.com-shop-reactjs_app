@@ -11,8 +11,7 @@ export default function Contact() {
                         <div className='-mc-global'>
                             <div className='section'>
                                 <h4 className='text-center'>
-                                    {/* World Of Chaos is about responsibility.<br/> */}
-                                    Why us&nbsp;?<br/>'Cause we Got 'Em&nbsp;!
+                                    World Of Chaos is about responsibility.<br/>
                                 </h4>
                             </div>
 

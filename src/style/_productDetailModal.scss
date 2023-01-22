@@ -1,5 +1,8 @@
 .modal {
     &-content {
+        z-index: 1001;
+        position: relative;
+
         &-body {
             height: 100%;
 
@@ -34,9 +37,83 @@
                         width: 100%;
                         overflow: hidden;
                         display: flex;
-    
-                        img {
-                            width: 100%;
+                        position: relative;
+
+                        &-slider {
+                            position: relative;
+                            height: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        &-arrow-left,
+                        &-arrow-right {
+                            position: absolute;
+                            top: 50%;
+                            cursor: pointer;
+                            transform: translate(0, -50%);
+                            transition: all .3 ease-in-out;
+                        }
+
+                        &-arrow-left {
+                            left: 0;
+
+                            .cls {
+                                &-1,&-4 {
+                                    fill: #999;
+                                }
+                                &-2 {
+                                    fill: none;
+                                }
+                                &-3,&-4 {
+                                    stroke: none;
+                                }
+                                &-4 {
+                                    fill: #999;
+                                }
+                            }
+
+                            &:hover {
+                                .cls {
+                                    &-1,&-4 {
+                                        fill: $woch-highlight;
+                                    }
+                                    &-4 {
+                                        fill: $woch-highlight;
+                                    }
+                                }
+                            }
+                        }
+                        &-arrow-right {
+                            right: 0;
+
+                            .cls {
+                                &-1,&-4 {
+                                    fill: #999;
+                                }
+                                &-2 {
+                                    fill: none;
+                                }
+                                &-3,&-4 {
+                                    stroke: none;
+                                }
+                                &-4 {
+                                    fill: #999;
+                                }
+                            }
+
+                            &:hover {
+                                .cls {
+                                    &-1,&-4 {
+                                        fill: $woch-highlight;
+                                    }
+                                    &-4 {
+                                        fill: $woch-highlight;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

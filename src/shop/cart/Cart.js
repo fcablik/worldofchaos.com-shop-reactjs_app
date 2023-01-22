@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from "./cartContext";
 import CartProduct from './cartProduct';
+import { NavLink } from 'react-router-dom';
 import { t } from 'i18next';
 
 export default function Cart() {
@@ -35,7 +36,12 @@ export default function Cart() {
                                         </button>
                                     </>
                                 :
-                                    <h1>no items</h1>
+                                <>
+                                    <div className='text-center'>
+                                        <h1>no items</h1>
+                                        <NavLink className="btn-back-to-shop" to="/shop">Back to Shop</NavLink>
+                                    </div>
+                                </>
                             }
                         </div>
                     </div>
