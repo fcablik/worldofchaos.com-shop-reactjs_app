@@ -21,7 +21,7 @@
 //* {base loads}
 
     * {
-        font-family:    'Source Code Pro', monospace;
+        font-family: 'Source Code Pro', monospace;
     }
 
     h1, h2, h3, h4, h5,
@@ -30,6 +30,13 @@
     .navigation span {
         font-style: normal;
         font-family: 'GoodTimesMain';
+    }
+
+    .modal-content {
+        h1, h2, h3, h4, h5 {
+            font-weight: 100;
+            font-family: 'Source Code Pro', monospace;
+        }
     }
 
     .navigation {

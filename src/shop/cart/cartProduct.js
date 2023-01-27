@@ -24,12 +24,29 @@ export default function CartProduct(props) {
         <>
             <p>{productData.title}</p>
             <p>{quantity}</p>
-            <p>{(quantity * productPrice)} {currencyShortText}</p>
+            <p>{(quantity * productPrice)}&nbsp;{currencyShortText}</p>
+
+            <div>
+                {
+                    (quantity <= productData.stock - 1) ?
+                        <div className='add' onClick={() =>  cart.addOneToCart(id)}> + </div>
+                    :
+                        <div className='add'> cant add more </div>
+                }
+                {
+                    quantity === 1 ?
+                        <div className='remove'> - </div>
+                    :
+                        <div className='remove' onClick={() =>  cart.removeOneFromCart(id)}> - </div>    
+                }
+            </div>
+
             <button
                 onClick={() => cart.deleteFromCart(id)}
             >
                 remove
             </button>
+
             <hr />
         </>
     )

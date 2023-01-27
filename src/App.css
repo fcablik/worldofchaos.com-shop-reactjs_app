@@ -22,6 +22,11 @@ h1, h2, h3, h4, h5,
   font-family: "GoodTimesMain";
 }
 
+.modal-content h1, .modal-content h2, .modal-content h3, .modal-content h4, .modal-content h5 {
+  font-weight: 100;
+  font-family: "Source Code Pro", monospace;
+}
+
 .navigation small {
   font-size: 0.4em;
 }
@@ -76,9 +81,9 @@ h6 {
   -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.55);
           box-shadow: 0 0 18px rgba(0, 0, 0, 0.55);
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .modal-container {
-    width: calc(100vw - 3em);
+    width: 90vw;
   }
 }
 @media (min-width: 1199px) {
@@ -91,14 +96,9 @@ h6 {
     max-width: 90%;
   }
 }
-@media (min-width: 2400px) {
+@media (min-width: 1800px) {
   .modal-container {
-    width: 75vw;
-  }
-}
-@media (min-width: 2500px) {
-  .modal-container {
-    width: 70vw;
+    max-width: 1700px;
   }
 }
 .modal-content {
@@ -113,9 +113,18 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin-top: 3rem;
-  padding: 1rem 2rem;
-  height: 70vh;
+  margin-top: 3em;
+  padding: 1em 2em;
+}
+@media (max-width: 767px) {
+  .modal-content {
+    height: 65vh;
+  }
+}
+@media (min-width: 768px) {
+  .modal-content {
+    height: 70vh;
+  }
 }
 @media (min-height: 1000px) {
   .modal-content {
@@ -478,6 +487,10 @@ h1, h2, h3, h4, h5, h6 {
   .xs-none {
     display: none;
   }
+}
+
+.woch-grey {
+  color: #6A6A6A;
 }
 
 .pixel-borders {
@@ -1904,39 +1917,42 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 .modal-content-body-product-detail {
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-@media (min-width: 1200px) {
-  .modal-content-body-product-detail {
-    grid-template-columns: repeat(3, 3fr);
-  }
-}
-@media (max-width: 1199px) {
-  .modal-content-body-product-detail {
-    grid-template-columns: repeat(2, 50%);
-  }
-}
-@media (min-width: 1200px) {
+@media (min-width: 991px) {
   .modal-content-body-product-detail {
     height: 100%;
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .modal-content-body-product-detail .col-no-2 {
+  .modal-content-body-product-detail-description, .modal-content-body-product-detail-variant {
+    width: 30%;
+  }
+  .modal-content-body-product-detail-description {
+    padding: 3em 3em 0 1em;
+  }
+  .modal-content-body-product-detail-variant {
+    padding: 3em 1em 0 3em;
+  }
+  .modal-content-body-product-detail-image {
+    width: 40%;
     -ms-flex-item-align: center;
         align-self: center;
+    padding: 0 1em;
   }
-  .modal-content-body-product-detail-description, .modal-content-body-product-detail-variant {
-    padding-left: 6em;
+  .modal-content-body-product-detail-image-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-}
-.modal-content-body-product-detail-image-gallery {
-  width: 100%;
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
 }
 .modal-content-body-product-detail-image-gallery-slider {
   position: relative;
@@ -1944,6 +1960,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .modal-content-body-product-detail-image-gallery-slider img {
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .modal-content-body-product-detail-image-gallery-slider img {
+    max-width: 350px;
+  }
+}
+@media (min-width: 1600px) {
+  .modal-content-body-product-detail-image-gallery-slider img {
+    max-width: 500px;
+  }
 }
 .modal-content-body-product-detail-image-gallery-arrow-left, .modal-content-body-product-detail-image-gallery-arrow-right {
   position: absolute;
@@ -1996,8 +2022,21 @@ h1, h2, h3, h4, h5, h6 {
 .modal-content-body-product-detail-image-gallery-arrow-right:hover .cls-4 {
   fill: #8ffab5;
 }
-.modal-content-body-product-detail-description-title {
-  color: #6A6A6A;
+.modal-content-body-product-detail-description-heading, .modal-content-body-product-detail-variant-heading {
+  margin-bottom: 1em;
+}
+.modal-content-body-product-detail-description-nametag {
+  padding-bottom: 1em;
+}
+.modal-content-body-product-detail-description-nametag-title, .modal-content-body-product-detail-description-nametag-color {
+  text-transform: uppercase;
+}
+.modal-content-body-product-detail-description-nametag-color span {
+  font-size: 0.95em;
+}
+.modal-content-body-product-detail-description-about {
+  font-size: 0.9em;
+  line-height: 1.6em;
 }
 
 .icons .-f-icon:not(.disabled),

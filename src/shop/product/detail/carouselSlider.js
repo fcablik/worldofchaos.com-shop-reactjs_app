@@ -27,7 +27,7 @@ const ImageSlider = ({ slides }) => {
                 {arrowRight}
             </div>
 
-            <img width='200' src={slides[currentIndex].url} alt=''/>
+            <img src={slides[currentIndex].url} alt=''/>
         </div>
     );
 };

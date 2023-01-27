@@ -4,10 +4,16 @@ import { t } from 'i18next';
 const Modal = ({ open, onClose, product, cart, productQuantity }) => {
 
     let productPrice;
-    if (t('store.currency.code') === 'czk') {
-        productPrice = (product.price.czk) + ' ' + t('store.currency.shortText');
-    } else {
+    let descriptionMain;
+    let descriptionPoints;
+    if (t('store.currency.code') === 'eur') {
         productPrice = t('store.currency.shortText') + ' ' + (product.price.eur);
+        descriptionMain = (product.description_main.en);
+        descriptionPoints = (product.description_points.en);
+    } else {
+        productPrice = (product.price.czk) + ' ' + t('store.currency.shortText');
+        descriptionMain = (product.description_main.cs);
+        descriptionPoints = (product.description_points.cs);
     }
 
     const slides = product.gallery.map((image) => {
@@ -15,6 +21,8 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
     });
 
     if (!open) return null;
+
+
     return (
         <div onClick={onClose} className='modal'>
             <div 
@@ -31,9 +39,23 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                     <div className='modal-content-body'>
                         <div id='product-detail' className='modal-content-body-product-detail'>
                             <div className='col-no-1 text-left modal-content-body-product-detail-description'>
-                                <div className='modal-content-body-product-detail-description-title'>Description</div>
-                                {product.title}<br/>
-                                {product.color}<br/>
+                                <div className='woch-grey modal-content-body-product-detail-description-heading'>
+                                    Description
+                                </div>
+                                <div className='modal-content-body-product-detail-description-nametag'>
+                                    <h4 className="modal-content-body-product-detail-description-nametag-title">
+                                        {product.title}
+                                    </h4>
+                                    <div className="modal-content-body-product-detail-description-nametag-color">
+                                        <span className="woch-grey">color:</span><span> {product.color}</span>
+                                    </div>
+                                </div>
+                                <div className="modal-content-body-product-detail-description-about">
+                                    <p>{descriptionMain}</p>
+                                    {descriptionPoints.map((points) => (
+                                        <li>{points}</li>
+                                    ))}
+                                </div>
                             </div>
 
                             <div className='col-no-2 modal-content-body-product-detail-image'>
@@ -43,44 +65,58 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                             </div>      
 
                             <div className='col-no-3 text-left modal-content-body-product-detail-variant'>
-                                {productPrice}
-                                {
-                                    productQuantity > 0 ?
-                                    <>
-                                        <div className='cart-info'>In Cart: {productQuantity}</div>
+                                <div className='woch-grey modal-content-body-product-detail-variant-heading'>
+                                    Variant Choice
+                                </div>
 
-                                        <div className='cart-amount'>
-                                            {
-                                                (productQuantity <= product.stock - 1) ?
-                                                    <div className='add' onClick={() =>  cart.addOneToCart(product.id)}> + </div>
-                                                :
-                                                    <div className='add'> + </div>
-                                            }
+                                <div>
+                                    {product.variants.map((variant) => (
+                                        <div>{variant.name}</div>
+                                    ))}
+                                </div>
 
-                                            {
-                                                productQuantity === 1 ?
-                                                    <div className='remove'> - </div>
-                                                :
-                                                    <div className='remove' onClick={() =>  cart.removeOneFromCart(product.id)}> - </div>    
-                                            }
-                                        </div>
+                                <div>
+                                    {productPrice}
+                                </div>
+                                <div>
+                                    {
+                                        productQuantity > 0 ?
+                                        <>
+                                            <div className='cart-info'>In Cart: {productQuantity}</div>
 
-                                        <div 
-                                            className='delete' 
-                                            onClick={() => cart.deleteFromCart(product.id)}
+                                            <div className='cart-amount'>
+                                                {
+                                                    (productQuantity <= product.stock - 1) ?
+                                                        <div className='add' onClick={() =>  cart.addOneToCart(product.id)}> + </div>
+                                                    :
+                                                        <div className='add'> can't add more </div>
+                                                }
+
+                                                {
+                                                    productQuantity === 1 ?
+                                                        <div className='remove'> - </div>
+                                                    :
+                                                        <div className='remove' onClick={() =>  cart.removeOneFromCart(product.id)}> - </div>    
+                                                }
+                                            </div>
+
+                                            <div 
+                                                className='delete' 
+                                                onClick={() => cart.deleteFromCart(product.id)}
+                                            >
+                                                Remove From Cart
+                                            </div>
+
+                                        </>
+                                        :
+                                        <button 
+                                            className='pixel-borders button-px-highlight bold capitalize'
+                                            onClick={() => cart.addOneToCart(product.id)}
                                         >
-                                            Remove From Cart
-                                        </div>
-
-                                    </>
-                                    :
-                                    <button 
-                                        className='pixel-borders button-px-highlight bold capitalize'
-                                        onClick={() => cart.addOneToCart(product.id)}
-                                    >
-                                        add to cart
-                                    </button>
-                                }
+                                            add to cart
+                                        </button>
+                                    }
+                                </div>
                             </div>
                         </div>
                     </div>

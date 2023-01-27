@@ -8,100 +8,49 @@ const productsArray = [
         id: '1',
         title: 'wttch edition "woch"',
         color: 'dark times',
-        price: 
-            {
-                czk: '4999',
-                eur: '179.99',
-            },
-        stock:
-        {
-            s: '5',
-            m: '5',
-            l: '5',
-            xl: '5'
+        price: {
+            eur: '179.99',
         },
+        stock: 8,
+
         imagePreview: 'https://theworldofchaos.com/images/product/gallery/wttch-edition-darktimes-back.png',
         gallery: $imageItems,
-        shortDescription: '',
-        description: '',
-    },
-    {
-        id: '2',
-        title: 'wttch edition "woch"',
-        color: 'sand life',
-        price: 
-            {
-                czk: '4999',
-                eur: '179.99',
-            },
-        stock: '7',
-        imagePreview: 'https://theworldofchaos.com/images/product/gallery/wttch-edition-sand-back.png',
-        gallery: $imageItems,
-        shortDescription: '',
-        description: ''
-    },
-    {
-        id: '3',
-        title: 'wttch edition "forest fire"',
-        color: 'dark times',
-        price: 
-            {
-                czk: '4999',
-                eur: '179.99',
-            },
-        stock: '2',
-        imagePreview: 'https://theworldofchaos.com/images/product/gallery/wttc-edition-forestfire-darktimes-back.png',
-        gallery: $imageItems,
-        shortDescription: '',
-        description: ''
-    },
-    {
-        id: '4',
-        title: 'wttch edition "forest fire"',
-        color: 'sand life',
-        price: 
-            {
-                czk: '4999',
-                eur: '179.99',
-            },
-        stock: '16',
-        imagePreview: 'https://theworldofchaos.com/images/product/gallery/wttc-edition-forestfire-sand-back.png',
-        gallery: $imageItems,
-        shortDescription: '',
-        description: ''
-    },
 
+        shortDescription: 'seo',
+        description_main: {
+            en: 'Welcome To The Chaos collection brings the very first pieces of 100% organic cotton hoodies.',
+        },
+        description_points: {
+            en: [
+                'Custom designed',
+                'Sustainable fabrics',
+                'Made in Europe',
+            ],
+        },
 
-    {
-        id: '6',
-        title: 'nb edition',
-        color: 'dark times',
-        price: 
+        variants: [
             {
-                czk: '4999',
-                eur: '179.99',
+                code: 11,
+                stock: 2,
+                name: 'S',
             },
-        stock: '16',
-        imagePreview: 'https://theworldofchaos.com/images/product/gallery/back-base-darkness.png',
-        gallery: $imageItems,
-        shortDescription: '',
-        description: ''
+            {
+                code: 12,
+                stock: 3,
+                name: 'M',
+            },
+            {
+                code: 13,
+                stock: 4,
+                name: 'L',
+            },
+            {
+                code: 14,
+                stock: 1,
+                name: 'XL',
+            },
+        ],
     },
-    {
-        id: '8',
-        title: 'nb edition',
-        color: 'sand life',
-        price: 
-            {
-                czk: '4999',
-                eur: '179.99',
-            },
-        stock: '16',
-        imagePreview: 'https://theworldofchaos.com/images/product/gallery/back-base-sand.png',
-        gallery: $imageItems,
-        shortDescription: '',
-        description: ''
-    }
 ];
 
 

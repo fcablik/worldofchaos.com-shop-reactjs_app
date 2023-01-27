@@ -7,44 +7,54 @@
             height: 100%;
 
             &-product-detail {
-                display: grid;
-        
-                @media (min-width: 1200px) {
-                    grid-template-columns: repeat(3, 3fr);
-                }
-                @media (max-width: 1199px) {
-                    grid-template-columns: repeat(2, 50%);
-                }
+                display: flex;
+    
 
-                @media (min-width: 1200px) {
+                @media (min-width: 991px) {
                     height: 100%;
                     align-content: center;
 
-                    .col-no {
-                        &-2 {
-                            align-self: center;
-                        }
-                    }
-
                     &-description,
                     &-variant {
-                        padding-left: 6em;
+                        width: 30%;
+                    }
+
+                    &-description {
+                        padding: 3em 3em 0 1em;
+                    }
+
+                    &-variant {
+                        padding: 3em 1em 0 3em;
+                    }
+
+                    &-image {
+                        width: 40%;
+                        align-self: center;
+                        padding: 0 1em;
+
+                        &-gallery{
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        }
                     }
                 }
 
                 &-image {
                     &-gallery {
-                        width: 100%;
-                        overflow: hidden;
-                        display: flex;
-                        position: relative;
-
                         &-slider {
                             position: relative;
                             height: 100%;
 
                             img {
                                 width: 100%;
+                                
+                                @media (min-width: 1200px) {
+                                    max-width: 350px;
+                                }
+                                @media (min-width: 1600px) {
+                                    max-width: 500px;
+                                }
                             }
                         }
 
@@ -118,13 +128,34 @@
                     }
                 }
 
-                &-description {
-                    &-title {
-                        color: $woch-grey;
+                &-description,
+                &-variant {
+                    &-heading {
+                        margin-bottom: 1em;
                     }
                 }
+                
+                &-description {
+                    &-nametag{
+                        padding-bottom: 1em;
 
-                // &-variant {}
+                        &-title,
+                        &-color {
+                            text-transform: uppercase;
+                        }
+
+                        &-color {
+                            span {
+                                font-size: .95em;
+                            }
+                        }
+                    }
+
+                    &-about {
+                        font-size: .9em;
+                        line-height: 1.6em;
+                    }
+                }
             }
         }
     }

@@ -20,20 +20,19 @@ import Sustainability from './pages/Sustainability';
 
 import CartProvider from './shop/cart/cartContext';
 
-import { useTranslation } from 'react-i18next';
-
-const lngs = {
-    en: { nativeName: 'en' },
-    cs: { nativeName: 'cz' },
-    sk: { nativeName: 'sk' }
-};
+// import { useTranslation } from 'react-i18next';
 
 function App() {
-    const { i18n } = useTranslation();
+    // const lngs = {
+    //     en: { nativeName: 'en' },
+    //     cs: { nativeName: 'cz' },
+    //     sk: { nativeName: 'sk' }
+    // };
+    // const { i18n } = useTranslation();
 
     return (
         <>
-            <div id='lang-switch'>
+            {/* <div id='lang-switch'>
                 {Object.keys(lngs).map((lng) => (
                     <button
                         key={lng}
@@ -47,7 +46,7 @@ function App() {
                         {lngs[lng].nativeName}
                     </button>
                 ))}
-            </div>
+            </div> */}
 
             <CartProvider>
                     <Router>
