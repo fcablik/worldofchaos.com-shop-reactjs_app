@@ -2,10 +2,10 @@
     error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
     header('Access-Control-Allow-Origin: *');
 
-    $dbConn['host']			= "uvdb54.active24.cz";
-    $dbConn['username']		= "theworldofchaos";
-    $dbConn['password']		= "1RKatxH7SN";
-    $dbConn['dbname']		= "theworldofchaos";
+    $dbConn['host']			= "uvdb66.active24.cz";
+    $dbConn['username']		= "wochlifeco";
+    $dbConn['password']		= "rZ3emMI8AY";
+    $dbConn['dbname']		= "wochlifeco";
 
     $conn = new mysqli($dbConn['host'], $dbConn['username'], $dbConn['password'], $dbConn['dbname']);
 

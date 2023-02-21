@@ -1,6 +1,6 @@
 const $imageItems = [
-    'https://theworldofchaos.com/images/product/gallery/wttch-edition-darktimes-back.png',
-    'https://theworldofchaos.com/images/product/gallery/wttch-edition-sand-back.png'
+    '/images/gallery/front-base-sand.png',
+    '/images/gallery/back-base-sand.png'
 ];
 
 const productsArray = [
@@ -13,7 +13,7 @@ const productsArray = [
         },
         stock: 8,
 
-        imagePreview: 'https://theworldofchaos.com/images/product/gallery/wttch-edition-darktimes-back.png',
+        imagePreview: '/images/gallery/back-base-sand.png',
         gallery: $imageItems,
 
         shortDescription: 'seo',

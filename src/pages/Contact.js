@@ -18,12 +18,12 @@ export default function Contact() {
                                 <br/><br/>
 
                             <div className='section'>
-                                <p>If you find yourself having any problems, <span className='highlight'>contact me</span> on:</p>
+                                <p>If you find yourself having any problems, <span className='highlight'>contact us</span> on:</p>
 
                                 <ul className='highlight-bullets'>
                                     <li>
                                         Mail:&nbsp;
-                                        <a className='highlight' href='mailto:phil@theworldofchaos.com'>phil@theworldofchaos.com</a>
+                                        <a className='highlight' href='mailto:info@wochlife.com'>info@wochlife.com</a>
                                     </li>
                                     <li>
                                         TikTok:&nbsp;
@@ -32,6 +32,10 @@ export default function Contact() {
                                     <li>
                                         Instagram:&nbsp;
                                         <a target='_blank' rel='noreferrer' className="highlight" href='https://instagram.com/wochlife'>@wochlife</a>
+                                    </li>
+                                    <li>
+                                        YouTube:&nbsp;
+                                        <a target='_blank' rel='noreferrer' className="highlight" href='https://youtube.com/@wochlife'>@wochlife</a>
                                     </li>
                                 </ul>
                             </div>
@@ -47,11 +51,10 @@ export default function Contact() {
                                     <li>IBAN: LT023250086995759630</li>
                                     <li>
                                         Operated by:&nbsp;
-                                        <a target='_blank' rel='noreferrer' href='https://www.instagram.com/husslephil/'>@husslephil</a>
+                                        <a target='_blank' rel='noreferrer' href='https://www.instagram.com/flowerboyfil/'>@flowerboyfil</a>
                                     </li>
                                     <li>
-                                        Mail:&nbsp;
-                                        <a className='highlight' href='mailto:phil@theworldofchaos.com'>phil@theworldofchaos.com</a>
+                                        Based in: Czech republic
                                     </li>
                                 </ul>
                             </div>

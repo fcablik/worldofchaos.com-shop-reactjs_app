@@ -30,12 +30,13 @@ i18n
                     },
                     shop: {
                         welcome: {
+                            shopOffline: 'The Store is closed at the moment.',
                             firstPart: "“welcome to the chaos”",
                             secondPart: "collection"
                         },
                         note: {
                             header: 'important customer note:',
-                            text: 'All our products are brand new &\u00a0authenticated -\u00a0we never sell used, fake or damaged goods!'
+                            text: 'All our products are brand new -\u00a0we never sell used, fake or damaged goods!'
                         }
                     }
                 }
@@ -56,6 +57,8 @@ i18n
                     },
                     shop: {
                         welcome: {
+                            shopOffline: 'Obchod je nyni uzavren.',
+                            firstPart: "“welcome to the chaos”",
                             secondPart: "kolekce"
                         },
                         note: {

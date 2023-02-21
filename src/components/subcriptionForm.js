@@ -46,7 +46,7 @@ export default function SubscriptionForm() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        const url = "https://www.theworldofchaos.com/_access/import_subs.php";
+        const url = "https://www.wochlife.com/_access/import_subs.php";
 
         let fData = new FormData();
         fData.append('email', email);

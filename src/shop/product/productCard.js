@@ -7,7 +7,6 @@ import { t } from 'i18next';
 function ProductCard(props) {
     const product                   = props.product;
     const cart                      = useContext(CartContext);
-        // console.log(cart.items);
     const productQuantity           = cart.getProductQuantity(product.id);
     const [openModal, setOpenModal] = useState(false);
 

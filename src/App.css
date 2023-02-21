@@ -41,8 +41,8 @@ h4, h5, h6 {
 
 @media (min-width: 768px) {
   p, a, i, q, b, s,
-strong, span,
-ul, li {
+  strong, span,
+  ul, li {
     font-size: 16px;
   }
   h1 {
@@ -51,8 +51,8 @@ ul, li {
 }
 @media (max-width: 767px) {
   p, a, i, q, b, s,
-strong, span,
-ul, li {
+  strong, span,
+  ul, li {
     font-size: 14.5px;
   }
   h1 {
@@ -233,16 +233,16 @@ body {
 
 @media (min-width: 768px) {
   #header,
-#footer,
-#main {
+  #footer,
+  #main {
     padding-right: 2em;
     padding-left: 2em;
   }
 }
 @media (max-width: 767px) {
   #header,
-#footer,
-#main {
+  #footer,
+  #main {
     padding-right: 1em;
     padding-left: 1em;
   }
@@ -380,6 +380,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-back-home:hover, .btn-back-to-shop:hover {
   background-color: #2e2e2e;
   color: #afafaf;
+}
+.btn-back-to-shop {
+  display: block;
 }
 
 .svg-action-icon:focus, .svg-action-icon:hover, .svg-action-icon:focus-visible, .svg-action-icon:active, .svg-action-icon:target, .svg-action-icon:visited {
@@ -1318,12 +1321,12 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(2px);
   }
   .footer .icons .-ic,
-.footer .icons .-ic-after {
+  .footer .icons .-ic-after {
     position: absolute;
   }
   .footer .icons .-ic.menu-active, .footer .icons .-ic.menu-inactive,
-.footer .icons .-ic-after.menu-active,
-.footer .icons .-ic-after.menu-inactive {
+  .footer .icons .-ic-after.menu-active,
+  .footer .icons .-ic-after.menu-inactive {
     -webkit-transition: all 1.2s;
     transition: all 1.2s;
   }

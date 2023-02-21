@@ -42,7 +42,7 @@ function Footer() {
                         <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@wochlife/" className='-f-icon'>
                             <YouTubeSvg />
                         </a>
-                        <a target="_blank" rel="noreferrer" href="mailto:phil@theworldofchaos.com" className='-f-icon'>
+                        <a target="_blank" rel="noreferrer" href="mailto:info@wochlife.com" className='-f-icon'>
                             <MailSvg />
                         </a>
                     </div>
@@ -91,7 +91,7 @@ function Footer() {
                             <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@wochlife/" className='-f-icon'>
                                 <YouTubeSvg />
                             </a>
-                            <a target="_blank" rel="noreferrer" href="mailto:phil@theworldofchaos.com" className='-f-icon'>
+                            <a target="_blank" rel="noreferrer" href="mailto:info@wochlife.com" className='-f-icon'>
                                 <MailSvg />
                             </a>
                         </div>
