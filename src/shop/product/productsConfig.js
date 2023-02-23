@@ -1,6 +1,8 @@
 const $imageItems = [
-    '/images/gallery/front-base-sand.png',
-    '/images/gallery/back-base-sand.png'
+    '/images/gallery/tees/tee.png',
+    '/images/gallery/tees/tee2.png',
+    '/images/gallery/tees/tee3.png',
+    '/images/gallery/tees/shorts.png',
 ];
 
 const productsArray = [
@@ -13,7 +15,7 @@ const productsArray = [
         },
         stock: 8,
 
-        imagePreview: '/images/gallery/back-base-sand.png',
+        imagePreview: '/images/gallery/tees/tee.png',
         gallery: $imageItems,
 
         shortDescription: 'seo',
