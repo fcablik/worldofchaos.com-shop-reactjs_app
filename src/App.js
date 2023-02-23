@@ -15,7 +15,7 @@ import Cart from './shop/cart/Cart';
 
 import Contact from './pages/Contact';
 import Subscription from './pages/Subscription';
-import Sustainability from './pages/Sustainability';
+// import Sustainability from './pages/Sustainability';
 // import TermsConditions from './pages/TermsConditions';
 
 import CartProvider from './shop/cart/cartContext';
@@ -62,7 +62,7 @@ function App() {
 
                                 <Route path='/contact' element={<Contact />} />
                                 <Route path='/subscription' element={<Subscription />} />
-                                <Route path='/sustainability' element={<Sustainability />} />
+                                {/* <Route path='/sustainability' element={<Sustainability />} /> */}
                                 {/* <Route path='/terms-conditions' element={<TermsConditions />} /> */}
 
                                 <Route path="*" element={<PageNotFound />} />

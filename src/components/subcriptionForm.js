@@ -120,7 +120,7 @@ export default function SubscriptionForm() {
                 </button>
             </form>
 
-            <div id='submit-response'></div>
+            <div id='submit-response' className='text-center'></div>
         </>
     )
 

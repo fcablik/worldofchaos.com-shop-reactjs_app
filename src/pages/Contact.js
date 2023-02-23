@@ -10,15 +10,15 @@ export default function Contact() {
 
                         <div className='-mc-global'>
                             <div className='section'>
-                                <h4 className='text-center'>
+                                <p className='text-center'>
                                     World Of Chaos is about responsibility.<br/>
-                                </h4>
+                                </p>
                             </div>
 
                                 <br/><br/>
 
                             <div className='section'>
-                                <p>If you find yourself having any problems, <span className='highlight'>contact us</span> on:</p>
+                                <p>If you find yourself having any problems, you can <span className='highlight'>contact us</span> through:</p>
 
                                 <ul className='highlight-bullets'>
                                     <li>
@@ -32,10 +32,6 @@ export default function Contact() {
                                     <li>
                                         Instagram:&nbsp;
                                         <a target='_blank' rel='noreferrer' className="highlight" href='https://instagram.com/wochlife'>@wochlife</a>
-                                    </li>
-                                    <li>
-                                        YouTube:&nbsp;
-                                        <a target='_blank' rel='noreferrer' className="highlight" href='https://youtube.com/@wochlife'>@wochlife</a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,7 +50,7 @@ export default function Contact() {
                                         <a target='_blank' rel='noreferrer' href='https://www.instagram.com/flowerboyfil/'>@flowerboyfil</a>
                                     </li>
                                     <li>
-                                        Based in: Czech republic
+                                        Based in: Czech Republic
                                     </li>
                                 </ul>
                             </div>

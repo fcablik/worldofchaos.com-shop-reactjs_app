@@ -36,7 +36,7 @@ i18n
                         },
                         note: {
                             header: 'important customer note:',
-                            text: 'All our products are brand new -\u00a0we never sell used, fake or damaged goods!'
+                            text: 'All our products are always brand new -\u00a0we never sell used, fake or damaged goods!'
                         }
                     }
                 }
@@ -63,7 +63,7 @@ i18n
                         },
                         note: {
                             header: 'dulezita poznamka:',
-                            text: 'Vsechny nase produkty jsou zcela nove &\u00a0overeny\u00a0(autentikovany) -\u00a0nikdy neprodavame pouzite, padelane nebo\u00a0poskozene zbozi!'
+                            text: 'Vsechny nase produkty jsou vzdy zcela nove &\u00a0overeny\u00a0(autentikovany) -\u00a0nikdy neprodavame pouzite, padelane nebo\u00a0poskozene zbozi!'
                         } 
                     }
                 }
@@ -88,7 +88,7 @@ i18n
                         },
                         note: {
                             header: 'dôležitá poznámka:',
-                            text: 'Vsetko nase zbozi je nove &\u00a0overene\u00a0(autentikovane) -\u00a0nikdy nepredavame pouzite, padelane alebo\u00a0poskozene zbozi!'
+                            text: 'Vsetko nase zbozi je vzdy nove &\u00a0overene\u00a0(autentikovane) -\u00a0nikdy nepredavame pouzite, padelane alebo\u00a0poskozene zbozi!'
                         } 
                     }
                 }

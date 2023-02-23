@@ -72,10 +72,14 @@ function Footer() {
                             <NavLink activeclassname='active' to="/subscription" className='-mb-text'>
                                 <span>Stay In Touch</span>
                             </NavLink>
-                            <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
+                            {/* <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>Sustainability</span>
-                            </NavLink>
-                            <a href='/' className='-mb-text disabled'>
+                            </NavLink> */}
+                            <a href='#' className='-mb-text disabled'>
+                                <span>Sustainability</span>
+                                <small>closed atm.</small>
+                            </a>
+                            <a href='#' className='-mb-text disabled'>
                                 <span>Terms & Conditions</span>
                                 <small>closed atm.</small>
                             </a>

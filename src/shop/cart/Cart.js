@@ -21,6 +21,11 @@ export default function Cart() {
                 <div className='main-content'>
                     <div id='shop'>
                         <div className='-mc-global'>
+                                    <div className='text-center'>
+                                        <p>The store is closed at the moment.</p>
+                                        <NavLink className="btn-back-to-shop" to="/">Back Home</NavLink>
+                                    </div>
+
                             {
                                 productsCount > 0 ?
                                     <>
@@ -38,8 +43,8 @@ export default function Cart() {
                                 :
                                 <>
                                     <div className='text-center'>
-                                        <h1>no items</h1>
-                                        <NavLink className="btn-back-to-shop" to="/shop">Back to Shop</NavLink>
+                                        {/* <h1>no items</h1>
+                                        <NavLink className="btn-back-to-shop" to="/shop">Back to Shop</NavLink> */}
                                     </div>
                                 </>
                             }
