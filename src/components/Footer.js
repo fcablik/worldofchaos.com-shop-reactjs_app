@@ -5,6 +5,7 @@ import TikTokSvg from '../components/svg/TikTok';
 import InstagramSvg from '../components/svg/Instagram';
 import YouTubeSvg from '../components/svg/YouTube';
 import MailSvg from '../components/svg/Mail';
+import { t } from 'i18next';
 
 
 function Footer() {
@@ -48,7 +49,7 @@ function Footer() {
                     </div>
 
                     <div className={isVisible ? '-ic-after menu-active' : '-ic-after menu-inactive'}>
-                        The Store is closed ATM.
+                        {t('component.footer.message')}
                     </div>
                 </div>
 
@@ -64,20 +65,20 @@ function Footer() {
                     <div className="menu-block">
                         <div className='web-links'>
                             <NavLink activeclassname='active' to="/shop" className='-mb-text'>
-                                <span>Shop</span>
+                                <span>{t('shop.title')}</span>
                             </NavLink>
                             <NavLink activeclassname='active' to="/contact" className='-mb-text'>
-                                <span>Contact</span>
+                                <span>{t('page.contact.title')}</span>
                             </NavLink>
                             <NavLink activeclassname='active' to="/subscription" className='-mb-text'>
-                                <span>Stay In Touch</span>
+                                <span>{t('page.stayintouch.title')}</span>
                             </NavLink>
                             <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
-                                <span>Sustainability</span>
+                                <span>{t('page.sustainability.title')}</span>
                             </NavLink>
                             <a href='/' className='-mb-text disabled'>
-                                <span>Terms & Conditions</span>
-                                <small>closed atm.</small>
+                                <span>{t('page.terms.title')}</span>
+                                <small>{t('page.closed.title')}</small>
                             </a>
                         </div>
 

@@ -22,7 +22,7 @@ function Header() {
                 <div className='-hdr-column'>
                     <div>
                         <NavLink to='/cart'>
-                            <span>{t('header.cart')} ({productsCount})</span>
+                            <span>{t('component.header.cart')} ({productsCount})</span>
                         </NavLink>
                     </div>
                 </div>

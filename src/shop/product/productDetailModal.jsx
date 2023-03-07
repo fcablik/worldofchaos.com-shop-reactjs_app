@@ -33,23 +33,27 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
             >
                 <div className='modal-content'>
                     <div className='modal-content-header'>
-                        <p className='modal-content-header-close button-px-close bold capitalize' onClick={onClose}> close </p>
+                        <p className='modal-content-header-close button-px-close bold capitalize' onClick={onClose}> {t('component.product.detail.close')} </p>
                     </div>
 
                     <div className='modal-content-body'>
                         <div id='product-detail' className='modal-content-body-product-detail'>
                             <div className='col-no-1 text-left modal-content-body-product-detail-description'>
                                 <div className='woch-grey modal-content-body-product-detail-description-heading'>
-                                    Description
+                                    {t('component.product.detail.description')}
                                 </div>
+
                                 <div className='modal-content-body-product-detail-description-nametag'>
                                     <h4 className="modal-content-body-product-detail-description-nametag-title">
                                         {product.title}
                                     </h4>
+
                                     <div className="modal-content-body-product-detail-description-nametag-color">
-                                        <span className="woch-grey">color:</span><span> {product.color}</span>
+                                        <span className="woch-grey">{t('component.product.detail.color')} </span>
+                                        <span>{product.color}</span>
                                     </div>
                                 </div>
+
                                 <div className="modal-content-body-product-detail-description-about">
                                     <p>{descriptionMain}</p>
                                     {descriptionPoints.map((points) => (
@@ -66,7 +70,7 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
 
                             <div className='col-no-3 text-left modal-content-body-product-detail-variant'>
                                 <div className='woch-grey modal-content-body-product-detail-variant-heading'>
-                                    Variant Choice
+                                    {t('component.product.detail.variant')}
                                 </div>
 
                                 <div>
@@ -82,21 +86,21 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                                     {
                                         productQuantity > 0 ?
                                         <>
-                                            <div className='cart-info'>In Cart: {productQuantity}</div>
+                                            <div className='cart-info'>{t('component.product.detail.cart')} {productQuantity}</div>
 
                                             <div className='cart-amount'>
                                                 {
                                                     (productQuantity <= product.stock - 1) ?
-                                                        <div className='add' onClick={() =>  cart.addOneToCart(product.id)}> + </div>
+                                                        <div className='add' onClick={() =>  cart.addOneToCart(product.id)}> {t('component.product.quantity.add.symbol')} </div>
                                                     :
-                                                        <div className='add'> can't add more </div>
+                                                        <div className='add'> {t('component.product.quantity.limit')} </div>
                                                 }
 
                                                 {
                                                     productQuantity === 1 ?
-                                                        <div className='remove'> - </div>
+                                                        <div className='remove'> {t('component.product.quantity.remove.symbol')} </div>
                                                     :
-                                                        <div className='remove' onClick={() =>  cart.removeOneFromCart(product.id)}> - </div>    
+                                                        <div className='remove' onClick={() =>  cart.removeOneFromCart(product.id)}> {t('component.product.quantity.remove.symbol')} </div>    
                                                 }
                                             </div>
 
@@ -104,7 +108,7 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                                                 className='delete' 
                                                 onClick={() => cart.deleteFromCart(product.id)}
                                             >
-                                                Remove From Cart
+                                                {t('component.product.quantity.remove.cart')}
                                             </div>
 
                                         </>
@@ -113,7 +117,7 @@ const Modal = ({ open, onClose, product, cart, productQuantity }) => {
                                             className='pixel-borders button-px-highlight bold capitalize'
                                             onClick={() => cart.addOneToCart(product.id)}
                                         >
-                                            add to cart
+                                             {t('component.product.quantity.add.cart')}
                                         </button>
                                     }
                                 </div>

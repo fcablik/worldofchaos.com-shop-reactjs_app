@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { t } from 'i18next';
 
 export default function SubscriptionForm() {
 
@@ -227,7 +228,7 @@ export default function SubscriptionForm() {
                 const title = document.getElementById('form-title');
                 const text = document.getElementById('form-text');
 
-                resp.innerHTML = "<p>Thanks for subscribing! Now you won't miss anything. :-)</p>";
+                resp.innerHTML = t('page.stayintouch.form.success');
                 resp.style.display = 'flex';
                 form.style.display = 'none';
                 title.style.display = 'none';
@@ -251,7 +252,7 @@ export default function SubscriptionForm() {
                 <input
                     className='text-center form-email'
                     type="email"
-                    placeholder="your email"
+                    placeholder={t('page.stayintouch.form.mail')}
                     value={email}
                     onChange={e=>getEmail(e.target.value)}
                 />
@@ -262,7 +263,7 @@ export default function SubscriptionForm() {
                     value={country}
                     onChange={e=>getCountry(e.target.value)}
                 >
-                    <option value=''>select your country</option>
+                    <option value=''>{t('page.stayintouch.form.country')}</option>
 
                     {countrySelect.map(country => (
                         <option
@@ -283,7 +284,7 @@ export default function SubscriptionForm() {
                     id="submit-sub"
                     disabled={!validate()}
                 >
-                    Submit
+                    {t('page.stayintouch.form.send')}
                 </button>
             </form>
 

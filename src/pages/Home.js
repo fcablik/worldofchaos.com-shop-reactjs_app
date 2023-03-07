@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
-
 import wochEarth from '../img/woch_earth.svg';
+import { t } from 'i18next';
 
 export default function Home() {
     return (
         <>
             <div className='welcome-container'>
                 <div className='-wc-center-block'>
-                    <img className='logo-full' src={wochEarth} alt='world of chaos' />
+                    <img className='logo-full' src={wochEarth} alt={t('store.name')} />
                 </div>
 
                 {/* <div className='-wc-info-block text-center'>

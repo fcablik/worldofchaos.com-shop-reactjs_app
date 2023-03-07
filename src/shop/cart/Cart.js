@@ -24,22 +24,22 @@ export default function Cart() {
                             {
                                 productsCount > 0 ?
                                     <>
-                                        <p>items in your cart:</p>
+                                        <p>{t('component.cart.items.info')}</p>
                                         {cart.items.map((currentProduct, idx) => (
                                             <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
                                         ))}
 
-                                        <h1>Total: {cart.getTotalCost()} {currencyShortText}</h1>
+                                        <h1>{t('component.cart.total')} {cart.getTotalCost()} {currencyShortText}</h1>
 
                                         <button variant='success'>
-                                            go to checkout
+                                            {t('component.cart.checkout')}
                                         </button>
                                     </>
                                 :
                                 <>
                                     <div className='text-center'>
-                                        <h1>no items</h1>
-                                        <NavLink className="btn-back-to-shop" to="/shop">Back to Shop</NavLink>
+                                        <h1>{t('component.cart.items.empty')}</h1>
+                                        <NavLink className="btn-back-to-shop" to="/shop">{t('component.cart.backtoshop')}</NavLink>
                                     </div>
                                 </>
                             }

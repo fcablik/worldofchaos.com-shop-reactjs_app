@@ -29,22 +29,20 @@ export default function CartProduct(props) {
             <div>
                 {
                     (quantity <= productData.stock - 1) ?
-                        <div className='add' onClick={() =>  cart.addOneToCart(id)}> + </div>
+                        <div className='add' onClick={() =>  cart.addOneToCart(id)}> {t('component.product.quantity.add.symbol')} </div>
                     :
-                        <div className='add'> cant add more </div>
+                        <div className='add'> {t('component.product.quantity.limit')} </div>
                 }
                 {
                     quantity === 1 ?
-                        <div className='remove'> - </div>
+                        <div className='remove'> {t('component.product.quantity.remove.symbol')} </div>
                     :
-                        <div className='remove' onClick={() =>  cart.removeOneFromCart(id)}> - </div>    
+                        <div className='remove' onClick={() =>  cart.removeOneFromCart(id)}> {t('component.product.quantity.remove.symbol')} </div>    
                 }
             </div>
 
-            <button
-                onClick={() => cart.deleteFromCart(id)}
-            >
-                remove
+            <button onClick={() => cart.deleteFromCart(id)}>
+                {t('component.product.quantity.remove.text')}
             </button>
 
             <hr />
