@@ -17,14 +17,11 @@ function Footer() {
 
         const location  = useLocation();
 
-        function changeClass(){
+        useEffect(() => {
             const nav = document.getElementById('navigation');
             if (nav.classList.contains('open')) {
                 handleClick();
             }
-        }
-        useEffect(() => {
-            changeClass();
         }, [location]);
 
 
