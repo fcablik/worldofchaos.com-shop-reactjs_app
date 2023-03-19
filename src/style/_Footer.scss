@@ -104,7 +104,12 @@
             }
 
             &:hover {
-                cursor: pointer;
+                @media (max-width: 991px) {
+                    cursor: pointer;
+                }
+                @media (min-width: 992px) {
+                    cursor: none;
+                }
 
                 .line {
                     background-color: $woch-highlight;

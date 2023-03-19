@@ -101,7 +101,12 @@
                 }
 
                 &:not(.disabled) {
-                    cursor: pointer;
+                    @media (max-width: 991px) {
+                        cursor: pointer;
+                    }
+                    @media (min-width: 992px) {
+                        cursor: none;
+                    }
 
                     &:hover,
                     &.active {
@@ -114,7 +119,13 @@
                 &.disabled {
                     flex-direction: column;
                     align-items: center;
-                    cursor: auto;
+
+                    @media (max-width: 991px) {
+                        cursor: auto;
+                    }
+                    @media (min-width: 992px) {
+                        cursor: none;
+                    }
                     
                     span {
                         text-decoration: line-through;

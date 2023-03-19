@@ -1,9 +1,10 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
+import { useRef } from 'react';
 import './App.min.css';
 
-// import Cursor from './components/Cursor';
+import Cursor from './components/Cursor';
 import ScrollToTop from './components/ScrollToTop';
+import RouterFinder from './components/routerFinder';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -30,6 +31,18 @@ function App() {
     // };
     // const { i18n } = useTranslation();
 
+
+
+    const windowWidth = useRef(window.innerWidth);
+
+    let cursor;
+    if (windowWidth.current > 991) {
+        cursor = <Cursor/>;
+    } else {
+        cursor = <></>;
+    }
+
+
     return (
         <>
             {/* <div id='lang-switch'>
@@ -49,27 +62,28 @@ function App() {
             </div> */}
 
             <CartProvider>
-                    <Router>
-                        {/* <Cursor/> */}
-                        <ScrollToTop />
-                        
-                        <Header />
+                <Router>
+                    {cursor}
+                    <ScrollToTop />
+                    <RouterFinder />
 
-                            <Routes>
-                                <Route exact path="/" element={<Home />}/>
-                                <Route path='/shop' element={<Shop />} />
-                                <Route path='/cart' element={<Cart />} />
+                    <Header />
 
-                                <Route path='/contact' element={<Contact />} />
-                                <Route path='/subscription' element={<Subscription />} />
-                                <Route path='/sustainability' element={<Sustainability />} />
-                                {/* <Route path='/terms-conditions' element={<TermsConditions />} /> */}
+                        <Routes>
+                            <Route exact path="/" element={<Home />}/>
+                            <Route path='/shop' element={<Shop />} />
+                            <Route path='/cart' element={<Cart />} />
 
-                                <Route path="*" element={<PageNotFound />} />
-                            </Routes>
+                            <Route path='/contact' element={<Contact />} />
+                            <Route path='/subscription' element={<Subscription />} />
+                            <Route path='/sustainability' element={<Sustainability />} />
+                            {/* <Route path='/terms-conditions' element={<TermsConditions />} /> */}
 
-                        <Footer />
-                    </Router>
+                            <Route path="*" element={<PageNotFound />} />
+                        </Routes>
+
+                    <Footer />
+                </Router>
             </CartProvider>
         </>
     )

@@ -39,7 +39,7 @@ export default function Cart() {
                                 <>
                                     <div className='text-center'>
                                         <h1>{t('component.cart.items.empty')}</h1>
-                                        <NavLink className="btn-back-to-shop" to="/shop">{t('component.cart.backtoshop')}</NavLink>
+                                        <NavLink className="btn-back-to-shop" to="/shop">{t('page.notfound.btn.store')}</NavLink>
                                     </div>
                                 </>
                             }

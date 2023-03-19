@@ -98,7 +98,13 @@
                 &:not(:disabled) {
                     color: $woch_text-dark;
                     background-color: $woch_bcg-components;
-                    cursor: pointer;
+
+                    @media (max-width: 991px) {
+                        cursor: pointer;
+                    }
+                    @media (min-width: 992px) {
+                        cursor: none;
+                    }
     
                     &:hover {
                         color: $woch_text-light;

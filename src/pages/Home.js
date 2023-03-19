@@ -10,16 +10,16 @@ export default function Home() {
                     <img className='logo-full' src={wochEarth} alt={t('store.name')} />
                 </div>
 
-                {/* <div className='-wc-info-block text-center'>
+                <div className='-wc-info-block text-center'>
                     <h4>
                         <span>The Store is closed<br/>at the moment, but you can still</span>
                         <NavLink activeclassname='active' to="/contact" className='-wc-info-text highlight'>
                             &nbsp;contact us
                         </NavLink>.
                     </h4>
-                </div> */}
+                </div>
 
-                <div className='-wc-go-shop'>
+                {/* <div className='-wc-go-shop'>
                     <NavLink activeclassname='active' to="/shop" className='-mb-text svg-action-icon'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="306.442" height="97.306" viewBox="0 0 306.442 97.306">
                             <g id="Group_1101" data-name="Group 1101" transform="translate(0 0)">
@@ -45,7 +45,7 @@ export default function Home() {
                             </g>
                         </svg>
                     </NavLink>
-                </div>
+                </div> */}
             </div>
         </>
     );

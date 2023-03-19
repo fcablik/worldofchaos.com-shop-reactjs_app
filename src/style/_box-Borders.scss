@@ -458,8 +458,14 @@
             &:active,
             &:focus,
             &:focus-visible {
-                cursor: pointer;
                 background-color: #85E2A6;
+
+                @media (max-width: 991px) {
+                    cursor: pointer;
+                }
+                @media (min-width: 992px) {
+                    cursor: none;
+                }
             }
         }
 
@@ -496,8 +502,14 @@
             &:active,
             &:focus,
             &:focus-visible {
-                cursor: pointer;
                 background-color: $woch_bcg-components_light;
+
+                @media (max-width: 991px) {
+                    cursor: pointer;
+                }
+                @media (min-width: 992px) {
+                    cursor: none;
+                }
             }
         }
 
@@ -535,8 +547,14 @@
             &:active,
             &:focus,
             &:focus-visible {
-                cursor: pointer;
                 background-color: $woch_bcg-components_light;
+
+                @media (max-width: 991px) {
+                    cursor: pointer;
+                }
+                @media (min-width: 992px) {
+                    cursor: none;
+                }
             }
         }
     //* end woch buttons

@@ -8,6 +8,12 @@
 
 body {
     background: $woch_bcg-light;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    @media (min-width: 992px) {
+        cursor: none;
+    }
 }
 
 #root {
@@ -31,11 +37,13 @@ body {
     @media (min-width: 768px) {
         background-size: 5em 5em;
 
-        @media (min-height: 730px){
-            padding: 120px 0 80px 0;
-        }
-        @media (max-height: 729px){
-            padding: 100px 0 0;
+        &:not(.home) {
+            @media (min-height: 730px){
+                padding: 120px 0 80px 0;
+            }
+            @media (max-height: 729px){
+                padding: 100px 0 0;
+            }
         }
 
         &::-webkit-scrollbar { 
@@ -44,7 +52,16 @@ body {
     }
     @media (max-width: 767px) {
         background-size: 4em 4em;
-        padding: 100px 0 80px 0;
+
+        &:not(.home) {
+            padding: 100px 0 80px 0;
+        }
+    }
+
+    &.home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     #subscription,

@@ -25,7 +25,14 @@
 
             // &:hover {
             //     background-color: $woch_bcg-components_light-hover;
-            //     cursor: pointer;
+
+            //     @media (max-width: 991px) {
+            //         cursor: pointer;
+            //     }
+            //     @media (min-width: 992px) {
+            //         cursor: none;
+            //     }
+            
             // }
 
             @media (min-width: 768px) {

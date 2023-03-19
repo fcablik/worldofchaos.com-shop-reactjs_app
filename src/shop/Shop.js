@@ -15,7 +15,7 @@ export default function Shop() {
                         </h1>
 
                         <div className='-mc-shop'>
-                            <ProductCategory />
+                            {/* <ProductCategory /> */}
 
                             <div className='-mc-important-note section text-center'>
                                 <p className='bold capitalize'>{t('shop.note.header')}</p>

@@ -166,7 +166,7 @@ i18n
                             backtoshop: 'Back to shop',
                             items: {
                                 info: 'items in your cart:',
-                                empty: 'no items in cart :-(',
+                                empty: 'no items in cart',
                             },
 
                             product: {

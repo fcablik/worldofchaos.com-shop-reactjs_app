@@ -76,10 +76,10 @@ function Footer() {
                             <NavLink activeclassname='active' to="/sustainability" className='-mb-text'>
                                 <span>{t('page.sustainability.title')}</span>
                             </NavLink>
-                            <a href='/' className='-mb-text disabled'>
+                            <div className='-mb-text disabled'>
                                 <span>{t('page.terms.title')}</span>
                                 <small>{t('page.closed.title')}</small>
-                            </a>
+                            </div>
                         </div>
 
                         <div className='social-links'>

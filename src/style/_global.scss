@@ -1,5 +1,32 @@
 //* {App.js} styles - global settings
 
+.cursor,
+.cursor-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 99999;
+}
+
+.cursor {
+    width: 8px;
+    height: 8px;
+    background-color: $woch-highlight;
+}
+.cursor-outline {
+    width: 35px;
+    height: 35px;
+    background-color: $woch_bcg-grid;
+}
+
+
+
+
 #lang-switch {
     position: absolute;
     right: 0;
@@ -38,7 +65,13 @@ a {
 
     &:hover {
         color: $woch-highlight;
-        cursor: pointer;
+
+        @media (max-width: 991px) {
+            cursor: pointer;
+        }
+        @media (min-width: 992px) {
+            cursor: none;
+        }
     }
 }
 
