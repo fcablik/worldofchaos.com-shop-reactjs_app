@@ -4,7 +4,12 @@
 .social-links {
     .-f-icon {
         &:not(.disabled) {
-            cursor: pointer;
+            @media (max-width: 991px) {
+                cursor: pointer;
+            }
+            @media (min-width: 992px) {
+                cursor: none;
+            }
         }
 
         svg {

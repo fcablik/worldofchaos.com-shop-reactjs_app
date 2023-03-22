@@ -2176,9 +2176,17 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6em;
 }
 
-.icons .-f-icon:not(.disabled),
-.social-links .-f-icon:not(.disabled) {
-  cursor: pointer;
+@media (max-width: 991px) {
+  .icons .-f-icon:not(.disabled),
+  .social-links .-f-icon:not(.disabled) {
+    cursor: pointer;
+  }
+}
+@media (min-width: 992px) {
+  .icons .-f-icon:not(.disabled),
+  .social-links .-f-icon:not(.disabled) {
+    cursor: none;
+  }
 }
 .icons .-f-icon svg,
 .social-links .-f-icon svg {
